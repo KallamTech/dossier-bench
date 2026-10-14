@@ -109,7 +109,7 @@ class LLMBaseline(Adapter):
         seen: dict[str, str] = {}
         for key, ex, parent in self._files(case):
             t0 = time.monotonic()
-            digest = hashlib.sha256((ex.text + str(len(ex.images))).encode()).hexdigest() if ex.text or ex.images else None
+            digest = hashlib.sha256(ex.text.encode() + b"".join(data for _, data in ex.images)).hexdigest() if ex.text or ex.images else None
             if digest and digest in seen:
                 docs[key] = Document(key, duplicate_of=seen[digest])
                 continue

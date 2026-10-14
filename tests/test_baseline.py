@@ -34,3 +34,13 @@ def test_ymd():
     assert _ymd("2025-03-14") == (2025, 3, 14)
     assert _ymd("2025-03") == (2025, 3, None)
     assert _ymd(None) == (None, None, None)
+
+
+def test_distinct_photos_are_not_duplicates(monkeypatch):
+    case = Case.load("harbor-dispute")
+    b = LLMBaseline(model="none")
+    monkeypatch.setattr(b, "_chat", lambda *a, **k: ("{}", 0.0, 0))
+    docs = b.ingest(case).documents
+    assert docs["slab-photo"].duplicate_of is None
+    assert docs["commissioning-log"].duplicate_of is None
+    assert docs["contract-v1-copy"].duplicate_of == "contract-v1"
