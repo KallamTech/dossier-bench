@@ -4,6 +4,6 @@ __pycache__/
 .pytest_cache/
 .DS_Store
 dist/
-runs/
-baselines/
+/runs/
+/baselines/
 dossier-bench.yaml
