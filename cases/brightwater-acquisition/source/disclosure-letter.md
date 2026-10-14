@@ -1,8 +1,8 @@
 # DISCLOSURE LETTER
 
-**From:** Imogen Hale and Rafael Duarte (the "Sellers"), by their solicitors Pemberton Clarke LLP, 40 Chancery Lane, London WC2A 1JA
+**From:** Imogen Hale and Rafael Duarte (the "Sellers"), by their solicitors Pemberton Clarke LLP, 40 Quill Court, London ZZ6 1JA
 
-**To:** Castellane Holdings Ltd (the "Buyer"), 14 Bruton Place, London W1J 6LX
+**To:** Castellane Holdings Ltd (the "Buyer"), 14 Ashgrove Mews, London ZZ3 6LX
 
 **Date:** 14 March 2025
 

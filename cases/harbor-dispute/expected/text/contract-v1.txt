@@ -6,9 +6,9 @@ Dated 4 November 2024
 
 BETWEEN
 
-(1) BRISAMAR LOGISTICS SA, a company incorporated in Spain with tax identification number A-46.812.337, whose registered office is at Polígono Industrial Fuente del Jarro, Calle Ciudad de Sevilla 14, 46988 Paterna (Valencia), Spain (the "Buyer"); and
+(1) BRISAMAR LOGISTICS SA, a company incorporated in Spain with tax identification number A-00.000.000, whose registered office is at Polígono Industrial Los Almendros, Calle del Almendro 14, 46988 Paterna (Valencia), Spain (the "Buyer"); and
 
-(2) TIDEWELL FABRICATION LTD, a company incorporated in England and Wales with company number 00000000, whose registered office is at Unit 4, Marchwood Industrial Park, Southampton SO40 4BL, United Kingdom (the "Supplier").
+(2) TIDEWELL FABRICATION LTD, a company incorporated in England and Wales with company number 00000000, whose registered office is at Unit 4, Kestrel Quay Industrial Estate, Southampton ZZ1 4BL, United Kingdom (the "Supplier").
 
 RECITALS
 
@@ -228,7 +228,7 @@ Practical Completion | 11 April 2025
 
 15.2 Each party irrevocably agrees that the courts of England and Wales shall have exclusive jurisdiction to settle any dispute or claim arising out of or in connection with this Agreement.
 
-15.3 The Buyer appoints Brisamar Logistics (UK) Ltd of 22 Thames Wharf Road, Tilbury RM18 7BA as its agent for service of process in England.
+15.3 The Buyer appoints Brisamar Logistics (UK) Ltd of 22 Saltmarsh Wharf, Tilbury ZZ10 7BA as its agent for service of process in England.
 
 16. DISPUTE RESOLUTION
 
@@ -242,8 +242,8 @@ Practical Completion | 11 April 2025
 17.1 Any notice under this Agreement shall be in writing and shall be delivered by hand, sent by recorded delivery or sent by e-mail to the addresses below (or such other address as a party may notify):
 
 Party | Postal address | E-mail
-Buyer | Polígono Industrial Fuente del Jarro, Calle Ciudad de Sevilla 14, 46988 Paterna (Valencia), Spain — attention Lucía Ortega, Project Director | l.ortega@brisamar-logistics.example
-Supplier | Unit 4, Marchwood Industrial Park, Southampton SO40 4BL, United Kingdom — attention Priya Nair, Project Manager | p.nair@tidewellfab.example
+Buyer | Polígono Industrial Los Almendros, Calle del Almendro 14, 46988 Paterna (Valencia), Spain — attention Lucía Ortega, Project Director | l.ortega@brisamar-logistics.example
+Supplier | Unit 4, Kestrel Quay Industrial Estate, Southampton ZZ1 4BL, United Kingdom — attention Priya Nair, Project Manager | p.nair@tidewellfab.example
 
 17.2 A notice sent by e-mail is deemed received at the time of transmission if sent before 17:00 on a Business Day, and otherwise at 09:00 on the next Business Day.
 

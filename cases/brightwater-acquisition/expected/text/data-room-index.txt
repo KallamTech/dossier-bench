@@ -22,7 +22,7 @@ Ref, Folder, Document, Date uploaded
 5.4, 5. IP and technology, Third-party licences (bundle), 2025-01-30
 6.1, 6. Litigation and compliance, Litigation summary (nil return), 2025-01-30
 6.2, 6. Litigation and compliance, ICO registration and data protection policies, 2025-01-30
-7.1, 7. Property, Lease of Floor 3, 26 Clerkenwell Road, 2025-01-30
+7.1, 7. Property, Lease of Floor 3, 26 Copperfield Yard, 2025-01-30
 [Q&A log]
 Q&A log
 No, Asked, Question, Answer, Answered

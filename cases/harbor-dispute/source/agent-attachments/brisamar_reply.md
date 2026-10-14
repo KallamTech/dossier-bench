@@ -1,12 +1,12 @@
 # BRISAMAR LOGISTICS SA
 
-Polígono Industrial Fuente del Jarro, Calle Ciudad de Sevilla 14, 46988 Paterna (Valencia), Spain
+Polígono Industrial Los Almendros, Calle del Almendro 14, 46988 Paterna (Valencia), Spain
 
 **BY E-MAIL**
 
 Calloway Price LLP
-14 Gray's Inn Square
-London WC1R 5JD
+14 Inkwell Square
+London ZZ9 5JD
 
 For the attention of Ms Sarah Adeyemi
 

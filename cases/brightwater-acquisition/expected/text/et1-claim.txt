@@ -8,7 +8,7 @@ Date presented: 20 May 2025
 
 Name: Rosemary Okafor
 
-Address: 52 Elmfield Road, London SE13 7EU
+Address: 52 Wrenfield Close, London ZZ7 7EU
 
 Email: r.okafor@mail.example
 
@@ -16,7 +16,7 @@ Email: r.okafor@mail.example
 
 Name: Brightwater Analytics Ltd
 
-Address: Floor 3, 26 Clerkenwell Road, London EC1M 5PQ
+Address: Floor 3, 26 Copperfield Yard, London ZZ4 5PQ
 
 ACAS early conciliation certificate number: R241057/25/03 (issued 2 May 2025)
 

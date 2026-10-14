@@ -1,10 +1,10 @@
 # FENWICK ROWE LLP
 
-1 Moorgate Place, London EC2R 6EA
+1 Lantern Row, London ZZ5 6EA
 
 **By email and post**
 
-Pemberton Clarke LLP, 40 Chancery Lane, London WC2A 1JA
+Pemberton Clarke LLP, 40 Quill Court, London ZZ6 1JA
 
 For the attention of Julian Pemberton
 

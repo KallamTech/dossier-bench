@@ -1,7 +1,7 @@
 # Ground truth for the benchmark case. Everything in expected/ is derived from
 # this file by generate.py. Fictional parties and matter. Bump case_version
 # whenever anything that changes the rendered documents changes.
-case_version: 5
+case_version: 6
 case:
   name: "Tidewell Fabrication v. Brisamar Logistics"
   type: commercial_dispute
@@ -18,13 +18,13 @@ organizations:
     aliases: [Tidewell, HFL, the Supplier]
     role: claimant
     country: GB
-    address: "Unit 4, Marchwood Industrial Park, Southampton SO40 4BL, United Kingdom"
+    address: "Unit 4, Kestrel Quay Industrial Estate, Southampton ZZ1 4BL, United Kingdom"
   - key: brisamar
     name: Brisamar Logistics SA
     aliases: [Brisamar, the Buyer]
     role: respondent
     country: ES
-    address: "Polígono Industrial Fuente del Jarro, Calle Ciudad de Sevilla 14, 46988 Paterna (Valencia), Spain"
+    address: "Polígono Industrial Los Almendros, Calle del Almendro 14, 46988 Paterna (Valencia), Spain"
   - key: velden
     name: Velden Controls BV
     aliases: [Velden]
@@ -160,7 +160,7 @@ documents:
     types: [contract, agreement]
     language: en
     family: { group: supply-agreement, role: base }
-    must_phrases: ["liquidated damages", "0.5%", "England and Wales", "Marchwood Industrial Park"]
+    must_phrases: ["liquidated damages", "0.5%", "England and Wales", "Kestrel Quay Industrial Estate"]
     must_facts:
       - "Supply and installation of an automated conveyor and sortation system at Brisamar's Valencia distribution centre"
       - "Contract price €1,240,000"
