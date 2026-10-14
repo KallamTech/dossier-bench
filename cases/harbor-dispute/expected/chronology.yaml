@@ -1,0 +1,159 @@
+case_version: 4
+events:
+- key: tender-submitted
+  date: 2024-09-18
+  text: Tidewell submits tender response for the Valencia conveyor system (proposed price €1,195,000)
+  docs:
+  - tender
+  - expert-report
+- key: contract-signed
+  date: 2024-11-04
+  text: Supply and Installation Agreement signed by Tidewell and Brisamar (price €1,240,000)
+  docs:
+  - contract-v1
+  - expert-report
+  - notes-txt
+- key: kickoff
+  date: 2024-11-19
+  text: Kick-off meeting at the Valencia site
+  docs:
+  - minutes-scan
+  - expert-report
+- key: design-pack
+  date: 2024-12-06
+  text: Tidewell issues the design pack
+  docs:
+  - minutes-scan
+  - expert-report
+- key: co-1
+  date: 2024-12-19
+  text: Change Order CO-1 (second sorter outfeed, +€31,000, +7 days) approved
+  docs:
+  - change-orders
+  - expert-report
+- key: co-2
+  date: 2025-01-10
+  text: Change Order CO-2 (redundant PLC pair, +€17,000) approved
+  docs:
+  - change-orders
+- key: contract-v2
+  date: 2025-01-20
+  text: Amended and Restated Agreement signed; price €1,288,000; milestones re-baselined
+  docs:
+  - contract-v2
+  - expert-report
+- key: power-due
+  date: 2025-02-07
+  text: Contractual date for Brisamar to provide the 400A power supply (clause 6.4); not met
+  docs:
+  - contract-v2
+  - delay-thread
+  - expert-report
+- key: delivery-actual
+  date: 2025-02-20
+  text: Equipment delivered to site, six days after the re-baselined delivery milestone
+  docs:
+  - expert-report
+- key: slab-discovered
+  date: 2025-02-18
+  text: Tidewell discovers Bay 3 floor slab out of tolerance
+  docs:
+  - delay-thread
+  - expert-report
+- key: slab-survey
+  date: 2025-02-19
+  text: 'Levantina Topografía surveys Bay 3 floor: 18 mm deviation over 3 m against 5 mm tolerance'
+  docs:
+  - survey-attachment
+  - delay-thread
+  - expert-report
+  - slab-photo
+  - acta-reunion
+- key: notice-1
+  date: 2025-02-21
+  text: Tidewell serves first delay notice under clause 9.2 (floor slab) and issues CO-3
+  docs:
+  - delay-thread
+  - change-orders
+  - expert-report
+- key: site-meeting
+  date: 2025-02-20
+  text: Site meeting reviews Levantina's survey results (18 mm over 3 m at C5); Brisamar cites an August 2024 survey showing
+    the slab within tolerance
+  docs:
+  - acta-reunion
+- key: proceed-at-risk
+  date: 2025-02-24
+  text: Brisamar replies that the slab is within tolerance and instructs Tidewell to proceed at risk
+  docs:
+  - delay-thread
+  - expert-report
+- key: notice-2
+  date: 2025-03-09
+  text: Tidewell serves second delay notice (power supply not available) and claims 21 days extension of time
+  docs:
+  - delay-thread
+  - expert-report
+- key: eot-rejected
+  date: 2025-03-11
+  text: Brisamar rejects the extension of time and warns of liquidated damages from 21 March 2025
+  docs:
+  - delay-thread
+  - expert-report
+- key: suspension
+  date: 2025-03-14
+  text: Installation in Bay 3 suspended pending floor re-levelling
+  docs:
+  - site-photo
+  - expert-report
+- key: power-energised
+  date: 2025-03-18
+  text: 400A power supply energised, 39 days after the contractual date
+  docs:
+  - expert-report
+  - commissioning-log
+- key: invoice-0417
+  date: 2025-03-24
+  text: Tidewell issues invoice 0417 for milestone 3 (mechanical completion), €257,600, due 23 April 2025
+  docs:
+  - invoice-es
+  - notes-txt
+- key: co-4
+  date: 2025-03-28
+  text: Change Order CO-4 (additional safety fencing, +€9,500, +3 days) approved
+  docs:
+  - change-orders
+- key: pc-due
+  date: 2025-04-25
+  text: Re-baselined practical completion date passes without completion
+  docs:
+  - contract-v2
+  - termination
+  - expert-report
+- key: termination
+  date: 2025-05-02
+  text: Brisamar terminates the agreement for alleged material breach and claims €45,080 liquidated damages
+  docs:
+  - termination
+  - notes-txt
+  - expert-report
+- key: invoice-hold
+  date: 2025-04-28
+  text: Brisamar places payment of invoice 0417 on hold pending its delay-damages claim and the Bay 3 works
+  docs:
+  - invoice-hold
+- key: vacate
+  date: 2025-05-09
+  text: Deadline set by Brisamar for Tidewell to vacate the site
+  docs:
+  - termination
+- key: counsel-call
+  date: 2025-05-15
+  text: Calloway Price call with Daniel Mercer on strategy
+  docs:
+  - notes-txt
+- key: expert-report
+  date: 2025-06-30
+  text: 'Meridian delay analysis report issued: 34 days critical delay, 23 attributable to Brisamar, 11 to Tidewell'
+  docs:
+  - expert-report

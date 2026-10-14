@@ -1,0 +1,187 @@
+- id: qa-ld-rate
+  group: qa-grounded
+  tags:
+  - qa
+  - core
+  turns:
+  - content: What is the liquidated damages rate and cap under the supply agreement?
+    expect:
+      answer:
+        must_facts:
+        - 0.5% of the contract price per week of delay
+        - capped at 10% of the contract price
+        must_not_claim:
+        - liquidated damages run from mechanical completion
+      citations:
+        must_include_docs:
+        - contract-v1
+        min: 1
+- id: qa-price-change
+  group: qa-grounded
+  tags:
+  - qa
+  - core
+  turns:
+  - content: How did the contract price change between the original agreement and the amended agreement, and why?
+    expect:
+      answer:
+        must_facts:
+        - original price €1,240,000
+        - amended price €1,288,000
+        - increase reflects change orders CO-1 (second sorter outfeed, €31,000) and CO-2 (redundant PLC pair, €17,000)
+      citations:
+        min: 1
+- id: qa-milestones-v2
+  group: qa-grounded
+  tags:
+  - qa
+  - core
+  turns:
+  - content: List the re-baselined milestone dates in Amendment No. 1.
+    expect:
+      answer:
+        must_facts:
+        - Delivery 14 February 2025
+        - Mechanical Completion 21 March 2025
+        - Practical Completion 25 April 2025
+        must_not_claim:
+        - Practical Completion 11 April 2025 is the amended date
+      citations:
+        must_include_docs:
+        - contract-v2
+- id: qa-slab-survey
+  group: qa-grounded
+  tags:
+  - qa
+  - core
+  turns:
+  - content: What did the floor slab survey find, who carried it out, and what was the contractual tolerance?
+    expect:
+      answer:
+        must_facts:
+        - Levantina Topografía carried out the survey on 19 February 2025
+        - maximum deviation 18 mm over 3 m between grid lines C4 and C7
+        - contract tolerance 5 mm over 3 m (clause 6.2)
+      citations:
+        min: 1
+- id: qa-expert-conclusion
+  group: qa-grounded
+  tags:
+  - qa
+  - core
+  turns:
+  - content: What does the delay expert conclude about the critical delay and how it splits between the parties?
+    expect:
+      answer:
+        must_facts:
+        - total critical delay 34 days
+        - 23 days attributable to Brisamar
+        - 11 days attributable to Tidewell
+        - Tidewell's liquidated damages exposure about €10,120
+      citations:
+        must_include_docs:
+        - expert-report
+- id: qa-invoice
+  group: qa-grounded
+  tags:
+  - qa
+  - core
+  turns:
+  - content: What is invoice 0417 for, how much is it, and when was it due?
+    expect:
+      answer:
+        must_facts:
+        - milestone 3, mechanical completion
+        - €257,600
+        - due 23 April 2025
+      citations:
+        must_include_docs:
+        - invoice-es
+- id: qa-termination-grounds
+  group: qa-grounded
+  tags:
+  - qa
+  - core
+  turns:
+  - content: On what grounds did Brisamar terminate, what did it claim, and by when did Tidewell have to leave the site?
+    expect:
+      answer:
+        must_facts:
+        - terminated under clause 12.1 for failure to achieve practical completion by 25 April 2025
+        - claimed liquidated damages of €45,080
+        - vacate the site by 9 May 2025
+      citations:
+        must_include_docs:
+        - termination
+- id: qa-cure-notice
+  group: qa-grounded
+  tags:
+  - qa
+  - core
+  - reasoning
+  turns:
+  - content: Did Brisamar follow the contractual termination procedure? Explain with reference to the relevant clause.
+    expect:
+      answer:
+        must_facts:
+        - clause 12.1 requires a written notice specifying the breach and a 21-day period to remedy it
+        - no cure notice was served before the termination of 2 May 2025
+        - the termination was with immediate effect
+      citations:
+        min: 2
+- id: qa-tender-team
+  group: qa-grounded
+  tags:
+  - qa
+  turns:
+  - content: Who did Tidewell propose as project manager and which subcontractor handles the PLC programming?
+    expect:
+      answer:
+        must_facts:
+        - Priya Nair is the project manager
+        - Velden Controls BV does the PLC programming
+      citations:
+        must_include_docs:
+        - tender
+- id: qa-change-orders
+  group: qa-grounded
+  tags:
+  - qa
+  - spreadsheet
+  turns:
+  - content: Which change orders were approved, which is disputed, and what is the total value of the approved ones?
+    expect:
+      answer:
+        must_facts:
+        - CO-1, CO-2 and CO-4 approved
+        - CO-3 (re-level Bay 3 floor slab, €48,000) is disputed
+        - approved total €57,500
+- id: qa-kickoff-actions
+  group: qa-grounded
+  tags:
+  - qa
+  - ocr
+  turns:
+  - content: According to the kick-off meeting minutes, who was to confirm the power supply upgrade date and by when?
+    expect:
+      answer:
+        must_facts:
+        - Lucía Ortega
+        - by 20 December 2024
+      citations:
+        must_include_docs:
+        - minutes-scan
+- id: qa-power-supply
+  group: qa-grounded
+  tags:
+  - qa
+  - core
+  turns:
+  - content: When was the permanent 400A power supply contractually due, and when was it actually energised?
+    expect:
+      answer:
+        must_facts:
+        - due 7 February 2025 under clause 6.4
+        - energised 18 March 2025
+      citations:
+        min: 1

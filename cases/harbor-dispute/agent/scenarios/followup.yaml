@@ -1,0 +1,70 @@
+- id: followup-notices
+  group: followup
+  tags:
+  - followup
+  - core
+  turns:
+  - content: Who sent the delay notices to Brisamar, and on which dates?
+    expect:
+      answer:
+        must_facts:
+        - Priya Nair of Tidewell sent the notices
+        - 21 February 2025
+        - 9 March 2025
+      citations:
+        min: 1
+  - content: What notice period did the contract require for those, and were they in time?
+    expect:
+      answer:
+        must_facts:
+        - clause 9.2 requires written notice within 14 days of becoming aware of the delay event
+        - the first notice followed discovery on 18 February 2025 and was within 14 days
+  - content: And how did she respond to the second one?
+    expect:
+      answer:
+        must_facts:
+        - Lucía Ortega rejected the extension of time on 11 March 2025
+        - said the power supply would be energised by the end of the week
+        - warned of liquidated damages from 21 March 2025
+- id: followup-ld-math
+  group: followup
+  tags:
+  - followup
+  - reasoning
+  turns:
+  - content: How much are liquidated damages per week under the amended contract?
+    expect:
+      answer:
+        must_facts:
+        - €6,440 per week (0.5% of €1,288,000)
+  - content: So how many weeks does Brisamar's €45,080 claim correspond to, and from which date did they count?
+    expect:
+      answer:
+        must_facts:
+        - seven weeks
+        - counted from 21 March 2025, the mechanical completion date
+  - content: Is that the right start date under clause 10?
+    expect:
+      answer:
+        must_facts:
+        - 'no: clause 10.1 applies liquidated damages to delay in practical completion, not mechanical completion'
+        must_not_claim:
+        - liquidated damages run from mechanical completion
+- id: followup-copy-of-doc
+  group: followup
+  tags:
+  - followup
+  - families
+  turns:
+  - content: Is there more than one version of the supply agreement in the case?
+    expect:
+      answer:
+        must_facts:
+        - there is an original agreement dated 4 November 2024 and an amended and restated version dated 20 January 2025
+  - content: What is new in the later one that is not in the earlier one?
+    expect:
+      answer:
+        must_facts:
+        - new clause 6.4 requiring the Buyer to provide a 400A power supply by 7 February 2025
+        - price increased to €1,288,000
+        - milestones re-baselined

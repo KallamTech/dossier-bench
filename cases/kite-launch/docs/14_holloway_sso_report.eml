@@ -1,0 +1,119 @@
+Subject: Kite 3.0 beta =?utf-8?b?4oCU?= single sign-on failing for multi-role
+ users
+From: "Kwame Mensah" <k.mensah@holloway-logistics.example>
+To: "Nadia Rahimi" <nadia.rahimi@larkspurlabs.example>
+Cc: "Owen Castillo" <owen.castillo@larkspurlabs.example>
+Date: Fri, 12 Sep 2025 14:10:22 +0100
+Message-ID: <20250912141022.HOL-OPS-0871@holloway-logistics.example>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==bench-customer-email=="
+
+--==bench-customer-email==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Nadia,
+
+We have hit a problem in the Kite 3.0 beta. Users who have more than one role=
+ (for example planner and approver) cannot sign in through single sign-on: af=
+ter the SAML redirect they get "role mapping failed". Users with a single rol=
+e sign in fine.
+
+This affects 14 of our 60 users, including all of our planners, so for now th=
+ey are using passwords, which our IT team does not want long term.
+
+Otherwise the feedback is good: the new dashboard and the saved views are a b=
+ig step up and our planners are already using them daily.
+
+Happy to jump on a call or share logs.
+
+Regards,
+Kwame Mensah
+Operations Director, Holloway Logistics Ltd
+
+--==bench-customer-email==
+MIME-Version: 1.0
+Content-Type: multipart/related; boundary="==bench-customer-email==1=="
+
+--==bench-customer-email==1==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><body style=3D"font-family: Segoe UI, Arial, sans-serif; font-size: 11p=
+t;">
+<p><img src=3D"cid:hol-logo" alt=3D"Holloway Logistics" width=3D"150"></p>
+<p>Hi Nadia,</p>
+<p>We have hit a problem in the Kite 3.0 beta. <b>Users who have more than on=
+e role</b> (for example planner and approver) <b>cannot sign in through singl=
+e sign-on</b>: after the SAML redirect they get "role mapping failed". Users =
+with a single role sign in fine.</p>
+<p>This affects <b>14 of our 60 users</b>, including all of our planners, so =
+for now they are using passwords, which our IT team does not want long term.<=
+/p>
+<p>Otherwise the feedback is good: the new dashboard and the saved views are =
+a big step up and our planners are already using them daily.</p>
+<p>Happy to jump on a call or share logs.</p>
+<p>Regards,<br>Kwame Mensah<br>Operations Director, Holloway Logistics Ltd</p>
+</body></html>
+
+--==bench-customer-email==1==
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="hol-logo.png"
+Content-ID: <hol-logo>
+MIME-Version: 1.0
+
+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
+
+--==bench-customer-email==1==--
+
+--==bench-customer-email==--

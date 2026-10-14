@@ -1,0 +1,19 @@
+# PRESS RELEASE — DRAFT v1
+
+**For release on 15 October 2025** — DRAFT v1, 5 September 2025, Ines Okonkwo — not for distribution
+
+## Larkspur Labs launches Kite Planner 3.0
+
+London, 15 October 2025 — Larkspur Labs Ltd today launched Kite Planner 3.0, the biggest update to its analytics platform since 2022. Version 3.0 brings a redesigned dashboard with saved views, single sign-on for enterprise teams and scheduled report exports.
+
+"Our customers asked for three things: speed, security and reports that arrive without anyone clicking a button. Kite 3.0 delivers all three," said Nadia Rahimi, Product Manager at Larkspur Labs.
+
+Kite Planner is used by more than 400 organisations across logistics, retail, healthcare and the public sector.
+
+[Customer quote to come]
+
+## About Larkspur Labs
+
+Larkspur Labs Ltd builds analytics software for operations teams. Founded in 2019, the company is based in London.
+
+Media contact: Ines Okonkwo, Head of Marketing.

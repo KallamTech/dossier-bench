@@ -1,0 +1,67 @@
+thread_subject: "Kite 3.0 launch video — quote Q-2025-118"
+file_prefix: 06_pixelforge_thread
+messages:
+  - key: vendor-thread-1
+    must_facts:
+      - "Email of 25 July 2025 from Ines Okonkwo to Faye Delacroix about quote Q-2025-118"
+      - "Larkspur's budget for the video is £25,000 but two other quotes came in lower"
+      - "Asks whether Pixelforge can meet £20,000 and deliver by 3 October 2025"
+    message_id: "<20250725093012.LL-MKT-0410@larkspurlabs.example>"
+    date: "Fri, 25 Jul 2025 09:30:12 +0100"
+    from: { ref: okonkwo }
+    to: [{ ref: faye }]
+    cc: [{ ref: rahimi }]
+    body: |
+      Hi Faye,
+
+      Thanks for quote Q-2025-118 for the Kite 3.0 launch video. We liked the concepts and would like to work with you.
+
+      Two things. Our budget for the video is £25,000 all in, and the two other quotes we received came in at £19,500 and £21,800. Could you meet £20,000 for the same scope? Second, our launch is 15 October 2025, so we need the master by Friday 3 October 2025 at the latest.
+
+      If that works we can approve the brief next week.
+
+      Best,
+      Ines
+  - key: vendor-thread-2
+    must_facts:
+      - "Reply of 29 July 2025 from Faye Delacroix"
+      - "Pixelforge offers £21,000 by dropping the second concept and one social version"
+      - "Delivery by 3 October 2025 is possible if the brief is approved by 8 August"
+    message_id: "<20250729154401.PF-0218@pixelforge.example>"
+    date: "Tue, 29 Jul 2025 15:44:01 +0100"
+    from: { ref: faye }
+    to: [{ ref: okonkwo }]
+    cc: [{ ref: rahimi }]
+    in_reply_to: vendor-thread-1
+    body: |
+      Hi Ines,
+
+      Thanks, we would love to do this one.
+
+      We can get to £21,000 by developing a single concept (rather than two) and dropping the vertical social version, which you can cut from the square master. Everything else in the quote stays, including two rounds of revisions.
+
+      On timing: if the brief and script are approved by Friday 8 August, we can deliver the master by 3 October 2025.
+
+      Best,
+      Faye
+  - key: vendor-thread-3
+    must_facts:
+      - "Email of 5 August 2025 from Ines Okonkwo accepting £21,000"
+      - "Brief approved; delivery by 3 October 2025 confirmed"
+      - "Deposit of £10,500 to be paid on receipt of the invoice"
+    message_id: "<20250805101533.LL-MKT-0422@larkspurlabs.example>"
+    date: "Tue, 05 Aug 2025 10:15:33 +0100"
+    from: { ref: okonkwo }
+    to: [{ ref: faye }]
+    cc: [{ ref: rahimi }, { ref: berglund }]
+    in_reply_to: vendor-thread-2
+    body: |
+      Hi Faye,
+
+      Agreed at £21,000 on that basis: one concept, no vertical version, two rounds of revisions, master by 3 October 2025. The brief is approved as sent on 1 August.
+
+      Tom (copied) will pay the 50% deposit of £10,500 on receipt of your invoice.
+
+      Looking forward to it.
+
+      Ines

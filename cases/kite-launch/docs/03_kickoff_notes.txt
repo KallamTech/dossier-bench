@@ -1,0 +1,22 @@
+PROJECT KITE — KICKOFF NOTES
+
+Date: Tuesday 8 July 2025, 10:00 to 11:15 Attendees: Nadia Rahimi (chair), Owen Castillo, Ines Okonkwo, Tom Berglund Notes by: Nadia Rahimi
+
+1. Nadia walked through the launch brief of 4 July 2025. Launch date 15 October 2025. Budget £120,000, held by Tom.
+
+2. Engineering: Owen confirmed the dashboard is on track for the design review on 14 August. Single sign-on (SAML) is the riskiest piece; he wants at least three enterprise customers with SSO in the beta.
+
+3. Beta: starts 1 September 2025 with about 12 customers. Nadia to confirm the list by 15 August. Beta customers get a 10% discount on their next renewal (budget line: beta customer incentives, £10,000).
+
+4. Marketing: Ines will source a 90-second launch video from an external studio; budget £25,000. Three studios to quote by 25 July. Press release draft by early September; a customer quote would be good if a beta customer agrees.
+
+5. Finance: Tom will keep the budget tracker (CSV in the shared drive) and flag any line more than 10% over plan. Usage-based billing is a stretch goal and will be reviewed at the week 38 checkpoint.
+
+6. Rhythm: weekly status update every Friday, owned by Nadia. Go / no-go meeting on 8 October.
+
+Actions:
+
+- Nadia: beta customer list by 15 August.
+- Owen: SSO test plan by 1 August.
+- Ines: three video quotes by 25 July.
+- Tom: budget tracker set up by 11 July.

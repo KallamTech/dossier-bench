@@ -1,0 +1,23 @@
+[ARR]
+Draft ARR statement at 30 September 2025 — Schedule 7 (earn-out) — prepared by Castellane Holdings Ltd, 3 October 2025
+Customer, ARR at 31 Dec 2024 (locked box), ARR at 30 Sep 2025 (Castellane draft), ARR at 30 Sep 2025 (Sellers' alternative), Note
+Northgate Retail plc, 1300000, 0, 650000, Contract ended 30 June 2025; sellers count H2 run-off at 50%
+Avalon Pharmacies Ltd, 620000, 640000, 640000, 
+Calder Vale Water, 540000, 560000, 560000, 
+Mirren Logistics Group, 470000, 470000, 470000, 
+Hadley Grocery Co-operative, 410000, 430000, 430000, 
+Caldera Energy plc, 380000, 380000, 380000, 
+Fenland Agri Supplies, 290000, 300000, 300000, 
+Oakridge Housing Association, 260000, 270000, 270000, 
+Westbourne Insurance, 240000, 250000, 250000, 
+Lumen Media Ltd, 210000, 210000, 210000, 
+Other customers (30 at locked box, 36 at 30 Sep 2025), 820000, 1590000, 1590000, 
+Signed, not yet live: Kestrel Pharma (go-live Nov 2025), 0, 0, 220000, Sellers: signed contracts count under schedule 7 para 2.2
+Signed, not yet live: Dunmore Council (go-live Dec 2025), 0, 0, 180000, Sellers: signed contracts count under schedule 7 para 2.2
+Southmere Hotels (churned Aug 2025), 360000, 0, 0, Churn since locked box; both parties exclude
+Total, 5900000, 5100000, 6150000, 
+
+Earn-out floor (Schedule 7), 5500000
+Earn-out target, 6200000
+Earn-out on Castellane draft, 0
+Earn-out on Sellers' alternative, 3000000

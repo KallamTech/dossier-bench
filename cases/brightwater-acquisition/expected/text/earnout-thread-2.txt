@@ -1,0 +1,16 @@
+Dear Claire,
+
+Thank you for the draft. We do not agree with it, and this email is our notice of dispute under paragraph 3 of Schedule 7, without prejudice to the timetable running from the final statement after the Test Date.
+
+1. Northgate. The transition arrangement concluded in April 2025 is a 12-month subscription at £650,000 per year for data access and reporting, invoiced monthly. It is recurring revenue from a live customer and should be included, at least at 50% of the historic ARR (£650,000).
+
+2. Signed contracts. Kestrel Pharma (£220,000) and Dunmore Council (£180,000) were signed in July and August 2025 with go-live dates of November and December 2025. Both will be live by the Test Date. Paragraph 2.2 excludes contracts not live at the Test Date; it does not exclude contracts that will be live. We are concerned that Castellane's implementation team has pushed both go-lives into January 2026, which, if it is to keep ARR below the floor, is exactly what paragraph 4 prohibits.
+
+3. Southmere. Agreed.
+
+On our figures ARR at the Test Date is £6,250,000, which exceeds the £6,200,000 target and earns the full £3,000,000.
+
+We propose a call next week; failing agreement we will ask for the independent accountant to be appointed.
+
+Kind regards,
+Imogen

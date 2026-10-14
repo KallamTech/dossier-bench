@@ -1,0 +1,111 @@
+# KICK-OFF MEETING — MINUTES
+
+**Project:** Valencia Distribution Centre — Automated Conveyor and Sortation System
+
+**Contract:** Supply and Installation Agreement dated 4 November 2024
+
+**Date and time:** Tuesday 19 November 2024, 10:00–12:30
+
+**Location:** Site office, Brisamar Logistics SA, Paterna (Valencia)
+
+**Minutes prepared by:** Priya Nair (Tidewell Fabrication Ltd) — issued 21 November 2024
+
+## Attendees
+
+| Name | Organisation | Role |
+| --- | --- | --- |
+| Lucía Ortega | Brisamar Logistics SA | Project Director |
+| Marc Pujol | Brisamar Logistics SA | Site Manager |
+| Priya Nair | Tidewell Fabrication Ltd | Project Manager |
+| Tomasz Wójcik | Tidewell Fabrication Ltd | Lead Installation Engineer |
+
+**Apologies:** Daniel Mercer (Tidewell), Jeroen van der Berg (Velden Controls BV, dial-in failed).
+
+## 1. Introductions and objectives
+
+1.1 LO welcomed the Tidewell team and confirmed that the contract had been signed on 4 November 2024 and that the deposit invoice had been received and approved for payment.
+
+1.2 PN set out the objectives of the meeting: agree communication arrangements, confirm site readiness dates, walk the installation hall and agree the design review process.
+
+## 2. Communication and reporting
+
+2.1 Weekly progress call every Tuesday at 09:30 CET, chaired by PN. Attendees: LO, MP, PN, TW and the Velden controls lead when required.
+
+2.2 Fortnightly progress report to be issued by Tidewell on alternate Fridays in accordance with clause 4.3 of the contract.
+
+2.3 All formal notices to be sent by e-mail to the addresses in clause 17 of the contract, with the project reference NWL-VAL-2024-07 in the subject line.
+
+<<<PAGEBREAK>>>
+
+## 3. Site readiness
+
+3.1 MP confirmed that the installation hall slab was poured in August 2024 and power-floated. The flatness survey from the main contractor has not yet been received by Brisamar. **Action: MP to obtain the main contractor's slab survey and send to PN by 29 November 2024.**
+
+3.2 TW raised a concern about the slab in Bay 3, where the sorter will be installed. During the walk-round TW observed visible undulation near grid line C5. TW noted that the contract tolerance is 5 mm over 3 m (clause 6.2) and that the sorter supports can only accommodate ±20 mm by adjustment. **Risk register item R-04 opened: Bay 3 floor slab tolerance. Owner: MP.**
+
+3.3 LO confirmed that the permanent power supply to the installation hall depends on an upgrade of the site's main switchboard by the local utility. The upgrade had been applied for in September. **Action: LO to confirm the power supply upgrade date to PN by 20 December 2024.**
+
+3.4 Temporary site power (63A) is available from the main contractor's distribution board from 25 November 2024.
+
+3.5 Secure storage: a fenced compound of 600 m² adjacent to Bay 1 will be available from 13 January 2025 for the receipt of equipment.
+
+## 4. Design
+
+4.1 PN confirmed that the Design Pack (general arrangement drawings, loads, electrical schematics and control philosophy) would be issued by **6 December 2024**, ahead of the Design Approval milestone of 13 December 2024.
+
+4.2 LO requested that the design pack include the interface specification for the warehouse management system. PN confirmed that Velden would issue the OPC UA interface document with the design pack.
+
+4.3 Brisamar's IT team to confirm the WMS test environment availability. **Action: LO by 6 December 2024.**
+
+<<<PAGEBREAK>>>
+
+## 5. Programme
+
+5.1 PN presented programme HFL-VAL-P01 rev B. Milestones confirmed as per clause 4.2: Design Approval 13 December 2024; Delivery 31 January 2025; Mechanical Completion 7 March 2025; Practical Completion 11 April 2025.
+
+5.2 Installation sequence: receiving lines and merge in Bays 1 and 2 from week 14, sorter and outfeeds in Bay 3 from week 16. Bay 3 is on the critical path.
+
+5.3 LO asked whether a second sorter outfeed on the recirculation line could be added. PN to price as a change request. **Action: PN to submit a quotation by 6 December 2024.**
+
+## 6. Health and safety
+
+6.1 MP to issue the site rules and induction schedule. All Tidewell and Velden personnel to be inducted before entering the hall.
+
+6.2 Tidewell's method statements and risk assessments to be issued in Spanish and English two weeks before mobilisation.
+
+## 7. Commercial
+
+7.1 Deposit invoice (instalment 1, €372,000) approved; payment expected by 4 December 2024.
+
+7.2 Change orders to be recorded in the register maintained by Tidewell and countersigned by LO under clause 5.3.
+
+## 8. Any other business
+
+8.1 LO noted that Brisamar's go-live for the distribution centre is planned for 5 May 2025 and that the sorter is essential for that date.
+
+8.2 Next meeting: weekly call Tuesday 26 November 2024.
+
+<<<PAGEBREAK>>>
+
+## Action list
+
+| Ref | Action | Owner | Due |
+| --- | --- | --- | --- |
+| A-01 | Obtain main contractor's slab flatness survey | MP | 29 Nov 2024 |
+| A-02 | Confirm power supply upgrade date | LO | 20 Dec 2024 |
+| A-03 | Issue Design Pack | PN | 6 Dec 2024 |
+| A-04 | Confirm WMS test environment | LO | 6 Dec 2024 |
+| A-05 | Quotation for second sorter outfeed | PN | 6 Dec 2024 |
+| A-06 | Issue site rules and induction schedule | MP | 29 Nov 2024 |
+| A-07 | Issue method statements (ES/EN) | TW | 13 Jan 2025 |
+
+## Risk register extract
+
+| Ref | Risk | Owner | Status |
+| --- | --- | --- | --- |
+| R-04 | Bay 3 floor slab outside 5 mm / 3 m tolerance; sorter supports cannot adjust | MP | Open |
+| R-05 | Utility switchboard upgrade delays permanent power; commissioning cannot start | LO | Open |
+
+These minutes are a true record of the meeting unless corrections are notified within five business days.
+
+Signed: Priya Nair, Project Manager, Tidewell Fabrication Ltd

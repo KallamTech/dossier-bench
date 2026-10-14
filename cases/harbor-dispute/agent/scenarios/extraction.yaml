@@ -1,0 +1,25 @@
+- id: extraction-delay-events
+  group: extraction
+  tags:
+  - extraction
+  turns:
+  - content: 'Extract a table of the delay events in the expert report with columns: Ref, Event, Period, Responsible party,
+      Critical delay (days).'
+    timeout_s: 900
+    expect:
+      answer:
+        must_facts:
+        - five events DE-1 to DE-5
+        - DE-2 Brisamar 14 days
+        - DE-3 Brisamar 9 days
+        - DE-1 Tidewell 6 days
+        - DE-4 Tidewell 5 days
+  - content: Add a column with the contract clause each event relies on.
+    timeout_s: 600
+    expect:
+      answer:
+        must_facts:
+        - DE-2 clause 6.2 / 9.1(b)
+        - DE-3 clause 6.4
+        - DE-1 clause 7.1
+        - DE-4 clause 2.4

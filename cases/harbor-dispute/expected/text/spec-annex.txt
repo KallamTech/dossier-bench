@@ -1,0 +1,1209 @@
+ANNEX A — TECHNICAL SPECIFICATION
+
+Supply and Installation Agreement dated 4 November 2024 — Project NWL-VAL-2024-07
+
+Automated Conveyor and Sortation System, Valencia Distribution Centre
+
+Revision B — issued with Amendment No. 1 on 20 January 2025
+
+1. Scope
+
+1.1 This Annex A sets out the performance, design, supply, installation and commissioning requirements for the automated conveyor and sortation system (the "System") to be supplied and installed by Tidewell Fabrication Ltd (the "Supplier") at Brisamar Logistics SA's Valencia Distribution Centre at Polígono Industrial Fuente del Jarro, Paterna (the "Site").
+
+1.2 In the event of conflict between this Annex and the body of the Agreement, the body of the Agreement prevails.
+
+2. Performance requirements
+
+2.1 Design throughput: the sorter shall process not less than 6,000 parcels per hour sustained over any 60-minute period, with a peak of 7,200 parcels per hour for 15 minutes.
+
+2.2 Sortation accuracy: not less than 99.7% of parcels delivered to the correct outfeed lane, measured over 10,000 consecutive parcels.
+
+2.3 Parcel envelope: 100 x 100 x 30 mm minimum to 800 x 600 x 500 mm maximum; mass 0.1 kg to 30 kg.
+
+2.4 Availability: not less than 98.5% during operating hours, excluding planned maintenance.
+
+3. Site conditions to be provided by the Buyer
+
+3.1 Floor slab: level to a tolerance of 5 mm over any 3 m span measured in accordance with DIN 18202 Table 3, line 4, in all installation areas (see clause 6.2 of the Agreement).
+
+3.2 Electrical supply: a permanent 400A three-phase 400 V 50 Hz supply terminated at the main control panel in Bay 1 (see clause 6.4 as introduced by Amendment No. 1), available by 7 February 2025.
+
+3.3 Ambient: 5 °C to 40 °C, non-condensing; the Site to be weather-tight before installation starts.
+
+3.4 Network: two fibre pairs from the Site IT room to the main control panel and to the sorter control cabinet in Bay 3.
+
+4. System architecture
+
+4.1 Cross-belt sorter, 26 outfeed lanes (lanes 1–26), two inductions, recirculation loop with a second sorter outfeed added under Change Order CO-1.
+
+4.2 Control system: Siemens S7-1500 redundant PLC pair (Change Order CO-2), Profinet field network, WinCC Unified HMI at the Bay 1 main control panel.
+
+4.3 Warehouse control software: Supplier's SortMaster 4 with the interface to the Buyer's WMS specified in section 9.
+
+5. Mechanical design
+
+5.1 Conveyor supports adjustable within ±20 mm of nominal height; the sorter carriage track in Bay 3 to be set within ±1.5 mm across its length.
+
+5.2 Guarding to EN ISO 13857; safety fencing at outfeed lanes 20–26 per Change Order CO-4.
+
+5.3 Belt conveyors: 600 mm and 800 mm belt widths, variable speed 0.5 to 2.5 m/s.
+
+6. Electrical installation
+
+6.1 The outfeed chute shall be protected to IP54 or better in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.2 The safety fence shall be labelled with the tag number shown on the schematic in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.3 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.4 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.5 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.6 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.7 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.8 The main control panel shall be tested over 72 hours of continuous operation in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.9 The field network shall be protected to IP54 or better in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.10 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.11 The drive inverter shall be interlocked with the adjacent zone in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.12 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.13 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.14 The safety fence shall be rated for continuous duty at the design throughput in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.15 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.16 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.17 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.18 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.19 The induction conveyor shall be interlocked with the adjacent zone in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.20 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.21 The field network shall be accessible for maintenance without the removal of guarding in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.22 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.23 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+6.24 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+6.T1 | outfeed chute | EN 60529 | 95 days
+6.T2 | safety fence | DIN 18202 | 12 days
+6.T3 | emergency stop circuit | EN 619 | 19 days
+6.T4 | HMI workstation | IEC 61131-3 | 26 days
+6.T5 | barcode scanner tunnel | EN ISO 13849-1 | 33 days
+6.T6 | sorter carriage | EN 60204-1 | 40 days
+
+7. Control system software
+
+7.1 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.2 The field network shall be accessible for maintenance without the removal of guarding in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.3 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.4 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.5 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.6 The outfeed chute shall be protected to IP54 or better in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.7 The safety fence shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.8 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.9 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.10 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.11 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.12 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.13 The main control panel shall be tested over 72 hours of continuous operation in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.14 The field network shall be protected to IP54 or better in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.15 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.16 The drive inverter shall be interlocked with the adjacent zone in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.17 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.18 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.19 The safety fence shall be rated for continuous duty at the design throughput in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.20 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.21 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.22 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.23 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+7.24 The induction conveyor shall be interlocked with the adjacent zone in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+7.T1 | safety fence | EN ISO 13857 | 18 days
+7.T2 | emergency stop circuit | EN ISO 13857 | 25 days
+7.T3 | HMI workstation | EN ISO 13857 | 32 days
+7.T4 | barcode scanner tunnel | EN ISO 13857 | 39 days
+7.T5 | sorter carriage | EN ISO 13857 | 46 days
+7.T6 | induction conveyor | EN ISO 13857 | 53 days
+
+8. Mechanical installation
+
+8.1 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.2 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.3 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.4 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.5 The induction conveyor shall be interlocked with the adjacent zone in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.6 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.7 The field network shall be accessible for maintenance without the removal of guarding in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.8 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.9 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.10 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.11 The outfeed chute shall be protected to IP54 or better in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.12 The safety fence shall be labelled with the tag number shown on the schematic in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.13 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.14 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.15 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.16 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.17 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.18 The main control panel shall be tested over 72 hours of continuous operation in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.19 The field network shall be protected to IP54 or better in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.20 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.21 The drive inverter shall be interlocked with the adjacent zone in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.22 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.23 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+8.24 The safety fence shall be rated for continuous duty at the design throughput in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+8.T1 | emergency stop circuit | EN 60204-1 | 31 days
+8.T2 | HMI workstation | EN ISO 13849-1 | 38 days
+8.T3 | barcode scanner tunnel | IEC 61131-3 | 45 days
+8.T4 | sorter carriage | EN 619 | 52 days
+8.T5 | induction conveyor | DIN 18202 | 59 days
+8.T6 | main control panel | EN 60529 | 66 days
+
+9. Safety and guarding
+
+9.1 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.2 The drive inverter shall be interlocked with the adjacent zone in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.3 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.4 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.5 The safety fence shall be rated for continuous duty at the design throughput in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.6 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.7 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.8 The barcode scanner tunnel shall be protected to IP54 or better in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.9 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.10 The induction conveyor shall be interlocked with the adjacent zone in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.11 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.12 The field network shall be accessible for maintenance without the removal of guarding in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.13 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.14 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.15 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.16 The outfeed chute shall be protected to IP54 or better in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.17 The safety fence shall be labelled with the tag number shown on the schematic in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.18 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.19 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.20 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.21 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.22 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.23 The main control panel shall be tested over 72 hours of continuous operation in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+9.24 The field network shall be protected to IP54 or better in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+9.T1 | HMI workstation | EN ISO 13849-1 | 44 days
+9.T2 | barcode scanner tunnel | EN 619 | 51 days
+9.T3 | sorter carriage | EN 60529 | 58 days
+9.T4 | induction conveyor | EN 60204-1 | 65 days
+9.T5 | main control panel | IEC 61131-3 | 72 days
+9.T6 | field network | DIN 18202 | 79 days
+
+10. Testing and commissioning
+
+10.1 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.2 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.3 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.4 The main control panel shall be tested over 72 hours of continuous operation in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.5 The field network shall be protected to IP54 or better in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.6 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.7 The drive inverter shall be interlocked with the adjacent zone in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.8 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.9 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.10 The safety fence shall be rated for continuous duty at the design throughput in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.11 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.12 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.13 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.14 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.15 The induction conveyor shall be interlocked with the adjacent zone in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.16 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.17 The field network shall be accessible for maintenance without the removal of guarding in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.18 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.19 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.20 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.21 The outfeed chute shall be protected to IP54 or better in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.22 The safety fence shall be labelled with the tag number shown on the schematic in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.23 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+10.24 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+10.T1 | barcode scanner tunnel | IEC 61131-3 | 57 days
+10.T2 | sorter carriage | EN 60529 | 64 days
+10.T3 | induction conveyor | EN ISO 13849-1 | 71 days
+10.T4 | main control panel | DIN 18202 | 78 days
+10.T5 | field network | EN 60204-1 | 85 days
+10.T6 | photo-eye array | EN 619 | 92 days
+
+11. Documentation and training
+
+11.1 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.2 The outfeed chute shall be protected to IP54 or better in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.3 The safety fence shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.4 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.5 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.6 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.7 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.8 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.9 The main control panel shall be tested over 72 hours of continuous operation in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.10 The field network shall be protected to IP54 or better in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.11 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.12 The drive inverter shall be interlocked with the adjacent zone in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.13 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.14 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.15 The safety fence shall be rated for continuous duty at the design throughput in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.16 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.17 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.18 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.19 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.20 The induction conveyor shall be interlocked with the adjacent zone in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.21 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.22 The field network shall be accessible for maintenance without the removal of guarding in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.23 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+11.24 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+11.T1 | sorter carriage | EN 619 | 70 days
+11.T2 | induction conveyor | EN 60204-1 | 77 days
+11.T3 | main control panel | DIN 18202 | 84 days
+11.T4 | field network | EN ISO 13849-1 | 91 days
+11.T5 | photo-eye array | EN 60529 | 98 days
+11.T6 | drive inverter | IEC 61131-3 | 15 days
+
+12. Spare parts and maintenance
+
+12.1 The induction conveyor shall be interlocked with the adjacent zone in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.2 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.3 The field network shall be accessible for maintenance without the removal of guarding in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.4 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.5 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.6 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.7 Design life: the System and all major components shall have a design life of not less than 15 years from Practical Completion, assuming the maintenance regime in section 7.
+
+12.8 The safety fence shall be labelled with the tag number shown on the schematic in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.9 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.10 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.11 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.12 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.13 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.14 The main control panel shall be tested over 72 hours of continuous operation in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.15 The field network shall be protected to IP54 or better in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.16 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.17 The drive inverter shall be interlocked with the adjacent zone in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.18 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.19 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.20 The safety fence shall be rated for continuous duty at the design throughput in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.21 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.22 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.23 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+12.24 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+12.T1 | induction conveyor | DIN 18202 | 83 days
+12.T2 | main control panel | IEC 61131-3 | 90 days
+12.T3 | field network | EN 60204-1 | 97 days
+12.T4 | photo-eye array | EN 60529 | 14 days
+12.T5 | drive inverter | EN 619 | 21 days
+12.T6 | belt conveyor | EN ISO 13849-1 | 28 days
+
+13. Interfaces to the warehouse management system
+
+13.1 The safety fence shall be rated for continuous duty at the design throughput in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.2 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.3 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.4 The barcode scanner tunnel shall be protected to IP54 or better in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.5 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.6 The induction conveyor shall be interlocked with the adjacent zone in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.7 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.8 The field network shall be accessible for maintenance without the removal of guarding in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.9 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.10 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.11 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.12 The outfeed chute shall be protected to IP54 or better in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.13 The safety fence shall be labelled with the tag number shown on the schematic in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.14 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.15 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.16 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.17 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.18 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.19 The main control panel shall be tested over 72 hours of continuous operation in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.20 The field network shall be protected to IP54 or better in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.21 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.22 The drive inverter shall be interlocked with the adjacent zone in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.23 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+13.24 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+13.T1 | main control panel | EN 60529 | 96 days
+13.T2 | field network | DIN 18202 | 13 days
+13.T3 | photo-eye array | EN 619 | 20 days
+13.T4 | drive inverter | IEC 61131-3 | 27 days
+13.T5 | belt conveyor | EN ISO 13849-1 | 34 days
+13.T6 | outfeed chute | EN 60204-1 | 41 days
+
+14. Quality assurance
+
+14.1 The field network shall be protected to IP54 or better in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.2 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.3 The drive inverter shall be interlocked with the adjacent zone in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.4 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.5 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.6 The safety fence shall be rated for continuous duty at the design throughput in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.7 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.8 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.9 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.10 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.11 The induction conveyor shall be interlocked with the adjacent zone in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.12 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.13 The field network shall be accessible for maintenance without the removal of guarding in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.14 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.15 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.16 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.17 The outfeed chute shall be protected to IP54 or better in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.18 The safety fence shall be labelled with the tag number shown on the schematic in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.19 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.20 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.21 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.22 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.23 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+14.24 The main control panel shall be tested over 72 hours of continuous operation in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+14.T1 | field network | EN ISO 13857 | 19 days
+14.T2 | photo-eye array | EN ISO 13857 | 26 days
+14.T3 | drive inverter | EN ISO 13857 | 33 days
+14.T4 | belt conveyor | EN ISO 13857 | 40 days
+14.T5 | outfeed chute | EN ISO 13857 | 47 days
+14.T6 | safety fence | EN ISO 13857 | 54 days
+
+15. Environmental and noise
+
+15.1 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.2 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.3 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.4 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.5 The main control panel shall be tested over 72 hours of continuous operation in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.6 The field network shall be protected to IP54 or better in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.7 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.8 The drive inverter shall be interlocked with the adjacent zone in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.9 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.10 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.11 The safety fence shall be rated for continuous duty at the design throughput in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.12 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.13 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.14 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.15 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.16 The induction conveyor shall be interlocked with the adjacent zone in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.17 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.18 The field network shall be accessible for maintenance without the removal of guarding in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.19 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.20 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.21 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.22 The outfeed chute shall be protected to IP54 or better in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.23 The safety fence shall be labelled with the tag number shown on the schematic in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+15.24 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+15.T1 | photo-eye array | EN 60204-1 | 32 days
+15.T2 | drive inverter | EN ISO 13849-1 | 39 days
+15.T3 | belt conveyor | IEC 61131-3 | 46 days
+15.T4 | outfeed chute | EN 619 | 53 days
+15.T5 | safety fence | DIN 18202 | 60 days
+15.T6 | emergency stop circuit | EN 60529 | 67 days
+
+16. Marking and identification
+
+16.1 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.2 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.3 The outfeed chute shall be protected to IP54 or better in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.4 The safety fence shall be labelled with the tag number shown on the schematic in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.5 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.6 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.7 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.8 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.9 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.10 The main control panel shall be tested over 72 hours of continuous operation in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.11 The field network shall be protected to IP54 or better in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.12 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.13 The drive inverter shall be interlocked with the adjacent zone in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.14 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.15 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.16 The safety fence shall be rated for continuous duty at the design throughput in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.17 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.18 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.19 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.20 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.21 The induction conveyor shall be interlocked with the adjacent zone in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.22 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.23 The field network shall be accessible for maintenance without the removal of guarding in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+16.24 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+16.T1 | drive inverter | EN ISO 13849-1 | 45 days
+16.T2 | belt conveyor | EN 619 | 52 days
+16.T3 | outfeed chute | EN 60529 | 59 days
+16.T4 | safety fence | EN 60204-1 | 66 days
+16.T5 | emergency stop circuit | IEC 61131-3 | 73 days
+16.T6 | HMI workstation | DIN 18202 | 80 days
+
+17. Packaging, transport and storage
+
+17.1 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.2 The induction conveyor shall be interlocked with the adjacent zone in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.3 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.4 The field network shall be accessible for maintenance without the removal of guarding in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.5 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.6 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.7 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.8 The outfeed chute shall be protected to IP54 or better in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.9 The safety fence shall be labelled with the tag number shown on the schematic in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.10 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.11 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.12 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.13 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.14 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.15 The main control panel shall be tested over 72 hours of continuous operation in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.16 The field network shall be protected to IP54 or better in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.17 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.18 The drive inverter shall be interlocked with the adjacent zone in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.19 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.20 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.21 The safety fence shall be rated for continuous duty at the design throughput in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.22 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.23 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+17.24 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+17.T1 | belt conveyor | IEC 61131-3 | 58 days
+17.T2 | outfeed chute | EN 60529 | 65 days
+17.T3 | safety fence | EN ISO 13849-1 | 72 days
+17.T4 | emergency stop circuit | DIN 18202 | 79 days
+17.T5 | HMI workstation | EN 60204-1 | 86 days
+17.T6 | barcode scanner tunnel | EN 619 | 93 days
+
+18. Site works and access
+
+18.1 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.2 The safety fence shall be rated for continuous duty at the design throughput in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.3 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.4 Spare parts: the Supplier shall dispatch any item on the recommended spares list within 10 business days of a written order, for a period of 10 years from Practical Completion.
+
+18.5 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.6 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.7 The induction conveyor shall be interlocked with the adjacent zone in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.8 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.9 The field network shall be accessible for maintenance without the removal of guarding in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.10 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.11 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.12 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.13 The outfeed chute shall be protected to IP54 or better in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.14 The safety fence shall be labelled with the tag number shown on the schematic in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.15 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.16 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.17 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.18 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.19 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.20 The main control panel shall be tested over 72 hours of continuous operation in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.21 The field network shall be protected to IP54 or better in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.22 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.23 The drive inverter shall be interlocked with the adjacent zone in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+18.24 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+18.T1 | outfeed chute | EN 619 | 71 days
+18.T2 | safety fence | EN 60204-1 | 78 days
+18.T3 | emergency stop circuit | DIN 18202 | 85 days
+18.T4 | HMI workstation | EN ISO 13849-1 | 92 days
+18.T5 | barcode scanner tunnel | EN 60529 | 99 days
+18.T6 | sorter carriage | IEC 61131-3 | 16 days
+
+19. Acceptance criteria
+
+19.1 The main control panel shall be tested over 72 hours of continuous operation in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.2 The field network shall be protected to IP54 or better in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.3 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.4 The drive inverter shall be interlocked with the adjacent zone in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.5 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.6 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.7 The safety fence shall be rated for continuous duty at the design throughput in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.8 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.9 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.10 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.11 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.12 The induction conveyor shall be interlocked with the adjacent zone in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.13 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.14 The field network shall be accessible for maintenance without the removal of guarding in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.15 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.16 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.17 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.18 The outfeed chute shall be protected to IP54 or better in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.19 The safety fence shall be labelled with the tag number shown on the schematic in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.20 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.21 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.22 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.23 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+19.24 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+19.T1 | safety fence | DIN 18202 | 84 days
+19.T2 | emergency stop circuit | IEC 61131-3 | 91 days
+19.T3 | HMI workstation | EN 60204-1 | 98 days
+19.T4 | barcode scanner tunnel | EN 60529 | 15 days
+19.T5 | sorter carriage | EN 619 | 22 days
+19.T6 | induction conveyor | EN ISO 13849-1 | 29 days
+
+20. Warranty and defects
+
+20.1 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.2 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.3 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.4 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.5 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.6 The main control panel shall be tested over 72 hours of continuous operation in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.7 The field network shall be protected to IP54 or better in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.8 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.9 The drive inverter shall be interlocked with the adjacent zone in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.10 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.11 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.12 The safety fence shall be rated for continuous duty at the design throughput in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.13 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.14 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.15 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.16 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.17 The induction conveyor shall be interlocked with the adjacent zone in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.18 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.19 The field network shall be accessible for maintenance without the removal of guarding in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.20 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.21 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.22 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.23 The outfeed chute shall be protected to IP54 or better in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+20.24 The safety fence shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+20.T1 | emergency stop circuit | EN 60529 | 97 days
+20.T2 | HMI workstation | DIN 18202 | 14 days
+20.T3 | barcode scanner tunnel | EN 619 | 21 days
+20.T4 | sorter carriage | IEC 61131-3 | 28 days
+20.T5 | induction conveyor | EN ISO 13849-1 | 35 days
+20.T6 | main control panel | EN 60204-1 | 42 days
+
+21. Electrical installation
+
+21.1 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.2 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.3 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.4 The outfeed chute shall be protected to IP54 or better in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.5 The safety fence shall be labelled with the tag number shown on the schematic in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.6 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.7 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.8 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.9 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.10 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.11 The main control panel shall be tested over 72 hours of continuous operation in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.12 The field network shall be protected to IP54 or better in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.13 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.14 The drive inverter shall be interlocked with the adjacent zone in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.15 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.16 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.17 The safety fence shall be rated for continuous duty at the design throughput in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.18 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.19 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.20 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.21 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.22 The induction conveyor shall be interlocked with the adjacent zone in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.23 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+21.24 The field network shall be accessible for maintenance without the removal of guarding in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+21.T1 | HMI workstation | EN ISO 13857 | 20 days
+21.T2 | barcode scanner tunnel | EN ISO 13857 | 27 days
+21.T3 | sorter carriage | EN ISO 13857 | 34 days
+21.T4 | induction conveyor | EN ISO 13857 | 41 days
+21.T5 | main control panel | EN ISO 13857 | 48 days
+21.T6 | field network | EN ISO 13857 | 55 days
+
+22. Control system software
+
+22.1 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.2 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.3 The induction conveyor shall be interlocked with the adjacent zone in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.4 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.5 The field network shall be accessible for maintenance without the removal of guarding in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.6 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.7 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.8 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.9 The outfeed chute shall be protected to IP54 or better in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.10 The safety fence shall be labelled with the tag number shown on the schematic in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.11 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.12 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.13 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.14 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.15 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.16 The main control panel shall be tested over 72 hours of continuous operation in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.17 The field network shall be protected to IP54 or better in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.18 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.19 The drive inverter shall be interlocked with the adjacent zone in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.20 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.21 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.22 The safety fence shall be rated for continuous duty at the design throughput in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.23 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+22.24 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+22.T1 | barcode scanner tunnel | EN 60204-1 | 33 days
+22.T2 | sorter carriage | EN ISO 13849-1 | 40 days
+22.T3 | induction conveyor | IEC 61131-3 | 47 days
+22.T4 | main control panel | EN 619 | 54 days
+22.T5 | field network | DIN 18202 | 61 days
+22.T6 | photo-eye array | EN 60529 | 68 days
+
+23. Mechanical installation
+
+23.1 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.2 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.3 The safety fence shall be rated for continuous duty at the design throughput in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.4 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.5 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.6 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.7 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.8 The induction conveyor shall be interlocked with the adjacent zone in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.9 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.10 The field network shall be accessible for maintenance without the removal of guarding in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.11 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.12 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.13 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.14 The outfeed chute shall be protected to IP54 or better in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.15 The safety fence shall be labelled with the tag number shown on the schematic in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.16 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.17 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.18 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.19 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.20 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.21 The main control panel shall be tested over 72 hours of continuous operation in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.22 The field network shall be protected to IP54 or better in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.23 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+23.24 The drive inverter shall be interlocked with the adjacent zone in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+23.T1 | sorter carriage | EN ISO 13849-1 | 46 days
+23.T2 | induction conveyor | EN 619 | 53 days
+23.T3 | main control panel | EN 60529 | 60 days
+23.T4 | field network | EN 60204-1 | 67 days
+23.T5 | photo-eye array | IEC 61131-3 | 74 days
+23.T6 | drive inverter | DIN 18202 | 81 days
+
+24. Safety and guarding
+
+24.1 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.2 The main control panel shall be tested over 72 hours of continuous operation in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.3 The field network shall be protected to IP54 or better in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.4 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.5 The drive inverter shall be interlocked with the adjacent zone in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.6 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.7 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.8 The safety fence shall be rated for continuous duty at the design throughput in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.9 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.10 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.11 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.12 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.13 The induction conveyor shall be interlocked with the adjacent zone in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.14 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.15 The field network shall be accessible for maintenance without the removal of guarding in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.16 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.17 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.18 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.19 The outfeed chute shall be protected to IP54 or better in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.20 The safety fence shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.21 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.22 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.23 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+24.24 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+24.T1 | induction conveyor | IEC 61131-3 | 59 days
+24.T2 | main control panel | EN 60529 | 66 days
+24.T3 | field network | EN ISO 13849-1 | 73 days
+24.T4 | photo-eye array | DIN 18202 | 80 days
+24.T5 | drive inverter | EN 60204-1 | 87 days
+24.T6 | belt conveyor | EN 619 | 94 days
+
+25. Testing and commissioning
+
+25.1 The safety fence shall be labelled with the tag number shown on the schematic in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.2 The emergency stop circuit shall be interlocked with the adjacent zone in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.3 The HMI workstation shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.4 The barcode scanner tunnel shall be accessible for maintenance without the removal of guarding in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.5 The sorter carriage shall be rated for continuous duty at the design throughput in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.6 The induction conveyor shall be supplied with as-built drawings before site acceptance in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.7 The main control panel shall be tested over 72 hours of continuous operation in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.8 The field network shall be protected to IP54 or better in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.9 The photo-eye array shall be labelled with the tag number shown on the schematic in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.10 The drive inverter shall be interlocked with the adjacent zone in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.11 The belt conveyor shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.12 The outfeed chute shall be accessible for maintenance without the removal of guarding in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.13 The safety fence shall be rated for continuous duty at the design throughput in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.14 The emergency stop circuit shall be supplied with as-built drawings before site acceptance in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.15 The HMI workstation shall be tested over 72 hours of continuous operation in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.16 The barcode scanner tunnel shall be protected to IP54 or better in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.17 The sorter carriage shall be labelled with the tag number shown on the schematic in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.18 The induction conveyor shall be interlocked with the adjacent zone in accordance with EN 60204-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.19 The main control panel shall achieve a mean time between failures of not less than 4,000 hours in accordance with EN ISO 13849-1. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.20 The field network shall be accessible for maintenance without the removal of guarding in accordance with IEC 61131-3. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.21 The photo-eye array shall be rated for continuous duty at the design throughput in accordance with EN 619. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.22 The drive inverter shall be supplied with as-built drawings before site acceptance in accordance with DIN 18202. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.23 The belt conveyor shall be tested over 72 hours of continuous operation in accordance with EN 60529. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+25.24 The outfeed chute shall be protected to IP54 or better in accordance with EN ISO 13857. Compliance shall be demonstrated at factory acceptance testing and again at site acceptance testing, and recorded in the commissioning dossier.
+
+Ref | Item | Standard | Lead time
+25.T1 | main control panel | EN 619 | 72 days
+25.T2 | field network | EN 60204-1 | 79 days
+25.T3 | photo-eye array | DIN 18202 | 86 days
+25.T4 | drive inverter | EN ISO 13849-1 | 93 days
+25.T5 | belt conveyor | EN 60529 | 10 days
+25.T6 | outfeed chute | IEC 61131-3 | 17 days

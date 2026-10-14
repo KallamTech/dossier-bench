@@ -1,0 +1,8 @@
+Milestone, Share of contract price, Amount EUR, Invoice no, Invoice date, Due date, Status, Paid on
+Design Approval, 10%, 128800, 0401, 2024-12-16, 2025-01-15, Paid, 2025-01-14
+Delivery, 30%, 386400, 0409, 2025-02-21, 2025-03-23, Paid, 2025-03-20
+Mechanical Completion, 20%, 257600, 0417, 2025-03-24, 2025-04-23, On hold (Brisamar email 28 Apr 2025), 
+Practical Completion, 30%, 386400, , , , Not yet invoiced, 
+Final account and retention release, 10%, 128800, , , , Not yet invoiced, 
+Total, 100%, 1288000, , , , , 
+Contract, Supply and Installation Agreement 4 Nov 2024 as amended and restated 20 Jan 2025 (NWL-VAL-2024-07); payment 30 days from invoice (clause 3.3), , , , , , 

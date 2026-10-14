@@ -1,0 +1,32 @@
+subject: "Brightwater MSA — notice of non-renewal"
+message_id: "<20250207091522.NGR-PROC-0412@northgate-retail.example>"
+date: "Fri, 07 Feb 2025 09:15:22 +0000"
+from: { ref: whitcombe }
+to: [{ ref: hale }]
+cc: [{ ref: duarte }]
+must_facts:
+  - "Email of 7 February 2025 from Gareth Whitcombe (Northgate Retail) to Imogen Hale"
+  - "Northgate will not renew the master services agreement when it expires on 30 June 2025"
+  - "Reason: Northgate is consolidating analytics into its ERP vendor's module"
+  - "Northgate is open to a reduced-fee transition arrangement until December 2025"
+html: |
+  <html><body style="font-family: Calibri, Arial, sans-serif; font-size: 11pt;">
+  <p><img src="cid:ngr-logo" alt="Northgate Retail" width="170"></p>
+  <p>Dear Imogen,</p>
+  <p>Further to our review of analytics suppliers, I am writing to give formal notice under clause 3.2 of the Master Services Agreement dated 1 July 2022 (as renewed on 1 July 2024) that <b>Northgate Retail plc will not renew the agreement</b> on its expiry on <b>30 June 2025</b>.</p>
+  <p>The decision reflects our programme to consolidate reporting and analytics into our ERP vendor's module from July 2025. It is not a reflection on the Brightwater service, which has performed well.</p>
+  <p>We would be open to a short transition arrangement on a reduced fee, covering historical data access and export support, through to <b>December 2025</b>. Please let me know if you would like to discuss.</p>
+  <p>Kind regards,<br>Gareth Whitcombe<br>Head of Procurement, Northgate Retail plc</p>
+  </body></html>
+text: |
+  Dear Imogen,
+
+  Further to our review of analytics suppliers, I am writing to give formal notice under clause 3.2 of the Master Services Agreement dated 1 July 2022 (as renewed on 1 July 2024) that Northgate Retail plc will not renew the agreement on its expiry on 30 June 2025.
+
+  The decision reflects our programme to consolidate reporting and analytics into our ERP vendor's module from July 2025. It is not a reflection on the Brightwater service, which has performed well.
+
+  We would be open to a short transition arrangement on a reduced fee, covering historical data access and export support, through to December 2025. Please let me know if you would like to discuss.
+
+  Kind regards,
+  Gareth Whitcombe
+  Head of Procurement, Northgate Retail plc

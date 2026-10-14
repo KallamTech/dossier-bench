@@ -1,0 +1,26 @@
+# DASHBOARD DESIGN REVIEW — NOTES
+
+Date: Thursday 14 August 2025
+Present: Nadia Rahimi, Owen Castillo, Priya Sethi, Marta Lindgren (contract designer)
+Scribe: Priya Sethi
+
+## Decisions
+
+1. New dashboard APPROVED with changes.
+
+2. Filter bar moves from the left panel to the top of the dashboard so saved views and filters sit together. Owen: two days of work.
+
+3. Saved views get a rename action and a "set as default" toggle. Marta to update the designs by 19 August.
+
+4. Dark mode raised again (Brindle Retail asked). Parked for 3.1; not in the launch.
+
+5. Empty state for new customers: use the sample data set rather than a blank page.
+
+## Open questions
+
+- Keyboard shortcuts for switching saved views: Priya to prototype, decide by 29 August.
+- Export button placement: keep in the top right for now.
+
+Next review: none planned before launch; changes go through the weekly status.
+
+Signed off: NR, OC — 14/08/2025

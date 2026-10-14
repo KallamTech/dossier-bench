@@ -1,0 +1,28 @@
+- id: multilingual-es-invoice
+  group: multilingual
+  tags:
+  - multilingual
+  turns:
+  - content: ¿Cuál es el importe de la factura 0417 y cuándo vencía?
+    expect:
+      answer:
+        must_facts:
+        - the reply is written in Spanish
+        - 257.600 euros
+        - vencimiento 23 de abril de 2025
+      citations:
+        must_include_docs:
+        - invoice-es
+- id: multilingual-es-contract
+  group: multilingual
+  tags:
+  - multilingual
+  turns:
+  - content: ¿Qué plazo de preaviso exige la cláusula 12.1 del contrato antes de resolverlo por incumplimiento?
+    expect:
+      answer:
+        must_facts:
+        - the reply is written in Spanish
+        - 21 días para subsanar el incumplimiento tras notificación escrita
+      citations:
+        min: 1

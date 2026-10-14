@@ -1,0 +1,51 @@
+[project]
+name = "dossier-bench"
+version = "0.1.0"
+description = "Quality / latency / cost benchmark for AI systems that ingest and answer questions over case files"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "cases/LICENSE"]
+authors = [{ name = "Kallam" }]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing",
+]
+dependencies = [
+    "pyyaml>=6.0",
+    "rich>=13.7",
+    "openai>=1.50",
+    "rapidfuzz>=3.9",
+    "reportlab>=4.2",
+    "python-docx>=1.1",
+    "openpyxl>=3.1",
+    "pillow>=10.4",
+    "pypdfium2>=4.30",
+    "pypdf>=5.0",
+]
+
+[project.urls]
+Repository = "https://github.com/KallamTech/dossier-bench"
+
+[project.scripts]
+dossier-bench = "dossier_bench.cli:main"
+
+[dependency-groups]
+test = ["pytest>=8.3"]
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["dossier_bench"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"cases" = "dossier_bench/_cases"
+
+[tool.hatch.build.targets.sdist]
+exclude = ["runs", "baselines", ".github"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

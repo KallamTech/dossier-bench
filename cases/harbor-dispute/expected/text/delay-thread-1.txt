@@ -1,0 +1,23 @@
+Dear Lucía,
+
+NOTICE OF DELAY EVENT — CLAUSE 9.2
+
+I write to give formal notice under clause 9.2 of the Supply and Installation Agreement dated 4 November 2024, as amended and restated on 20 January 2025.
+
+On Tuesday 18 February 2025, while setting out the sorter supports in Bay 3, Tomasz Wójcik found that the floor slab between grid lines C4 and C7 is visibly out of level. We instructed Levantina Topografía SL to survey the slab the following day. Their report LT-2025-0218 is attached. It records a maximum deviation of 18 mm over 3 m, centred on grid line C5, against the tolerance of 5 mm over 3 m required by clause 6.2 of the Agreement. The deviation exceeds the ±20 mm adjustment range of the sorter supports once the high point at C7 is taken into account.
+
+Delay Event: failure of the Site to comply with clause 6.2 (clause 9.1(b)).
+
+Likely effect: the sorter supports in zone C4–C7 cannot be set until the slab has been re-levelled. Our programme shows this activity starting on 24 February 2025 on the critical path. Based on Levantina's estimate of seven days for screed application and curing, plus mobilisation, we currently estimate a delay to Mechanical Completion and Practical Completion of 14 days, subject to the method of re-levelling Brisamar elects.
+
+Extension of time claimed: 14 days, to be confirmed once the re-levelling method is agreed.
+
+We have today issued Change Order CO-3 (re-level Bay 3 floor slab) for €48,000 and 14 days, which proposes grinding the high points and a self-levelling screed. Please countersign CO-3 under clause 5.3, or instruct an alternative, as soon as possible. We can continue installation in Bays 1 and 2 and in the remaining zones of Bay 3 in the meantime.
+
+I should also flag that the permanent 400A supply under clause 6.4 was due on 7 February 2025 and is not yet available. We will keep this under review.
+
+Kind regards,
+
+Priya Nair
+Project Manager, Tidewell Fabrication Ltd
++44 23 8087 1140 | p.nair@tidewellfab.example

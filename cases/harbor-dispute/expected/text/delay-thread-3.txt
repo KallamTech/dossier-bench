@@ -1,0 +1,20 @@
+Dear Lucía,
+
+SECOND NOTICE OF DELAY EVENT — CLAUSE 9.2 — PERMANENT POWER SUPPLY
+
+I write to give notice of a further Delay Event under clause 9.2.
+
+Clause 6.4 of the Amended and Restated Agreement required Brisamar to provide and energise a permanent 400A three-phase supply to the installation hall distribution board not later than 7 February 2025. As of today, 9 March 2025, the supply is not available. The controls cabinets for Bays 1 and 2 are installed and loop checks were programmed to start tomorrow, 10 March 2025. Under clause 8.5 testing and commissioning cannot commence until the permanent supply is energised.
+
+Delay Event: failure to comply with clause 6.4 (clause 9.1(b)).
+
+Likely effect: the loop-check, software-load and dry-run sequence cannot start. Every day without the supply from 10 March is a day of critical delay to Practical Completion. Taking Marc's latest indication of the week of 17 March, we estimate 21 days.
+
+Extension of time claimed: 21 days to Practical Completion, in addition to the 14 days claimed in my notice of 21 February 2025 in respect of the Bay 3 slab.
+
+On the slab: we have not received the main contractor's survey referred to in your e-mail of 24 February. We maintain that the slab is Brisamar's responsibility under clause 6.2. We have continued installation outside zone C4–C7 as you requested, but we cannot set the supports in that zone, and CO-3 remains unsigned. Unless we receive an instruction by Friday 14 March we will have to suspend work on conveyor line 2 in that zone.
+
+Kind regards,
+
+Priya Nair
+Project Manager, Tidewell Fabrication Ltd

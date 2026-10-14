@@ -1,0 +1,93 @@
+- id: route-csv
+  group: formats
+  tags:
+  - formats
+  - routing
+  turns:
+  - content: From the payment schedule, which milestone invoices have been paid, and which one is on hold?
+    expect:
+      answer:
+        must_facts:
+        - invoices 0401 and 0409 were paid
+        - invoice 0417 (mechanical completion, €257,600) is on hold
+      citations:
+        must_include_docs:
+        - payment-schedule
+- id: qa-long-doc
+  group: formats
+  tags:
+  - formats
+  - qa
+  turns:
+  - content: What design life does the technical specification annex require for the system, and which clause says so?
+    expect:
+      answer:
+        must_facts:
+        - not less than 15 years
+        - clause 12.7
+      citations:
+        must_include_docs:
+        - spec-annex
+- id: qa-commissioning-log
+  group: formats
+  tags:
+  - formats
+  - qa
+  - ocr
+  turns:
+  - content: According to the commissioning log, at what time on which day was the permanent supply energised, and who signed
+      it off?
+    expect:
+      answer:
+        must_facts:
+        - 18 March 2025 at 14:30
+        - Marc Pujol and Tomasz Wójcik
+      citations:
+        must_include_docs:
+        - commissioning-log
+- id: route-photo-slab
+  group: formats
+  tags:
+  - formats
+  - vision
+  turns:
+  - content: There is a photo of a measurement card on the Bay 3 slab. What does the card say, and when was the photo taken?
+    expect:
+      answer:
+        must_facts:
+        - grid C5
+        - deviation of 18 mm over 3 m
+        - taken 19 February 2025
+- id: multilingual-es-acta
+  group: formats
+  tags:
+  - formats
+  - multilingual
+  turns:
+  - content: ¿Qué acordaron las partes en la reunión de obra del 20 de febrero de 2025 y cuándo es la siguiente reunión?
+    expect:
+      answer:
+        must_facts:
+        - the reply is written in Spanish
+        - Tidewell notificará el evento de retraso (cláusula 9.2) el 21 de febrero y emitirá la orden de cambio CO-3
+        - Brisamar enviará su levantamiento de agosto de 2024
+        - próxima reunión el 28 de febrero de 2025
+      citations:
+        must_include_docs:
+        - acta-reunion
+- id: qa-invoice-hold
+  group: formats
+  tags:
+  - formats
+  - qa
+  turns:
+  - content: What reason did Brisamar give for not paying invoice 0417, and by when did it want Tidewell to reply?
+    expect:
+      answer:
+        must_facts:
+        - Brisamar's claim for delay damages under clause 10.1 from 21 March 2025
+        - the outstanding Bay 3 works in zone C4 to C7
+        - reply requested by 2 May 2025
+      citations:
+        must_include_docs:
+        - invoice-hold

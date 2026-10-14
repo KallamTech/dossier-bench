@@ -1,0 +1,13 @@
+Hi Nadia,
+
+We have hit a problem in the Kite 3.0 beta. Users who have more than one role (for example planner and approver) cannot sign in through single sign-on: after the SAML redirect they get "role mapping failed". Users with a single role sign in fine.
+
+This affects 14 of our 60 users, including all of our planners, so for now they are using passwords, which our IT team does not want long term.
+
+Otherwise the feedback is good: the new dashboard and the saved views are a big step up and our planners are already using them daily.
+
+Happy to jump on a call or share logs.
+
+Regards,
+Kwame Mensah
+Operations Director, Holloway Logistics Ltd

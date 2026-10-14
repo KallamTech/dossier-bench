@@ -1,0 +1,13 @@
+[Components]
+Open-source licence audit — Brightwater platform — Lattice Compliance Ltd — completed 22 August 2025
+Component, Version, Licence, Usage, Exposure, Remediation
+ghostscript-bridge, 10.2, AGPL-3.0, PDF rendering in report export, High — linked in the hosted service, Replace with commercial licence or MuPDF under commercial terms
+iText 7 community, 7.2.5, AGPL-3.0, PDF generation, High — hosted service, Purchase iText commercial licence (quote £38,000 p.a.)
+mongoose-sse, 2.1, AGPL-3.0, Streaming updates in the dashboard, Medium, Rewrite (est. 6 engineer-weeks)
+numpy, 1.26, BSD-3-Clause, Analytics engine, None, None
+react, 18.2, MIT, Front end, None, None
+postgresql, 15, PostgreSQL, Database, None, None
+redis, 7.2, BSD-3-Clause (pre-7.4), Cache, None, None
+chart.js, 4.4, MIT, Front end charts, None, None
+
+Copyleft (AGPL-3.0) components in the hosted service, 3, ghostscript-bridge, iText 7 community, mongoose-sse

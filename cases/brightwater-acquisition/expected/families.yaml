@@ -1,0 +1,14 @@
+case_version: 2
+families:
+- group: spa
+  kind: version
+  members:
+    spa-draft: base
+    spa: revision
+- group: earnout-thread
+  kind: thread
+  members:
+    earnout-thread-1: message
+    earnout-thread-2: message
+    earnout-thread-3: message
+copies: []

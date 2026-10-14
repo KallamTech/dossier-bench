@@ -1,0 +1,303 @@
+SUPPLY AND INSTALLATION AGREEMENT
+
+Valencia Distribution Centre — Automated Conveyor and Sortation System
+
+Dated 4 November 2024
+
+BETWEEN
+
+(1) BRISAMAR LOGISTICS SA, a company incorporated in Spain with tax identification number A-46.812.337, whose registered office is at Polígono Industrial Fuente del Jarro, Calle Ciudad de Sevilla 14, 46988 Paterna (Valencia), Spain (the "Buyer"); and
+
+(2) TIDEWELL FABRICATION LTD, a company incorporated in England and Wales with company number 07731942, whose registered office is at Unit 4, Marchwood Industrial Park, Southampton SO40 4BL, United Kingdom (the "Supplier").
+
+RECITALS
+
+(A) The Buyer is constructing a distribution centre at Paterna, Valencia (the "Site") and wishes to procure the design, supply, installation and commissioning of an automated conveyor and sortation system for the Site.
+
+(B) The Supplier carries on the business of designing, fabricating and installing materials-handling systems and submitted a tender response dated 18 September 2024 in respect of the System.
+
+(C) The Buyer has agreed to engage the Supplier, and the Supplier has agreed to design, supply, install and commission the System, on the terms and subject to the conditions of this Agreement.
+
+IT IS AGREED as follows:
+
+
+1. DEFINITIONS AND INTERPRETATION
+
+1.1 In this Agreement the following words and expressions have the following meanings:
+
+"Business Day" means a day other than a Saturday, Sunday or public holiday in England or in the Autonomous Community of Valencia.
+
+"Change Order" means a written instruction issued and countersigned in accordance with clause 5.
+
+"Contract Price" means the sum of one million two hundred and forty thousand euros (€1,240,000) exclusive of VAT, as adjusted from time to time in accordance with this Agreement.
+
+"Delay Event" means any event or circumstance listed in clause 9.1.
+
+"Delivery" means the delivery of all Equipment to the Site in accordance with clause 7.
+
+"Design Pack" means the general arrangement drawings, load calculations, electrical schematics and control philosophy to be prepared by the Supplier under clause 2.2.
+
+"Equipment" means the conveyors, sorter, merges, controls cabinets, PLC hardware, safety fencing and all other plant and materials to be supplied under this Agreement, as more particularly described in Schedule 1.
+
+"Mechanical Completion" means the stage at which all Equipment has been installed, levelled, aligned and mechanically connected, as certified under clause 8.2.
+
+"Milestone" means each of the milestones set out in Schedule 2.
+
+"Milestone Date" means the date set against a Milestone in Schedule 2, as extended under clause 9.
+
+"Practical Completion" means the stage at which the System has passed the Acceptance Tests and is capable of being used for its intended purpose, as certified under clause 8.4.
+
+"Programme" means the programme of works attached at Schedule 3.
+
+"Site" has the meaning given in Recital (A).
+
+"System" means the automated conveyor and sortation system comprising the Equipment, the control software and all associated works.
+
+"Works" means the design, supply, installation, testing and commissioning of the System.
+
+1.2 Clause and Schedule headings do not affect interpretation. References to clauses and Schedules are to the clauses of and Schedules to this Agreement. The Schedules form part of this Agreement.
+
+1.3 In the event of any conflict between the clauses of this Agreement and the Schedules, the clauses prevail.
+
+2. SCOPE OF THE WORKS
+
+2.1 The Supplier shall carry out and complete the Works in accordance with this Agreement, the Specification at Schedule 1 and good industry practice.
+
+2.2 The Supplier shall prepare and submit the Design Pack to the Buyer for approval by the Design Approval Milestone Date. The Buyer shall approve or comment on the Design Pack within ten Business Days of receipt. Approval shall not relieve the Supplier of responsibility for the design.
+
+2.3 The System shall be designed to achieve a sustained throughput of 4,800 cartons per hour at the sorter with a maximum carton mass of 25 kg, as described in Schedule 1.
+
+2.4 The Supplier may subcontract the PLC programming and SCADA integration to Velden Controls BV. The Supplier remains responsible for the acts and omissions of its subcontractors as if they were its own.
+
+
+3. CONTRACT PRICE AND PAYMENT
+
+3.1 In consideration of the performance of the Works the Buyer shall pay the Supplier the Contract Price.
+
+3.2 The Contract Price shall be invoiced and paid in the following instalments:
+
+Instalment | Trigger | Percentage | Amount (€)
+1 | Signature of this Agreement | 30% | 372,000
+2 | Delivery | 40% | 496,000
+3 | Mechanical Completion | 20% | 248,000
+4 | Practical Completion | 10% | 124,000
+
+3.3 Each invoice shall be payable within thirty (30) days of the date of the invoice. Invoices shall be addressed to the Buyer's Project Director and sent to the e-mail address set out in clause 17.
+
+3.4 If the Buyer fails to pay any undisputed sum by the due date, interest shall accrue on the overdue amount at four per cent (4%) per annum above the base rate of the Bank of England from time to time.
+
+3.5 The Buyer may withhold payment of any sum which it disputes in good faith provided that it notifies the Supplier in writing of the amount withheld and the grounds for withholding not later than five Business Days before the due date.
+
+3.6 All sums are exclusive of value added tax, which shall be payable (if applicable) in addition at the prevailing rate.
+
+4. PROGRAMME AND MILESTONES
+
+4.1 The Supplier shall carry out the Works in accordance with the Programme and shall achieve each Milestone by the relevant Milestone Date.
+
+4.2 The Milestone Dates are:
+
+Milestone | Milestone Date
+Design Approval | 13 December 2024
+Delivery | 31 January 2025
+Mechanical Completion | 7 March 2025
+Practical Completion | 11 April 2025
+
+4.3 The Supplier shall submit a progress report to the Buyer every two weeks showing actual progress against the Programme and any anticipated delay.
+
+4.4 Time is of the essence in respect of the Practical Completion Milestone Date, subject always to clause 9.
+
+
+5. VARIATIONS AND CHANGE ORDERS
+
+5.1 The Buyer may at any time request a variation to the Works by issuing a written change request describing the proposed variation.
+
+5.2 Within ten Business Days of receiving a change request the Supplier shall submit a quotation setting out the effect of the variation on the Contract Price and on the Milestone Dates.
+
+5.3 No variation shall be binding unless and until it is recorded in a Change Order signed by the Buyer's Project Director and the Supplier's Project Manager. The Supplier shall not be obliged to carry out any variation which has not been so recorded.
+
+5.4 Where the Buyer instructs the Supplier in writing to proceed with a variation before a Change Order has been signed, the Supplier shall be entitled to a fair and reasonable adjustment to the Contract Price and to the Milestone Dates in respect of the work so instructed.
+
+5.5 Each Change Order shall be numbered sequentially and recorded in the Change Order register maintained by the Supplier.
+
+6. SITE CONDITIONS AND BUYER'S OBLIGATIONS
+
+6.1 The Buyer shall give the Supplier access to the Site from 11 November 2024 and shall ensure that the Site is in a condition suitable for the installation of the Equipment.
+
+6.2 Without limiting clause 6.1 the Buyer shall ensure that the floor slab in all installation areas is level to a tolerance of five millimetres (5 mm) over any three metre (3 m) span, measured in accordance with DIN 18202 Table 3 line 4, and has a minimum load-bearing capacity of 50 kN/m².
+
+6.3 The Buyer shall provide, at its own cost, a temporary three-phase electrical supply adequate for installation works, together with lighting, welfare facilities and secure storage for the Equipment.
+
+6.4 [Intentionally left blank.]
+
+6.5 If the Buyer fails to comply with this clause 6 the Supplier shall be entitled to an extension of time under clause 9 and to recover its reasonable additional costs.
+
+7. DELIVERY
+
+7.1 The Supplier shall deliver the Equipment to the Site by the Delivery Milestone Date. Delivery shall be deemed to occur when the last consignment of Equipment is unloaded at the Site.
+
+7.2 Risk in the Equipment shall pass to the Buyer on Delivery. Title shall pass on payment in full of the instalment due on Delivery.
+
+7.3 The Buyer shall provide suitable unloading equipment and a hard-standing area adjacent to the installation hall for the receipt of Equipment.
+
+
+8. TESTING AND COMMISSIONING
+
+8.1 The Supplier shall carry out the tests described in Schedule 4 in the presence of the Buyer's representative.
+
+8.2 On completion of installation the Supplier shall notify the Buyer that Mechanical Completion has been achieved. The Buyer shall within five Business Days either issue a certificate of Mechanical Completion or notify the Supplier in writing of any defects which prevent Mechanical Completion.
+
+8.3 Following Mechanical Completion the Supplier shall energise the System, load the control software and carry out dry-run testing, followed by the Acceptance Tests described in Schedule 4, which shall include a four-hour sustained throughput test at not less than 4,800 cartons per hour with a mis-sort rate not exceeding 0.1%.
+
+8.4 When the System has passed the Acceptance Tests the Buyer shall issue a certificate of Practical Completion. Minor defects which do not affect the use of the System shall not prevent the issue of the certificate and shall be listed in a snagging schedule to be completed within thirty days.
+
+8.5 Testing and commissioning cannot commence until the permanent electrical supply to the installation hall is available and energised.
+
+9. EXTENSION OF TIME
+
+9.1 Each of the following is a Delay Event:
+
+(a) any variation instructed under clause 5;
+
+(b) any failure by the Buyer to comply with its obligations under clause 6 or clause 7.3;
+
+(c) any suspension of the Works instructed by the Buyer other than by reason of the Supplier's default;
+
+(d) any act of prevention by the Buyer or its other contractors;
+
+(e) force majeure as defined in clause 14.
+
+9.2 If the Supplier becomes aware that the progress of the Works is being or is likely to be delayed by a Delay Event, the Supplier shall give written notice to the Buyer within fourteen (14) days of becoming so aware, identifying the Delay Event, its likely effect on the Milestone Dates and the extension of time claimed.
+
+9.3 Within ten Business Days of receiving a notice under clause 9.2 the Buyer shall grant such extension of the affected Milestone Dates as is fair and reasonable, having regard to the effect of the Delay Event on the critical path of the Programme.
+
+9.4 Failure to give notice within the period in clause 9.2 shall not bar the Supplier's entitlement to an extension of time but the Supplier shall not be entitled to an extension in respect of any delay which could have been avoided had timely notice been given.
+
+9.5 Where the Supplier is entitled to an extension of time under clause 9.1(a) to (d) it shall also be entitled to recover its reasonable and properly documented prolongation costs.
+
+
+10. LIQUIDATED DAMAGES
+
+10.1 If the Supplier fails to achieve Practical Completion by the Practical Completion Milestone Date (as extended under clause 9), the Supplier shall pay to the Buyer liquidated damages at the rate of one half of one per cent (0.5%) of the Contract Price for each week or part week of delay, calculated pro rata for part weeks.
+
+10.2 The total liquidated damages payable under clause 10.1 shall not exceed ten per cent (10%) of the Contract Price.
+
+10.3 The parties agree that the liquidated damages are a genuine pre-estimate of the Buyer's loss and are the Buyer's sole and exclusive remedy for delay in achieving Practical Completion.
+
+10.4 The Buyer may deduct liquidated damages from any sum otherwise due to the Supplier, subject to giving notice in accordance with clause 3.5.
+
+11. WARRANTY
+
+11.1 The Supplier warrants that the System shall be free from defects in design, materials and workmanship for a period of twenty-four (24) months from the date of the certificate of Practical Completion (the "Warranty Period").
+
+11.2 During the Warranty Period the Supplier shall, at its own cost, repair or replace any part of the System which is found to be defective within ten Business Days of notification, or such longer period as is reasonable in the circumstances.
+
+11.3 The warranty does not extend to defects caused by misuse, lack of maintenance, operation outside the parameters in Schedule 1 or modifications not carried out by the Supplier.
+
+12. TERMINATION
+
+12.1 Either party may terminate this Agreement with immediate effect by written notice if the other party commits a material breach of this Agreement and, where the breach is capable of remedy, fails to remedy it within twenty-one (21) days after receiving written notice specifying the breach and requiring it to be remedied.
+
+12.2 Either party may terminate this Agreement with immediate effect by written notice if the other party becomes insolvent, enters administration or liquidation, or ceases to carry on business.
+
+12.3 The Buyer may terminate this Agreement for convenience on not less than thirty (30) days' written notice. On termination under this clause the Buyer shall pay the Supplier for all Works performed to the date of termination, the cost of Equipment manufactured or ordered which cannot reasonably be cancelled, and a demobilisation charge of ten per cent (10%) of the unpaid balance of the Contract Price.
+
+12.4 On termination for any reason the Supplier shall leave the Site in a safe condition and the Buyer shall allow the Supplier a reasonable period, being not less than ten Business Days, to remove its tools and plant.
+
+12.5 Termination shall not affect any rights or remedies accrued before termination.
+
+
+13. LIMITATION OF LIABILITY
+
+13.1 Nothing in this Agreement limits or excludes either party's liability for death or personal injury caused by negligence, for fraud, or for any other liability which cannot be limited by law.
+
+13.2 Subject to clause 13.1, neither party shall be liable to the other for any loss of profit, loss of business, loss of goodwill or any indirect or consequential loss.
+
+13.3 Subject to clauses 13.1 and 13.2, the Supplier's total aggregate liability under or in connection with this Agreement, whether in contract, tort or otherwise, shall not exceed one hundred per cent (100%) of the Contract Price.
+
+14. FORCE MAJEURE
+
+14.1 Neither party shall be in breach of this Agreement nor liable for delay in performing any of its obligations if such delay results from events beyond its reasonable control, including flood, fire, epidemic, war, civil unrest, or failure of public utilities, but excluding industrial action of the affected party's own workforce and shortage of labour or materials.
+
+14.2 The affected party shall notify the other promptly and shall use reasonable endeavours to mitigate the effect of the event.
+
+14.3 If a force majeure event continues for more than ninety days either party may terminate this Agreement on fourteen days' written notice.
+
+15. GOVERNING LAW AND JURISDICTION
+
+15.1 This Agreement and any dispute or claim arising out of or in connection with it or its subject matter shall be governed by and construed in accordance with the law of England and Wales.
+
+15.2 Each party irrevocably agrees that the courts of England and Wales shall have exclusive jurisdiction to settle any dispute or claim arising out of or in connection with this Agreement.
+
+15.3 The Buyer appoints Brisamar Logistics (UK) Ltd of 22 Thames Wharf Road, Tilbury RM18 7BA as its agent for service of process in England.
+
+16. DISPUTE RESOLUTION
+
+16.1 If a dispute arises the parties shall first attempt to resolve it by negotiation between the Buyer's Project Director and the Supplier's Managing Director within twenty (20) Business Days of either party giving written notice of the dispute.
+
+16.2 If the dispute is not resolved by negotiation the parties may, by agreement, refer it to mediation under the CEDR Model Mediation Procedure before commencing proceedings.
+
+
+17. NOTICES
+
+17.1 Any notice under this Agreement shall be in writing and shall be delivered by hand, sent by recorded delivery or sent by e-mail to the addresses below (or such other address as a party may notify):
+
+Party | Postal address | E-mail
+Buyer | Polígono Industrial Fuente del Jarro, Calle Ciudad de Sevilla 14, 46988 Paterna (Valencia), Spain — attention Lucía Ortega, Project Director | l.ortega@brisamar-logistics.example
+Supplier | Unit 4, Marchwood Industrial Park, Southampton SO40 4BL, United Kingdom — attention Priya Nair, Project Manager | p.nair@tidewellfab.example
+
+17.2 A notice sent by e-mail is deemed received at the time of transmission if sent before 17:00 on a Business Day, and otherwise at 09:00 on the next Business Day.
+
+18. GENERAL
+
+18.1 This Agreement, together with its Schedules, constitutes the entire agreement between the parties and supersedes all previous agreements, including the Supplier's tender response dated 18 September 2024, except to the extent expressly incorporated in Schedule 1.
+
+18.2 No variation of this Agreement shall be effective unless in writing and signed by both parties.
+
+18.3 Neither party may assign its rights under this Agreement without the prior written consent of the other.
+
+18.4 This Agreement may be executed in counterparts, each of which is an original and all of which together constitute one agreement.
+
+SIGNED by the parties on the date first written above.
+
+For and on behalf of BRISAMAR LOGISTICS SA | For and on behalf of TIDEWELL FABRICATION LTD
+Signature: Lucía Ortega | Signature: Daniel Mercer
+Name: Lucía Ortega | Name: Daniel Mercer
+Title: Project Director | Title: Managing Director
+Date: 4 November 2024 | Date: 4 November 2024
+
+
+SCHEDULE 1 — SPECIFICATION
+
+1. Receiving conveyors. Four powered roller receiving lines, each 24 m long, 620 mm wide, 0.8 m/s, zero-pressure accumulation, with manual induct stations.
+
+2. Merge. One 4-to-1 sawtooth merge feeding the sorter induct at up to 5,400 cartons per hour.
+
+3. Sorter. One narrow-belt sorter, 68 m long, 26 divert positions (13 each side), bi-directional pop-up wheel diverts, rated 4,800 cartons per hour sustained with carton sizes 200 × 150 × 80 mm to 800 × 600 × 500 mm and mass 0.5 kg to 25 kg.
+
+4. Outfeeds. 26 gravity roller outfeed lanes, each 6 m long, with photo-eye full-lane detection, plus one powered recirculation line.
+
+5. Scanning. Two five-sided barcode scanning tunnels at the sorter induct with 99.5% read rate on GS1-128 labels.
+
+6. Controls. One Siemens S7-1500 PLC with distributed ET200 I/O, two HMI stations, SCADA integration to the Buyer's warehouse management system via an OPC UA interface. PLC programming and SCADA integration by Velden Controls BV.
+
+7. Safety. Perimeter fencing to EN ISO 14120 with interlocked access gates, emergency stop circuits to PL d, and light curtains at all manual induct stations.
+
+8. Finish. Galvanised supports, powder-coated side guards RAL 5015, belts and rollers in food-safe grade not required.
+
+SCHEDULE 2 — MILESTONES
+
+As set out in clause 4.2.
+
+SCHEDULE 3 — PROGRAMME
+
+Programme reference HFL-VAL-P01 rev B dated 28 October 2024, 26 weeks from Site access to Practical Completion, with installation in Bays 1 and 2 preceding Bay 3.
+
+SCHEDULE 4 — TESTS
+
+1. Pre-delivery inspection at the Supplier's works, Southampton.
+
+2. Mechanical Completion inspection: alignment within ±2 mm, belt tracking, guarding complete.
+
+3. Dry-run test: 8 hours continuous running without product.
+
+4. Acceptance Tests: 4-hour sustained throughput at not less than 4,800 cartons per hour, mis-sort rate not exceeding 0.1%, scan read rate not less than 99.5%, emergency stop response not exceeding 500 ms.

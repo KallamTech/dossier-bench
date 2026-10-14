@@ -1,0 +1,80 @@
+case_version: 2
+entities:
+- type: organization
+  key: larkspur
+  name: Larkspur Labs Ltd
+  aliases:
+  - Larkspur
+  - the company
+- type: organization
+  key: pixelforge
+  name: Pixelforge Studio Ltd
+  aliases:
+  - Pixelforge
+- type: organization
+  key: holloway
+  name: Holloway Logistics Ltd
+  aliases:
+  - Holloway
+- type: product
+  key: kite
+  name: Kite Planner 3.0
+  aliases:
+  - Kite 3.0
+  - Kite Planner
+  - the product
+- type: person
+  key: rahimi
+  name: Nadia Rahimi
+  aliases:
+  - Rahimi
+- type: person
+  key: castillo
+  name: Owen Castillo
+  aliases:
+  - Castillo
+- type: person
+  key: okonkwo
+  name: Ines Okonkwo
+  aliases:
+  - Okonkwo
+- type: person
+  key: berglund
+  name: Tom Berglund
+  aliases:
+  - Berglund
+- type: person
+  key: faye
+  name: Faye Delacroix
+  aliases:
+  - Delacroix
+- type: person
+  key: mensah
+  name: Kwame Mensah
+  aliases:
+  - Mensah
+relations:
+- from: Nadia Rahimi
+  to: Larkspur Labs Ltd
+  kind: works_for
+- from: Owen Castillo
+  to: Larkspur Labs Ltd
+  kind: works_for
+- from: Ines Okonkwo
+  to: Larkspur Labs Ltd
+  kind: works_for
+- from: Faye Delacroix
+  to: Pixelforge Studio Ltd
+  kind: works_for
+- from: Kwame Mensah
+  to: Holloway Logistics Ltd
+  kind: works_for
+- from: Pixelforge Studio Ltd
+  to: Larkspur Labs Ltd
+  kind: vendor_of
+- from: Holloway Logistics Ltd
+  to: Larkspur Labs Ltd
+  kind: customer_of
+- from: Larkspur Labs Ltd
+  to: Kite Planner 3.0
+  kind: makes

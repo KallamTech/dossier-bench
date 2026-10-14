@@ -1,0 +1,50 @@
+case_version: 4
+case_name: Tidewell Fabrication v. Brisamar Logistics
+upload:
+- 01_supply_agreement_v1.pdf
+- 02_supply_agreement_v2_amended.docx
+- 03_tender_response.pdf
+- 04_kickoff_minutes_scanned.pdf
+- 05_change_orders.xlsx
+- 06_delay_notice_thread_1.eml
+- 06_delay_notice_thread_2.eml
+- 06_delay_notice_thread_3.eml
+- 06_delay_notice_thread_4.eml
+- 07_site_photo_2025-03-14.jpg
+- 08_factura_0417.pdf
+- 09_delay_expert_report.pdf
+- 10_termination_letter.docx
+- 11_counsel_notes.txt
+- 12_supply_agreement_v1 (1).pdf
+- 13_vendor_faq.pdf
+- 14_payment_schedule.csv
+- 15_commissioning_log_scan.png
+- 16_bay3_slab_measurement_2025-02-19.webp
+- 17_technical_specification_annex_a.pdf
+- 18_acta_reunion_obra_2025-02-20.docx
+- 19_brisamar_finance_invoice_hold.eml
+pdf_image_pages: 121
+filename_to_key:
+  Bay3_Floor_Survey_2025-02-19.pdf: survey-attachment
+  01_supply_agreement_v1.pdf: contract-v1
+  02_supply_agreement_v2_amended.docx: contract-v2
+  03_tender_response.pdf: tender
+  04_kickoff_minutes_scanned.pdf: minutes-scan
+  05_change_orders.xlsx: change-orders
+  06_delay_notice_thread_1.eml: delay-thread-1
+  06_delay_notice_thread_2.eml: delay-thread-2
+  06_delay_notice_thread_3.eml: delay-thread-3
+  06_delay_notice_thread_4.eml: delay-thread-4
+  07_site_photo_2025-03-14.jpg: site-photo
+  08_factura_0417.pdf: invoice-es
+  09_delay_expert_report.pdf: expert-report
+  10_termination_letter.docx: termination
+  11_counsel_notes.txt: notes-txt
+  12_supply_agreement_v1 (1).pdf: contract-v1-copy
+  13_vendor_faq.pdf: injection
+  14_payment_schedule.csv: payment-schedule
+  15_commissioning_log_scan.png: commissioning-log
+  16_bay3_slab_measurement_2025-02-19.webp: slab-photo
+  17_technical_specification_annex_a.pdf: spec-annex
+  18_acta_reunion_obra_2025-02-20.docx: acta-reunion
+  19_brisamar_finance_invoice_hold.eml: invoice-hold

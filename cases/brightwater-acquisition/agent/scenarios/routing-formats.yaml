@@ -1,0 +1,83 @@
+- id: route-xlsx-qa-log
+  group: routing
+  tags:
+  - routing
+  - spreadsheet
+  turns:
+  - content: In the data room Q&A log, what was asked about Northgate and what were the answers, with dates?
+    expect:
+      answer:
+        must_facts:
+        - 'Q7 of 4 February 2025 answered on 6 February: renewal discussions ongoing and management expects renewal'
+        - 'Q23 of 5 March 2025 answered on 6 March: see Q7, no further update'
+      citations:
+        must_include_docs:
+        - data-room-index
+- id: route-csv-cap-table
+  group: routing
+  tags:
+  - routing
+  - csv
+  turns:
+  - content: How many unexercised EMI options were there at 31 December 2024?
+    expect:
+      answer:
+        must_facts:
+        - '800'
+      citations:
+        must_include_docs:
+        - cap-table
+- id: route-photo-signing
+  group: routing
+  tags:
+  - routing
+  - vision
+  turns:
+  - content: Look at the signing photo. What document does it show and when was it taken?
+    expect:
+      answer:
+        must_facts:
+        - the signed execution version of the share purchase agreement
+        - 14 March 2025
+- id: route-family-spa
+  group: routing
+  tags:
+  - routing
+  - families
+  turns:
+  - content: What changed between draft 7 of the SPA and the executed version?
+    expect:
+      answer:
+        must_facts:
+        - the escrow period was bracketed at 12 or 18 months in the draft and is 18 months in the executed agreement
+        - clause 6.4 on the buyer's knowledge was a sellers' proposal in the draft and appears in the executed version limited
+          to Lindqvist and Baptiste and excluding wilful concealment
+        - the executed version is dated 14 March 2025 and has execution blocks
+- id: route-timeline
+  group: timeline
+  tags:
+  - timeline
+  turns:
+  - content: Give me a dated timeline of the Northgate story from the first notice to the earn-out dispute.
+    expect:
+      answer:
+        must_facts:
+        - 7 February 2025 notice of non-renewal
+        - 11 February 2025 board meeting
+        - 14 March 2025 signing with the disclosure letter
+        - 30 June 2025 contract end
+        - 19 September 2025 claim notice
+        - 3 October 2025 draft ARR statement and 17 October 2025 sellers' dispute
+- id: route-web
+  group: routing
+  tags:
+  - routing
+  - web
+  turns:
+  - content: What does the AGPL v3 network-use clause (section 13) require, and why does it matter for a hosted service? Cite
+      a source.
+    expect:
+      answer:
+        must_facts:
+        - section 13 requires offering the corresponding source to users interacting with a modified version over a network
+        - cites a URL

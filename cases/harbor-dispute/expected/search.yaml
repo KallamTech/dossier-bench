@@ -1,0 +1,161 @@
+case_version: 4
+queries:
+- query: liquidated damages cap
+  expect:
+  - contract-v1
+  - contract-v2
+  k: 5
+- query: floor slab tolerance survey
+  expect:
+  - survey-attachment
+  - delay-thread-1
+  k: 5
+- query: 400A power supply
+  expect:
+  - contract-v2
+  - delay-thread-3
+  k: 5
+- query: factura hito 3 terminación mecánica
+  expect:
+  - invoice-es
+  k: 3
+- query: termination for material breach cure period
+  expect:
+  - contract-v1
+  - termination
+  k: 5
+- query: time impact analysis critical delay
+  expect:
+  - expert-report
+  k: 3
+- query: redundant PLC pair
+  expect:
+  - change-orders
+  - tender
+  k: 5
+- query: vacate the site
+  expect:
+  - termination
+  k: 3
+- query: Aldgate Hub reference project
+  expect:
+  - tender
+  k: 3
+- query: proceed at risk
+  expect:
+  - delay-thread-2
+  k: 5
+- query: sustained throughput 4,800 cartons per hour
+  expect:
+  - contract-v1
+  - tender
+  k: 5
+- query: Levantina Topografía Leica digital level grid lines
+  expect:
+  - survey-attachment
+  k: 3
+- query: Velden Controls Eindhoven Siemens S7-1500
+  expect:
+  - tender
+  k: 5
+- query: Dr Helena Voss statement of truth
+  expect:
+  - expert-report
+  k: 3
+- query: second notice of delay event permanent power supply
+  expect:
+  - delay-thread-3
+  k: 5
+- query: main contractor surveyed the slab in August 2024
+  expect:
+  - delay-thread-2
+  - minutes-scan
+  k: 5
+- query: risk register R-04 slab flatness
+  expect:
+  - minutes-scan
+  k: 3
+- query: IBAN Solent Commercial Bank
+  expect:
+  - invoice-es
+  k: 3
+- query: datos bancarios transferencia vencimiento
+  expect:
+  - invoice-es
+  k: 3
+- query: withholding notice five business days before the due date
+  expect:
+  - contract-v1
+  - termination
+  - notes-txt
+  k: 5
+- query: demobilisation charge termination for convenience
+  expect:
+  - contract-v1
+  - notes-txt
+  k: 5
+- query: replacement contractor PLC source code as-built drawings
+  expect:
+  - termination
+  k: 3
+- query: litigation hold Meridian instruction letter
+  expect:
+  - notes-txt
+  k: 3
+- query: Tidewell settlement floor invoice 0417 plus 60,000
+  expect:
+  - notes-txt
+  k: 3
+- query: concurrent delay attributed to the first event in time
+  expect:
+  - expert-report
+  k: 3
+- query: DE-2 floor slab 14 days critical delay
+  expect:
+  - expert-report
+  k: 3
+- query: installation suspended sign Bay 3
+  expect:
+  - site-photo
+  - delay-thread-3
+  k: 5
+- query: go-live 5 May 2025
+  expect:
+  - minutes-scan
+  - termination
+  k: 5
+- query: PPE hard hat high-visibility site induction
+  expect:
+  - injection
+  k: 3
+- query: fiscal governing law exclusive jurisdiction courts of England
+  expect:
+  - contract-v1
+  - contract-v2
+  k: 5
+- query: payment schedule invoice on hold
+  expect:
+  - payment-schedule
+  - invoice-hold
+  k: 5
+- query: commissioning log loop checks
+  expect:
+  - commissioning-log
+  k: 5
+- query: acta reunión obra levantamiento topográfico
+  expect:
+  - acta-reunion
+  k: 3
+- query: sorter throughput parcels per hour
+  expect:
+  - spec-annex
+  k: 3
+- query: design life of the system
+  expect:
+  - spec-annex
+  k: 5
+- query: delay damages clause 10.1 withhold invoice
+  expect:
+  - invoice-hold
+  - termination
+  k: 5

@@ -1,0 +1,32 @@
+[Index]
+Project Larch — data room index (as at 6 March 2025)
+Ref, Folder, Document, Date uploaded
+1.1, 1. Corporate, Certificate of incorporation, 2016-05-03
+1.2, 1. Corporate, Articles of association (adopted 2021), 2021-09-14
+1.3, 1. Corporate, Cap table at 31 December 2024, 2025-01-10
+1.4, 1. Corporate, Board minutes 2023-2024 (bundle), 2025-01-10
+2.1, 2. Financial, Audited accounts FY2022-FY2024, 2025-01-15
+2.2, 2. Financial, Management accounts to 31 December 2024, 2025-01-22
+2.3, 2. Financial, ARR schedule by customer at 31 December 2024, 2025-01-22
+2.4, 2. Financial, Budget FY2025, 2025-01-22
+3.1, 3. Customers, Top 20 customer contracts, 2025-01-24
+3.2, 3. Customers, Northgate Retail master services agreement (2022) and renewal 2024, 2025-01-24
+3.3, 3. Customers, Customer churn analysis 2022-2024, 2025-01-24
+4.1, 4. Employment, Standard employment contract and handbook, 2025-01-28
+4.2, 4. Employment, Senior employee contracts (bundle), 2025-01-28
+4.3, 4. Employment, Grievance log 2023-2024, 2025-02-18
+4.4, 4. Employment, EMI option scheme rules and grants, 2025-01-28
+5.1, 5. IP and technology, Registered trade marks (UK and EU), 2025-01-30
+5.2, 5. IP and technology, Software architecture overview, 2025-01-30
+5.3, 5. IP and technology, Open-source component inventory (preliminary), 2025-02-20
+5.4, 5. IP and technology, Third-party licences (bundle), 2025-01-30
+6.1, 6. Litigation and compliance, Litigation summary (nil return), 2025-01-30
+6.2, 6. Litigation and compliance, ICO registration and data protection policies, 2025-01-30
+7.1, 7. Property, Lease of Floor 3, 26 Clerkenwell Road, 2025-01-30
+[Q&A log]
+Q&A log
+No, Asked, Question, Answer, Answered
+7, 2025-02-04, Please confirm the renewal status of the Northgate Retail contract expiring 30 June 2025., Renewal discussions are ongoing and management expects renewal on similar terms., 2025-02-06
+12, 2025-02-12, Are there any threatened or pending employee claims?, No formal claims. One informal grievance (customer success) was resolved internally in January 2025., 2025-02-14
+19, 2025-02-25, Please provide the full open-source licence audit., A preliminary inventory is at 5.3; a full audit has been commissioned and will be shared when available., 2025-02-27
+23, 2025-03-05, Has Northgate confirmed renewal?, See answer to Q7; no further update., 2025-03-06

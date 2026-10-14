@@ -1,0 +1,88 @@
+# Three-message thread rendered to 14_earnout_thread_{n}.eml. Replies quote the previous message.
+thread_subject: "Project Larch — draft ARR statement at 30 September 2025 (earn-out, Schedule 7)"
+file_prefix: 14_earnout_thread
+messages:
+  - key: earnout-thread-1
+    must_facts:
+      - "Email of 3 October 2025 from Claire Baptiste (Castellane CFO) to Imogen Hale and Rafael Duarte"
+      - "Draft ARR statement at 30 September 2025 shows £5,100,000"
+      - "Northgate removed from 30 June 2025 and Southmere Hotels churned in August 2025 (£360,000)"
+      - "On this trajectory the earn-out would be nil (below the £5,500,000 floor)"
+    message_id: "<20251003153011.CAS-FIN-0771@castellane.example>"
+    date: "Fri, 03 Oct 2025 15:30:11 +0100"
+    from: { ref: baptiste }
+    to: [{ ref: hale }, { ref: duarte }]
+    cc: [{ ref: lindqvist }]
+    body: |
+      Dear Imogen and Rafael,
+
+      Please find attached the draft ARR statement at 30 September 2025, prepared on the basis of Schedule 7 and the policies applied in the locked-box ARR schedule. Although the Test Date is 31 December 2025, we agreed to share quarterly drafts so that there are no surprises.
+
+      Headline: ARR at 30 September 2025 is £5,100,000, against £5,900,000 at 31 December 2024.
+
+      The main movements are:
+      - Northgate Retail (£1,300,000) is excluded in full from 7 February 2025 under paragraph 2.2 of Schedule 7, and in any event the contract ended on 30 June 2025. The transition arrangement is a time-limited services fee, not recurring subscription revenue.
+      - Southmere Hotels (£360,000) gave notice in August 2025 following its change of ownership.
+      - Net upsell across the remaining base of £140,000.
+
+      On this trajectory ARR at the Test Date will be below the £5,500,000 floor and no Earn-Out Payment would be due. We would of course welcome any new live customers before 31 December.
+
+      Kind regards,
+      Claire Baptiste
+      Group CFO, Castellane Holdings Ltd
+  - key: earnout-thread-2
+    must_facts:
+      - "Reply of 17 October 2025 from Imogen Hale disputing the statement"
+      - "Sellers' position: Northgate run-off at 50% (£650,000) should count, and the signed Kestrel Pharma (£220,000) and Dunmore Council (£180,000) contracts should count"
+      - "Sellers' figure £6,250,000, which would earn the full £3,000,000"
+      - "Hale alleges Castellane delayed the Kestrel and Dunmore go-lives into 2026 contrary to paragraph 4 (bad faith)"
+    message_id: "<20251017110904.BWA-0218@brightwater-analytics.example>"
+    date: "Fri, 17 Oct 2025 11:09:04 +0100"
+    from: { ref: hale }
+    to: [{ ref: baptiste }]
+    cc: [{ ref: duarte }, { ref: lindqvist }]
+    in_reply_to: earnout-thread-1
+    body: |
+      Dear Claire,
+
+      Thank you for the draft. We do not agree with it, and this email is our notice of dispute under paragraph 3 of Schedule 7, without prejudice to the timetable running from the final statement after the Test Date.
+
+      1. Northgate. The transition arrangement concluded in April 2025 is a 12-month subscription at £650,000 per year for data access and reporting, invoiced monthly. It is recurring revenue from a live customer and should be included, at least at 50% of the historic ARR (£650,000).
+
+      2. Signed contracts. Kestrel Pharma (£220,000) and Dunmore Council (£180,000) were signed in July and August 2025 with go-live dates of November and December 2025. Both will be live by the Test Date. Paragraph 2.2 excludes contracts not live at the Test Date; it does not exclude contracts that will be live. We are concerned that Castellane's implementation team has pushed both go-lives into January 2026, which, if it is to keep ARR below the floor, is exactly what paragraph 4 prohibits.
+
+      3. Southmere. Agreed.
+
+      On our figures ARR at the Test Date is £6,250,000, which exceeds the £6,200,000 target and earns the full £3,000,000.
+
+      We propose a call next week; failing agreement we will ask for the independent accountant to be appointed.
+
+      Kind regards,
+      Imogen
+  - key: earnout-thread-3
+    must_facts:
+      - "Reply of 24 October 2025 from Claire Baptiste"
+      - "Castellane maintains that the Northgate transition fee is not subscription ARR and that signed-not-live contracts are excluded by paragraph 2.2"
+      - "Denies delaying go-lives: Kestrel's own IT freeze moved it to January 2026"
+      - "Agrees to a call on 30 October 2025 and to the independent accountant if needed"
+    message_id: "<20251024164520.CAS-FIN-0794@castellane.example>"
+    date: "Fri, 24 Oct 2025 16:45:20 +0100"
+    from: { ref: baptiste }
+    to: [{ ref: hale }]
+    cc: [{ ref: duarte }, { ref: lindqvist }]
+    in_reply_to: earnout-thread-2
+    body: |
+      Dear Imogen,
+
+      Thank you. We maintain the draft.
+
+      1. Northgate. The April 2025 arrangement is a transition services agreement, terminable on 30 days' notice, for export support and read-only access. It is not a Customer Contract for the platform and the fee is not "recurring subscription fees". In any event paragraph 2.2 excludes a contract under which notice of non-renewal has been given, from the date of the notice.
+
+      2. Signed contracts. Paragraph 2.2 is explicit: a contract under which the customer has not gone live at the Test Date is not included. Kestrel's go-live moved to January 2026 at Kestrel's request because of its own year-end IT change freeze; we can share the correspondence. Dunmore's go-live is still planned for December and, if it is live on 31 December, it will be counted.
+
+      3. We reject any suggestion of bad faith.
+
+      We are happy to speak on Thursday 30 October 2025 at 10:00 and, if we cannot agree, to the appointment of an independent accountant under paragraph 3.
+
+      Kind regards,
+      Claire

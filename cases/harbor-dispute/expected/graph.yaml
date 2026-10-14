@@ -1,0 +1,98 @@
+case_version: 4
+entities:
+- type: organization
+  key: tidewell
+  name: Tidewell Fabrication Ltd
+  aliases:
+  - Tidewell
+  - HFL
+  - the Supplier
+- type: organization
+  key: brisamar
+  name: Brisamar Logistics SA
+  aliases:
+  - Brisamar
+  - the Buyer
+- type: organization
+  key: velden
+  name: Velden Controls BV
+  aliases:
+  - Velden
+- type: organization
+  key: meridian
+  name: Meridian Forensic Scheduling Ltd
+  aliases:
+  - Meridian
+- type: organization
+  key: calloway
+  name: Calloway Price LLP
+  aliases:
+  - Calloway Price
+- type: organization
+  key: levantina
+  name: Levantina Topografía SL
+  aliases:
+  - Levantina
+- type: person
+  key: mercer
+  name: Daniel Mercer
+  aliases:
+  - Mercer
+- type: person
+  key: nair
+  name: Priya Nair
+  aliases:
+  - Nair
+- type: person
+  key: wojcik
+  name: Tomasz Wójcik
+  aliases:
+  - Wójcik
+- type: person
+  key: ortega
+  name: Lucía Ortega
+  aliases:
+  - Ortega
+- type: person
+  key: pujol
+  name: Marc Pujol
+  aliases:
+  - Pujol
+- type: person
+  key: voss
+  name: Dr Helena Voss
+  aliases:
+  - Voss
+- type: person
+  key: ferrer
+  name: Andreu Ferrer
+  aliases:
+  - Ferrer
+relations:
+- from: Priya Nair
+  to: Tidewell Fabrication Ltd
+  kind: works_for
+- from: Lucía Ortega
+  to: Brisamar Logistics SA
+  kind: works_for
+- from: Marc Pujol
+  to: Brisamar Logistics SA
+  kind: works_for
+- from: Daniel Mercer
+  to: Tidewell Fabrication Ltd
+  kind: works_for
+- from: Velden Controls BV
+  to: Tidewell Fabrication Ltd
+  kind: subcontractor_of
+- from: Dr Helena Voss
+  to: Meridian Forensic Scheduling Ltd
+  kind: works_for
+- from: Andreu Ferrer
+  to: Levantina Topografía SL
+  kind: works_for
+- from: Calloway Price LLP
+  to: Tidewell Fabrication Ltd
+  kind: represents
+- from: Tidewell Fabrication Ltd
+  to: Brisamar Logistics SA
+  kind: contract_with

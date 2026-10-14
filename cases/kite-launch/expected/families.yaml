@@ -1,0 +1,14 @@
+case_version: 2
+families:
+- group: press-release
+  kind: version
+  members:
+    press-release-v1: base
+    press-release-v2: revision
+- group: vendor-thread
+  kind: thread
+  members:
+    vendor-thread-1: message
+    vendor-thread-2: message
+    vendor-thread-3: message
+copies: []

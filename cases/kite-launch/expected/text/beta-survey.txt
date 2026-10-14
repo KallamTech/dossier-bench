@@ -1,0 +1,21 @@
+[Survey]
+Kite 3.0 beta survey — 'How likely are you to recommend Kite 3.0?' (0-10) — closed 19 September 2025
+Customer, Score, Comment
+Holloway Logistics, 6, SSO fails for users with more than one role; otherwise strong
+Marlow & Finch, 9, Saved views are the best change
+Redgate Foods, 9, Exports are slow on big ranges
+Ashworth Clinics, 10, 
+Brindle Retail, 7, Wants dark mode
+Cobalt Freight, 9, 
+Dunmore Council, 5, Onboarding emails confusing
+Ellery Hotels, 8, 
+Fairlead Marine, 9, 
+Greystone Energy, 10, Filter bar is excellent
+Hartwell Schools, 7, Needs CSV import
+Ivybridge Pharma, 9, 
+
+Responses, 12
+Promoters (9-10), 7
+Passives (7-8), 3
+Detractors (0-6), 2
+NPS, 41

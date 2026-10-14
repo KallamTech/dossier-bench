@@ -1,0 +1,216 @@
+SHARE PURCHASE AGREEMENT
+
+Dated 14 March 2025
+
+(1) IMOGEN HALE and RAFAEL DUARTE (together the "Sellers")
+
+(2) CASTELLANE HOLDINGS LTD (company number 11483920) of 14 Bruton Place, London W1J 6LX (the "Buyer")
+
+relating to the entire issued share capital of BRIGHTWATER ANALYTICS LTD (company number 10177245) of Floor 3, 26 Clerkenwell Road, London EC1M 5PQ (the "Company")
+
+Execution version. Prepared by Fenwick Rowe LLP for the Buyer. Project Larch.
+
+1. Definitions and interpretation
+
+1.1 In this Agreement the following words have the following meanings:
+
+"ARR" means, at any date, the annualised value of recurring subscription fees under Customer Contracts that are live (the customer having gone live and being invoiced) at that date, excluding one-off implementation fees, usage overages and any contract under which notice of termination or non-renewal has been given, as calculated in accordance with Schedule 7;
+
+"Business Day" means a day other than a Saturday, Sunday or public holiday in England;
+
+"Claim" means a claim by the Buyer for breach of any of the Warranties;
+
+"Completion" means completion of the sale and purchase of the Shares in accordance with clause 5;
+
+"Completion Date" means 30 April 2025 or such other date as the parties agree in writing;
+
+"Customer Contract" means a contract between the Company and a customer for the provision of the Company's software as a service;
+
+"Disclosure Letter" means the letter of the same date as this Agreement from the Sellers to the Buyer, together with the Data Room index and Q&A log annexed to it;
+
+"Earn-Out Payment" has the meaning given in Schedule 7;
+
+"Escrow Account" means the interest-bearing account in the joint names of the Buyer's Solicitors and the Sellers' Solicitors;
+
+"Escrow Amount" means £1,850,000;
+
+"Escrow Period" means the period of 18 months from the Completion Date;
+
+"Locked Box Date" means 31 December 2024;
+
+"Material Customer" means any customer whose Customer Contracts represent 5% or more of ARR at the Locked Box Date;
+
+"Purchase Price" has the meaning given in clause 3;
+
+"Shares" means the 10,000 ordinary shares of £0.01 each in the capital of the Company, being the entire issued share capital;
+
+"Warranties" means the warranties set out in Schedule 4.
+
+2. Sale and purchase
+
+2.1 Each Seller shall sell with full title guarantee, and the Buyer shall purchase, the Shares set against that Seller's name in Schedule 1, free from all encumbrances and together with all rights attaching to them at Completion.
+
+2.2 Neither party is obliged to complete the purchase of any of the Shares unless the purchase of all the Shares is completed simultaneously.
+
+3. Purchase Price
+
+3.1 The purchase price for the Shares is £18,500,000 (the "Purchase Price"), calculated on a locked-box basis by reference to the balance sheet of the Company at the Locked Box Date.
+
+3.2 The Purchase Price shall be satisfied at Completion as follows:
+
+(a) £16,650,000 in cash to the Sellers in the proportions set out in Schedule 1; and
+
+(b) £1,850,000 (the Escrow Amount) into the Escrow Account, to be held and released in accordance with clause 10.
+
+3.3 In addition, the Buyer shall pay the Earn-Out Payment (if any) in accordance with Schedule 7.
+
+4. Locked box
+
+4.1 Each Seller warrants that since the Locked Box Date there has been no Leakage to that Seller or any person connected with that Seller other than Permitted Leakage, and undertakes to pay to the Buyer on demand an amount equal to any Leakage received.
+
+5. Completion
+
+5.1 Completion shall take place at the offices of the Buyer's Solicitors on the Completion Date.
+
+5.2 At Completion the Sellers shall deliver the documents listed in Part 1 of Schedule 3 (including stock transfer forms, the share certificates, the resignations of the Sellers as directors, and the statutory books) and the Buyer shall pay the amounts in clause 3.2.
+
+6. Warranties
+
+6.1 Each Seller warrants to the Buyer that each of the Warranties is true and accurate at the date of this Agreement, except as fairly disclosed in the Disclosure Letter.
+
+6.2 A matter is "fairly disclosed" if disclosed in the Disclosure Letter with sufficient detail to enable a reasonable buyer to identify the nature and scope of the matter disclosed. The general disclosure of the Data Room does not fairly disclose a matter unless the relevant document itself discloses it with that detail.
+
+6.3 The Warranties are given subject to the limitations in Schedule 5.
+
+6.4 The Buyer confirms that at the date of this Agreement it is not actually aware of any fact or matter which would entitle it to bring a Claim, having made enquiry of Anders Lindqvist and Claire Baptiste only; this clause 6.4 does not apply to a Claim arising from the fraud or wilful concealment of a Seller.
+
+7. Restrictive covenants
+
+7.1 Each Seller undertakes that for a period of 3 years from Completion he or she shall not, directly or indirectly, carry on or be engaged in any business which competes with the business of the Company in the United Kingdom or Ireland.
+
+7.2 Each Seller undertakes that for 3 years from Completion he or she shall not solicit any Material Customer or any employee of the Company earning more than £60,000 per year.
+
+8. Tax covenant
+
+8.1 The Sellers covenant with the Buyer in the terms of Schedule 6 (Tax Covenant).
+
+9. Claims
+
+9.1 The Buyer shall give written notice of any Claim to the Sellers' Solicitors, specifying in reasonable detail the matter giving rise to the Claim and, so far as practicable, the amount claimed, within 18 months of the Completion Date (or 7 years in the case of a claim under the Tax Covenant).
+
+9.2 A Claim notified in accordance with clause 9.1 shall be deemed withdrawn unless legal proceedings have been issued and served within 9 months of the notice.
+
+10. Escrow
+
+10.1 The Escrow Amount shall be released to the Sellers at the end of the Escrow Period, less the amount of any Claim notified in accordance with clause 9.1 and not settled or withdrawn, which shall be retained until the Claim is determined or settled.
+
+10.2 Any amount agreed or determined to be due to the Buyer in respect of a Claim shall be paid first from the Escrow Account.
+
+11. Conduct of claims
+
+11.1 The Buyer shall keep the Sellers informed of any third-party claim which may give rise to a Claim and shall consult with the Sellers before settling it.
+
+12. Entire agreement
+
+12.1 This Agreement, the Disclosure Letter and the documents referred to in them constitute the entire agreement between the parties and supersede the heads of terms dated 17 January 2025.
+
+13. Governing law and jurisdiction
+
+13.1 This Agreement and any dispute arising out of or in connection with it are governed by the law of England and Wales, and the courts of England and Wales have exclusive jurisdiction.
+
+
+SCHEDULE 1 — THE SELLERS
+
+Seller | Shares | Proportion | Completion cash
+Imogen Hale | 5,500 ordinary shares | 55% | £9,157,500
+Rafael Duarte | 3,000 ordinary shares | 30% | £4,995,000
+Seedcorn EIS Fund III LP (by its manager, as a Minority Seller under the drag-along) | 1,000 ordinary shares | 10% | £1,665,000
+Priya Venkatesan (Minority Seller under the drag-along) | 500 ordinary shares | 5% | £832,500
+
+The Minority Sellers give only the title warranties in Part 1 of Schedule 4.
+
+SCHEDULE 4 — WARRANTIES
+
+Part 1 — Title and capacity
+
+1.1 Each Seller is the sole legal and beneficial owner of the Shares set against his or her name and has the right to transfer them.
+
+Part 2 — Accounts and financial
+
+4.1 The Accounts give a true and fair view of the state of affairs of the Company at 31 December 2024 and have been prepared in accordance with UK GAAP (FRS 102).
+
+4.3 The ARR schedule in the Data Room (document 2.3) is complete and accurate in all material respects and shows ARR of £5,900,000 at the Locked Box Date.
+
+Part 3 — Customers
+
+12.1 Document 3.1 of the Data Room contains true and complete copies of all Customer Contracts with the twenty largest customers by ARR.
+
+12.2 No Material Customer has, during the 12 months before the date of this Agreement, materially reduced its purchases from the Company.
+
+12.3 No Material Customer has given notice (whether or not in writing) to terminate, or not to renew, any Customer Contract, and so far as the Sellers are aware no Material Customer intends to do so.
+
+Part 4 — Employment
+
+14.1 Document 4.2 of the Data Room contains the contracts of all employees whose basic salary exceeds £60,000.
+
+14.4 No employee has been dismissed in the 12 months before the date of this Agreement other than as set out in the Disclosure Letter.
+
+Part 5 — Litigation
+
+15.1 Neither the Company nor any of its directors or employees (in that capacity) is engaged in any litigation, arbitration, tribunal or regulatory proceedings, and no such proceedings are pending or threatened against the Company, and so far as the Sellers are aware there are no circumstances likely to give rise to any such proceedings.
+
+15.2 No employee or former employee has made or threatened any claim against the Company.
+
+Part 6 — Intellectual property and information technology
+
+18.1 The Company owns or has valid licences to use all intellectual property used in its business.
+
+18.4 No software incorporated in the Company's products is licensed under a copyleft open-source licence (including the GNU General Public License or Affero General Public License) in a manner that requires, or would require on distribution or provision as a service, the disclosure or licensing of the source code of the Company's proprietary software.
+
+18.5 Document 5.3 of the Data Room is a complete list of open-source software incorporated in the Company's products.
+
+
+SCHEDULE 5 — LIMITATIONS ON CLAIMS
+
+1. The aggregate liability of the Sellers for all Claims (other than claims under the title warranties or the Tax Covenant) shall not exceed 25% of the Purchase Price, being £4,625,000.
+
+2. The Sellers shall not be liable for any individual Claim unless the amount of the Claim exceeds £25,000 (a "Qualifying Claim").
+
+3. The Sellers shall not be liable for any Qualifying Claim unless the aggregate amount of all Qualifying Claims exceeds £185,000, in which case the Sellers shall be liable for the whole amount and not only the excess.
+
+4. The Sellers shall not be liable for any Claim to the extent that the matter giving rise to it was fairly disclosed in the Disclosure Letter.
+
+5. The Sellers shall not be liable for any Claim to the extent that it arises from a change in law after Completion.
+
+6. Nothing in this Schedule limits the liability of a Seller for fraud or wilful concealment.
+
+SCHEDULE 7 — EARN-OUT
+
+1. Subject to this Schedule, the Buyer shall pay to the Sellers an Earn-Out Payment calculated by reference to ARR at 31 December 2025 (the "Test Date") as follows:
+
+(a) if ARR at the Test Date is £6,200,000 or more, £3,000,000;
+
+(b) if ARR at the Test Date is £5,500,000 or less, nil;
+
+(c) otherwise, £3,000,000 multiplied by (ARR minus £5,500,000) divided by £700,000.
+
+2.1 ARR at the Test Date shall be calculated in accordance with the definition in clause 1.1 and the accounting policies applied in the ARR schedule at the Locked Box Date.
+
+2.2 For the avoidance of doubt, a Customer Contract that has been signed but under which the customer has not gone live at the Test Date shall not be included, and a Customer Contract under which notice of termination or non-renewal has been given shall be excluded in full from the date of that notice.
+
+3. The Buyer shall deliver a draft ARR statement to the Sellers within 20 Business Days after the Test Date. The Sellers may dispute it by notice within 20 Business Days; if the parties cannot agree within a further 20 Business Days, the dispute shall be referred to an independent accountant whose determination shall be final and binding save for manifest error.
+
+4. The Buyer shall not take any action in bad faith with the intention of reducing the Earn-Out Payment.
+
+5. Any Earn-Out Payment shall be paid within 10 Business Days of the ARR statement becoming final.
+
+
+EXECUTION
+
+Signed by IMOGEN HALE — I. Hale — 14 March 2025
+
+Signed by RAFAEL DUARTE — R. Duarte — 14 March 2025
+
+Signed for and on behalf of CASTELLANE HOLDINGS LTD by ANDERS LINDQVIST, director — A. Lindqvist — 14 March 2025
+
+Witnessed by Sophie Adair, solicitor, Fenwick Rowe LLP, 1 Moorgate Place, London EC2R 6EA.

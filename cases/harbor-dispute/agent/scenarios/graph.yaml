@@ -1,0 +1,25 @@
+- id: graph-multihop
+  group: graph
+  tags:
+  - graph
+  turns:
+  - content: Who instructed the delay expert, and which party does that firm act for?
+    expect:
+      answer:
+        must_facts:
+        - Calloway Price LLP instructed Dr Helena Voss of Meridian Forensic Scheduling
+        - Calloway Price acts for Tidewell Fabrication
+- id: graph-research
+  group: graph
+  tags:
+  - graph
+  turns:
+  - content: Map the relationships between all the organisations and people in this case and explain the two chains of responsibility
+      for the Bay 3 slab issue.
+    timeout_s: 900
+    expect:
+      answer:
+        must_facts:
+        - Marc Pujol (Brisamar site manager) owned the slab risk R-04 and was to obtain the main contractor's survey
+        - Tomasz Wójcik (Tidewell) raised the slab concern and Levantina Topografía surveyed it for Tidewell
+        - Velden Controls BV is Tidewell's controls subcontractor

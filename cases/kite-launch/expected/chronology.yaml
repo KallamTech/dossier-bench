@@ -1,0 +1,59 @@
+case_version: 2
+events:
+- key: kickoff
+  date: 2025-07-08
+  text: 'Project Kite kickoff: launch of Kite Planner 3.0 set for 15 October 2025 with a £120,000 budget'
+  docs:
+  - brief
+  - kickoff-notes
+- key: quote
+  date: 2025-07-24
+  text: Pixelforge Studio quotes £24,500 for the launch video
+  docs:
+  - vendor-quote
+  - vendor-thread-1
+- key: quote-agreed
+  date: 2025-08-05
+  text: Launch video agreed at £21,000 with delivery by 3 October 2025
+  docs:
+  - vendor-thread-3
+- key: design-review
+  date: 2025-08-14
+  text: 'Design review of the new dashboard: approved with changes to the filter bar'
+  docs:
+  - design-review
+- key: beta-start
+  date: 2025-09-01
+  text: Beta starts with 12 customers including Holloway Logistics
+  docs:
+  - status-update
+  - beta-survey
+- key: sso-bug
+  date: 2025-09-12
+  text: Holloway reports that single sign-on fails for users with multiple roles
+  docs:
+  - customer-email
+  - status-update
+- key: slip
+  date: 2025-09-18
+  text: Launch moved from 15 October to 29 October 2025 because of the single sign-on bug
+  docs:
+  - status-update
+  - checklist
+- key: press-release-v2
+  date: 2025-09-26
+  text: Press release version 2 issued with the 29 October date and the Holloway quote
+  docs:
+  - press-release-v2
+- key: video-delivered
+  date: 2025-10-03
+  text: Pixelforge delivers the launch video
+  docs:
+  - vendor-thread-3
+  - checklist
+- key: go-no-go
+  date: 2025-10-22
+  text: Go / no-go meeting scheduled for 22 October 2025
+  docs:
+  - checklist
+  - whiteboard-photo

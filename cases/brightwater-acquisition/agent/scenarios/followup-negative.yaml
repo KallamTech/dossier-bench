@@ -1,0 +1,79 @@
+- id: followup-escrow
+  group: followup
+  tags:
+  - followup
+  turns:
+  - content: How much is in escrow and when is it due to be released?
+    expect:
+      answer:
+        must_facts:
+        - £1,850,000
+        - 18 months from completion on 30 April 2025, so 30 October 2026
+  - content: What has the buyer asked to happen to it, and what did the sellers reply?
+    expect:
+      answer:
+        must_facts:
+        - the buyer requires the whole escrow to be retained pending the claims
+        - the sellers refuse and offer a £250,000 retention with £1,600,000 released on 30 October 2026
+  - content: If the buyer's claims were all upheld at the amounts claimed, would the escrow cover them?
+    expect:
+      answer:
+        must_facts:
+        - 'no: £2,400,000 claimed against £1,850,000 in escrow'
+        - the shortfall of £550,000 would have to be recovered from the sellers directly
+- id: followup-arr-math
+  group: followup
+  tags:
+  - followup
+  - math
+  turns:
+  - content: What earn-out would be payable if ARR at the test date were £5,850,000?
+    expect:
+      answer:
+        must_facts:
+        - £1,500,000
+        - £3,000,000 multiplied by (5,850,000 minus 5,500,000) divided by 700,000
+  - content: And if the sellers are right about Northgate run-off but wrong about the signed-not-live contracts, where does
+      ARR land on their own numbers?
+    expect:
+      answer:
+        must_facts:
+        - £5,850,000 (6,250,000 minus 220,000 minus 180,000)
+        - an earn-out of £1,500,000
+- id: neg-no-indemnity
+  group: negative
+  tags:
+  - negative
+  turns:
+  - content: Quote the specific indemnity for Northgate churn in the SPA.
+    expect:
+      answer:
+        must_facts:
+        - states that the SPA contains no specific indemnity for Northgate churn
+        - notes that Hollis & Marr recommended one and that the earn-out was chosen instead
+        must_not_claim:
+        - a quoted indemnity clause presented as being in the SPA
+- id: neg-fact-not-in-case
+  group: negative
+  tags:
+  - negative
+  turns:
+  - content: What did the tribunal decide in Okafor's case?
+    expect:
+      answer:
+        must_facts:
+        - no tribunal decision is in the case; only the ET1 claim form of 20 May 2025 is on record
+        must_not_claim:
+        - an outcome, award or hearing date presented as fact
+- id: neg-wrong-premise
+  group: negative
+  tags:
+  - negative
+  turns:
+  - content: Why did Castellane pay £20 million for Brightwater?
+    expect:
+      answer:
+        must_facts:
+        - 'corrects the premise: the price was £18,500,000, not £20 million'
+        must_not_claim:
+        - an explanation that accepts £20 million as the price

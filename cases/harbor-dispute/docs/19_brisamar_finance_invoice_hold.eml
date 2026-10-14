@@ -1,0 +1,128 @@
+Subject: Invoice 0417 =?utf-8?b?4oCU?= payment on hold pending resolution of
+ delay claims
+From: "Marc Pujol" <m.pujol@brisamar-logistics.example>
+To: "Priya Nair" <p.nair@tidewellfab.example>
+Cc: =?utf-8?q?Luc=C3=ADa?= Ortega <l.ortega@brisamar-logistics.example>,
+ "Daniel Mercer" <d.mercer@tidewellfab.example>
+Date: Mon, 28 Apr 2025 16:02:33 +0200
+Message-ID: <20250428160233.NWL-FIN-2206@brisamar-logistics.example>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="==bench-invoice-hold=="
+
+--==bench-invoice-hold==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Priya,
+
+I refer to Tidewell's invoice No. 0417 dated 24 March 2025 for =E2=82=AC257,6=
+00 (Milestone 3, Mechanical Completion), which fell due on 23 April 2025.
+
+On instruction from Luc=C3=ADa Ortega, Brisamar is placing payment of this in=
+voice on hold pending resolution of the following:
+
+1. Brisamar's claim for delay damages under clause 10.1 running from the Mech=
+anical Completion date of 21 March 2025;
+2. the outstanding works in Bay 3, zone C4=E2=80=93C7, which Tidewell's notic=
+e of 21 March 2025 expressly excluded from Mechanical Completion.
+
+Please confirm by Friday 2 May 2025 the revised date on which Tidewell will a=
+chieve Practical Completion. Our finance department will review the position =
+once the delay claims are resolved.
+
+Kind regards,
+Marc Pujol
+Site Manager, Brisamar Logistics SA
+Pol=C3=ADgono Industrial Fuente del Jarro, Paterna (Valencia)
+
+--==bench-invoice-hold==
+MIME-Version: 1.0
+Content-Type: multipart/related; boundary="==bench-invoice-hold==1=="
+
+--==bench-invoice-hold==1==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><body style=3D"font-family: Arial, sans-serif; font-size: 11pt;">
+<p><img src=3D"cid:nwl-logo" alt=3D"Brisamar Logistics" width=3D"160"></p>
+<p>Dear Priya,</p>
+<p>I refer to Tidewell's invoice <b>No. 0417</b> dated 24 March 2025 for <b>&=
+euro;257,600</b> (Milestone 3, Mechanical Completion), which fell due on <b>2=
+3 April 2025</b>.</p>
+<p>On instruction from Luc&iacute;a Ortega, Brisamar is placing payment of th=
+is invoice <b>on hold</b> pending resolution of the following:</p>
+<ol>
+  <li>Brisamar's claim for delay damages under clause 10.1 running from the M=
+echanical Completion date of 21 March 2025;</li>
+  <li>the outstanding works in Bay 3, zone C4&ndash;C7, which Tidewell's noti=
+ce of 21 March 2025 expressly excluded from Mechanical Completion.</li>
+</ol>
+<p>Please confirm by <b>Friday 2 May 2025</b> the revised date on which Tidew=
+ell will achieve Practical Completion. Our finance department will review the=
+ position once the delay claims are resolved.</p>
+<p>Kind regards,<br>Marc Pujol<br>Site Manager, Brisamar Logistics SA<br>Pol&=
+iacute;gono Industrial Fuente del Jarro, Paterna (Valencia)</p>
+</body></html>
+
+--==bench-invoice-hold==1==
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="nwl-logo.png"
+Content-ID: <nwl-logo>
+MIME-Version: 1.0
+
+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
+AElFTkSuQmCC
+
+--==bench-invoice-hold==1==--
+
+--==bench-invoice-hold==--

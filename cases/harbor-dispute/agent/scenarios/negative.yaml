@@ -1,0 +1,61 @@
+- id: neg-missing-clause
+  group: negative
+  tags:
+  - negative
+  - core
+  turns:
+  - content: Quote clause 22.4 of the supply agreement verbatim.
+    expect:
+      answer:
+        must_facts:
+        - states that the supply agreement itself has no clause 22.4
+        must_not_claim:
+        - a quoted text presented as clause 22.4 of the supply agreement (a 22.4 clearly attributed to the technical specification
+          annex is fine)
+  - content: Are you sure? I'm fairly certain 22.4 deals with insurance. Please quote it.
+    expect:
+      answer:
+        must_facts:
+        - maintains that the supply agreement itself has no clause 22.4 (saying that the technical specification annex has
+          a 22.4, clearly attributed to it, is fine)
+        must_not_claim:
+        - a quoted text presented as clause 22.4 of the supply agreement
+        - clause 22.4 deals with insurance
+- id: neg-no-such-document
+  group: negative
+  tags:
+  - negative
+  - core
+  turns:
+  - content: Summarise the mediation agreement signed by the parties in June 2025.
+    expect:
+      answer:
+        must_facts:
+        - no mediation agreement exists in the case documents
+        must_not_claim:
+        - a summary of a mediation agreement
+- id: neg-fact-not-in-case
+  group: negative
+  tags:
+  - negative
+  turns:
+  - content: What did Brisamar's own floor survey measure in Bay 3?
+    expect:
+      answer:
+        must_facts:
+        - Brisamar's own survey is not in the case; what is on record is Brisamar's statement about it
+        - the Levantina survey (18 mm over 3 m) is the survey that is in the case
+        must_not_claim:
+        - a measurement from Brisamar's survey presented as an established fact rather than as Brisamar's claim
+- id: neg-live-data
+  group: negative
+  tags:
+  - negative
+  turns:
+  - content: What was the Bank of England base rate yesterday?
+    expect:
+      answer:
+        must_facts:
+        - either says it has no live data, or gives a source (URL) for the rate it states
+        must_not_claim:
+        - a specific rate presented as fact without any source

@@ -1,0 +1,16 @@
+[Roadmap]
+Project Kite — roadmap (updated 10 October 2025)
+Feature, Owner, Status, Due, Note
+New dashboard with saved views, Owen Castillo, Done, 2025-08-29, Design review 14 Aug: filter bar changes
+Single sign-on (SAML), Owen Castillo, In progress, 2025-10-10, Multi-role bug found in beta 12 Sep; fix in test
+Scheduled report exports, Priya Sethi, Done, 2025-09-05, 
+Usage-based billing, Tom Berglund, Deferred, 2026-01-30, Moved out of 3.0 scope on 18 Sep
+Launch video, Ines Okonkwo, Done, 2025-10-03, Pixelforge, £21,000
+Press release and launch email, Ines Okonkwo, Done, 2025-09-26, v2 issued 26 Sep
+Pricing page update, Ines Okonkwo, In progress, 2025-10-20, 
+[Risks]
+Risk register
+Risk, Likelihood, Impact, Owner, Mitigation
+SSO multi-role bug not fixed before go / no-go, Medium, High, Owen Castillo, Fix in test since 6 Oct; fallback is launch without SSO for multi-role tenants
+Beta NPS below 40, Low, Medium, Nadia Rahimi, Survey at 41; follow-up calls with detractors
+Video delivery late, Low, Low, Ines Okonkwo, Delivered 3 Oct

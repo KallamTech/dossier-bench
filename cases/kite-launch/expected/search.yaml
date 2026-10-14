@@ -1,0 +1,60 @@
+case_version: 2
+queries:
+- query: launch date moved to 29 October
+  expect:
+  - status-update
+  - checklist
+  - press-release-v2
+  k: 5
+- query: single sign-on multiple roles bug
+  expect:
+  - customer-email
+  - status-update
+  - roadmap
+  k: 5
+- query: launch video quote
+  expect:
+  - vendor-quote
+  - vendor-thread-1
+  k: 5
+- query: beta NPS score
+  expect:
+  - beta-survey
+  - status-update
+  k: 5
+- query: budget paid media actual
+  expect:
+  - budget
+  k: 3
+- query: filter bar design review
+  expect:
+  - design-review
+  k: 3
+- query: go no-go meeting
+  expect:
+  - checklist
+  - whiteboard-photo
+  k: 5
+- query: usage-based billing deferred
+  expect:
+  - roadmap
+  - status-update
+  k: 5
+- query: customer quote press release
+  expect:
+  - press-release-v2
+  k: 3
+- query: two rounds of revisions delivery formats
+  expect:
+  - vendor-quote
+  - injection
+  k: 5
+- query: weekly status update owner
+  expect:
+  - kickoff-notes
+  k: 3
+- query: dark mode
+  expect:
+  - design-review
+  - beta-survey
+  k: 5

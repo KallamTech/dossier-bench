@@ -1,0 +1,29 @@
+# PROJECT KITE — WEEKLY STATUS UPDATE
+
+**Week 38 — Friday 19 September 2025** — Nadia Rahimi
+
+**Overall status:** AMBER (was green last week)
+
+## Headline
+
+The launch moves from 15 October to **29 October 2025**. Decided on Thursday 18 September with Owen, Ines and Tom. Reason: the single sign-on bug reported by Holloway Logistics on 12 September (users with more than one role cannot sign in through SAML) is a blocker for enterprise customers and the fix needs two more weeks of testing.
+
+## This week
+
+- Beta survey closed: 12 responses, NPS 41 (7 promoters, 3 passives, 2 detractors). Target was 40.
+- Holloway Logistics (score 6) and Dunmore Council (score 5) are the detractors; both have follow-up calls booked.
+- Usage-based billing is deferred out of 3.0 to 30 January 2026 to protect the engineering time for the SSO fix.
+- Press release v2 goes out on 26 September with the new date and a quote from Kwame Mensah at Holloway, who agreed despite the bug.
+
+## Next week
+
+- Owen: SSO fix into test by 6 October.
+- Ines: paid media start moved to 20 October; venue holds the new date.
+- Tom: budget unchanged; £70,300 spent of £120,000.
+
+## Risks
+
+| Risk | Likelihood | Impact | Mitigation |
+| --- | --- | --- | --- |
+| SSO fix not signed off before go / no-go (now 22 October) | Medium | High | Fallback: launch without SSO for multi-role tenants |
+| Beta detractors churn | Low | Medium | Calls booked |

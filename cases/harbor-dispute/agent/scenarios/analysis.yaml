@@ -1,0 +1,14 @@
+- id: modes-analysis
+  group: analysis
+  tags:
+  - core
+  turns:
+  - content: Walk me through, step by step, whether Tidewell was entitled to an extension of time under the agreement, citing
+      the clauses and the evidence.
+    expect:
+      answer:
+        must_facts:
+        - clause 9.1(b) makes the Buyer's failure under clause 6 a delay event
+        - slab tolerance under clause 6.2 and power supply under clause 6.4 were Brisamar's responsibility
+        - notices of 21 February and 9 March 2025 were given under clause 9.2
+        - expert supports 23 days extension

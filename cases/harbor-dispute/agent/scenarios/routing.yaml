@@ -1,0 +1,88 @@
+- id: route-spreadsheet
+  group: routing
+  tags:
+  - routing
+  - spreadsheet
+  turns:
+  - content: Using the change order register spreadsheet, what is the variance in days between the re-baselined and actual
+      delivery milestone?
+    expect:
+      answer:
+        must_facts:
+        - 6 days (actual 20 February 2025 vs re-baseline 14 February 2025)
+- id: route-photo
+  group: routing
+  tags:
+  - routing
+  - vision
+  turns:
+  - content: Look at the site photo. What does the sign say and what date was the photo taken?
+    expect:
+      answer:
+        must_facts:
+        - installation suspended pending floor re-level
+        - Bay 3, conveyor line 2
+        - 14 March 2025
+- id: route-family
+  group: routing
+  tags:
+  - routing
+  - families
+  turns:
+  - content: Show me the version history of the supply agreement.
+    expect:
+      answer:
+        must_facts:
+        - original agreement 4 November 2024
+        - amended and restated 20 January 2025
+- id: route-timeline
+  group: routing
+  tags:
+  - routing
+  - timeline
+  turns:
+  - content: What happened in the case in March 2025, in date order?
+    expect:
+      answer:
+        must_facts:
+        - 9 March second delay notice
+        - 11 March Brisamar rejects extension
+        - 14 March installation suspended
+        - 18 March power energised
+        - 21 March mechanical completion notified
+        - 24 March invoice 0417
+        - 28 March CO-4
+- id: route-page
+  group: routing
+  tags:
+  - routing
+  turns:
+  - content: Open the delay expert report and tell me what Appendix A is.
+    expect:
+      answer:
+        must_facts:
+        - Appendix A is a chronology table of the project events with document sources
+- id: route-web
+  group: routing
+  tags:
+  - routing
+  - web
+  turns:
+  - content: What does the current Society of Construction Law Delay and Disruption Protocol say about concurrent delay? Cite
+      your source.
+    expect:
+      answer:
+        must_facts:
+        - an answer about the SCL Protocol's treatment of concurrent delay with a cited URL
+- id: route-graph
+  group: routing
+  tags:
+  - routing
+  - graph
+  turns:
+  - content: Who works for Brisamar, and who works for Tidewell, according to the documents?
+    expect:
+      answer:
+        must_facts:
+        - Lucía Ortega and Marc Pujol work for Brisamar
+        - Daniel Mercer, Priya Nair and Tomasz Wójcik work for Tidewell

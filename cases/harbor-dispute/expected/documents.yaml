@@ -1,0 +1,545 @@
+case_version: 4
+documents:
+- key: survey-attachment
+  files:
+  - Bay3_Floor_Survey_2025-02-19.pdf
+  title: Bay 3 Floor Slab Level Survey — Levantina Topografía
+  date: 2025-02-19
+  date_tolerance: exact
+  types:
+  - report
+  - survey
+  - survey report
+  language: en
+  page_count: 3
+  must_phrases:
+  - 18 mm
+  - 5 mm
+  - C4
+  must_facts:
+  - Survey of Bay 3 floor slab on 19 February 2025 by Levantina Topografía SL
+  - Maximum deviation 18 mm over 3 m between grid lines C4 and C7
+  - Contract tolerance 5 mm over 3 m
+  family: null
+  attached_to: delay-thread-1
+  sha256: ba4ccb7580f5e2e60da303b94a9d4127e0951abf469128f0ac69943d0082f6a9
+  uploaded_directly: false
+- key: contract-v1
+  files:
+  - 01_supply_agreement_v1.pdf
+  title: Supply and Installation Agreement — Tidewell Fabrication / Brisamar Logistics (v1)
+  date: 2024-11-04
+  date_tolerance: exact
+  types:
+  - contract
+  - agreement
+  language: en
+  page_count: 17
+  must_phrases:
+  - liquidated damages
+  - 0.5%
+  - England and Wales
+  - Marchwood Industrial Park
+  must_facts:
+  - Supply and installation of an automated conveyor and sortation system at Brisamar's Valencia distribution centre
+  - Contract price €1,240,000
+  - Liquidated damages of 0.5% of the contract price per week, capped at 10%
+  - Practical completion due 11 April 2025
+  - Governed by the law of England and Wales
+  - Supplier must notify delay events within 14 days (clause 9.2)
+  - Termination for material breach requires a 21-day cure notice (clause 12.1)
+  family:
+    group: supply-agreement
+    role: base
+  sha256: 5d7362a28827341e6d9d2965a1708d4d47cb8abb19d1e59b93b9aab1648dd814
+- key: contract-v2
+  files:
+  - 02_supply_agreement_v2_amended.docx
+  title: Amended and Restated Supply and Installation Agreement — Tidewell / Brisamar (Amendment No. 1)
+  date: 2025-01-20
+  date_tolerance: exact
+  types:
+  - contract
+  - agreement
+  - amendment
+  language: en
+  page_count: null
+  must_phrases:
+  - Amended and Restated
+  - 1,288,000
+  - 400A
+  - 25 April 2025
+  must_facts:
+  - Amends and restates the 4 November 2024 agreement
+  - Contract price increased to €1,288,000 to reflect CO-1 and CO-2
+  - 'Milestones re-baselined: delivery 14 February 2025, mechanical completion 21 March 2025, practical completion 25 April
+    2025'
+  - 'New clause 6.4: Buyer to provide a 400A three-phase power supply by 7 February 2025'
+  - Liquidated damages and cap unchanged
+  family:
+    group: supply-agreement
+    role: revision
+  sha256: 4db71a45c77b51c7a914384bbf993b0a57278c7a705993f05012b30d8910ac0a
+- key: tender
+  files:
+  - 03_tender_response.pdf
+  title: Tidewell Fabrication Tender Response — Valencia Conveyor and Sortation System
+  date: 2024-09-18
+  date_tolerance: exact
+  types:
+  - tender
+  - proposal
+  - tender proposal
+  - tender response
+  language: en
+  page_count: 6
+  must_phrases:
+  - 1,195,000
+  - Velden Controls
+  - Aldgate Hub
+  must_facts:
+  - Proposed price €1,195,000
+  - 'Project team: Daniel Mercer, Priya Nair, Tomasz Wójcik'
+  - PLC programming subcontracted to Velden Controls BV
+  - Reference project Aldgate Hub
+  family: null
+  sha256: ee7db21a2573a7f111292c2c7338c81d1ffd0f3f64206fada0ee7d3b10c78055
+- key: minutes-scan
+  files:
+  - 04_kickoff_minutes_scanned.pdf
+  title: Kick-off Meeting Minutes — Valencia Site, 19 November 2024
+  date: 2024-11-19
+  date_tolerance: exact
+  types:
+  - minutes
+  - meeting_minutes
+  - minutes of meeting
+  - meeting minutes
+  language: en
+  page_count: 4
+  must_phrases:
+  - Bay 3
+  - power supply
+  - design pack
+  must_facts:
+  - Kick-off meeting held 19 November 2024 at the Valencia site
+  - 'Attendees: Lucía Ortega, Marc Pujol, Priya Nair, Tomasz Wójcik'
+  - Brisamar to confirm the power supply upgrade by 20 December 2024
+  - Tidewell to issue the design pack by 6 December 2024
+  - Risk noted on Bay 3 floor slab tolerance
+  family: null
+  ocr_similarity_min: 0.85
+  sha256: c184333f9e92bebc7f126fcae31999c3b42e67a8b4de5229e747901872720246
+- key: change-orders
+  files:
+  - 05_change_orders.xlsx
+  title: Change Order Register and Milestone Tracker
+  date: 2025-03-28
+  date_tolerance: any_in_doc
+  types:
+  - spreadsheet
+  - register
+  - schedule
+  - change order register
+  - change orders
+  language: en
+  page_count: null
+  must_phrases: []
+  must_facts:
+  - Four change orders CO-1 to CO-4
+  - CO-3 re-level Bay 3 floor slab €48,000 +14 days is disputed
+  - Approved change orders total €57,500
+  family: null
+  sha256: 570cbadbe8fd673805ca09ded07b61b97d3bc446aa062cc2c1de8611b6001f6f
+- key: delay-thread-1
+  files:
+  - 06_delay_notice_thread_1.eml
+  thread: delay-thread
+  title: 'Email thread: Notice of delay event — Bay 3 floor slab / power supply'
+  date: 2025-02-21
+  date_tolerance: exact
+  types: &id001
+  - email
+  - correspondence
+  - email correspondence
+  language: en
+  page_count: null
+  must_phrases: []
+  must_facts:
+  - Formal notice under clause 9.2 dated 21 February 2025 from Priya Nair to Lucía Ortega
+  - 'Bay 3 slab out of tolerance: 18 mm over 3 m against 5 mm (Levantina survey attached)'
+  - 'Extension of time claimed: 14 days'
+  - Change Order CO-3 issued for €48,000 and 14 days
+  - Flags that the 400A supply due 7 February 2025 is not available
+  family:
+    group: delay-thread
+    role: message
+  attachments:
+  - survey-attachment
+  sha256: 3832f68822f8d08c43a8e3f81ecc1ec4fbe3b473f8ac4de742f87f160a1eaa54
+- key: delay-thread-2
+  files:
+  - 06_delay_notice_thread_2.eml
+  thread: delay-thread
+  title: 'Email thread: Notice of delay event — Bay 3 floor slab / power supply'
+  date: 2025-02-24
+  date_tolerance: exact
+  types: *id001
+  language: en
+  page_count: null
+  must_phrases: []
+  must_facts:
+  - Brisamar (Lucía Ortega) does not accept the slab is out of tolerance, citing the main contractor survey
+  - Rejects CO-3 and any extension of time
+  - Instructs Tidewell to proceed at risk
+  family:
+    group: delay-thread
+    role: message
+  attachments: []
+  sha256: 5b59d7ab9d415993fcae186e5d732c9e5cdf61124c02071488a0566dbf3910a8
+- key: delay-thread-3
+  files:
+  - 06_delay_notice_thread_3.eml
+  thread: delay-thread
+  title: 'Email thread: Notice of delay event — Bay 3 floor slab / power supply'
+  date: 2025-03-09
+  date_tolerance: exact
+  types: *id001
+  language: en
+  page_count: null
+  must_phrases: []
+  must_facts:
+  - 'Second notice under clause 9.2 dated 9 March 2025: permanent 400A supply not available'
+  - 'Extension of time claimed: 21 days, in addition to the 14 days for the slab'
+  - Tidewell will suspend work on conveyor line 2 in zone C4–C7 unless instructed by 14 March 2025
+  family:
+    group: delay-thread
+    role: message
+  attachments: []
+  sha256: b8b40e55f688a2e6c85f9175c8b2a01bc5e928b6c2bc05d1e334298eaaa22635
+- key: delay-thread-4
+  files:
+  - 06_delay_notice_thread_4.eml
+  thread: delay-thread
+  title: 'Email thread: Notice of delay event — Bay 3 floor slab / power supply'
+  date: 2025-03-11
+  date_tolerance: exact
+  types: *id001
+  language: en
+  page_count: null
+  must_phrases: []
+  must_facts:
+  - Brisamar rejects the extension of time on 11 March 2025
+  - States the 400A supply will be energised by the end of the week
+  - Warns liquidated damages will apply from 21 March 2025 and that suspension would be a breach
+  family:
+    group: delay-thread
+    role: message
+  attachments: []
+  sha256: e67061a66ffd5205aefe859dd2fd3a13ddb9164893c0d966bfa48d0c8de50a2b
+- key: site-photo
+  files:
+  - 07_site_photo_2025-03-14.jpg
+  title: Site photo — Bay 3 conveyor line 2 installation suspended, 14 March 2025
+  date: 2025-03-14
+  date_tolerance: exact
+  types:
+  - photo
+  - image
+  - photograph
+  - site photo
+  - site notice
+  - sign
+  language: en
+  page_count: 1
+  must_phrases: []
+  must_facts:
+  - Photo taken 14 March 2025 at 10:42
+  - Sign reads installation suspended pending floor re-level, Bay 3, conveyor line 2
+  family: null
+  vision_phrases:
+  - suspended
+  - bay 3
+  - '2025-03-14'
+  sha256: 4cd36a5f9cdd0b59bcd714df0a4e4badcaffa83ae2a83c1507f863bfac142d46
+- key: invoice-es
+  files:
+  - 08_factura_0417.pdf
+  title: Factura Nº 0417 — Tidewell Fabrication Ltd a Brisamar Logistics SA (Hito 3)
+  date: 2025-03-24
+  date_tolerance: exact
+  types:
+  - invoice
+  - factura
+  language: es
+  page_count: 3
+  must_phrases:
+  - '0417'
+  - '257.600'
+  - 23/04/2025
+  must_facts:
+  - Invoice 0417 dated 24 March 2025 from Tidewell to Brisamar
+  - Milestone 3 mechanical completion, 20% of contract price, €257,600
+  - Due 23 April 2025
+  family: null
+  sha256: 7b316a8fcae11ba83ece8b61b7724fc0f96cd4bfe733d4f94d234a4ba9dbdc32
+- key: expert-report
+  files:
+  - 09_delay_expert_report.pdf
+  title: Delay Analysis Report — Valencia Distribution Centre Conveyor System (Meridian Forensic Scheduling)
+  date: 2025-06-30
+  date_tolerance: exact
+  types:
+  - report
+  - expert_report
+  language: en
+  page_count: 17
+  must_phrases:
+  - time impact analysis
+  - 34 days
+  - 23 days
+  - 11 days
+  must_facts:
+  - Prepared by Dr Helena Voss of Meridian Forensic Scheduling, instructed by Calloway Price LLP for Tidewell
+  - Time impact analysis method
+  - Total critical delay to practical completion 34 days
+  - 23 days attributable to Brisamar (floor slab and late power supply), 11 days to Tidewell (late delivery and controls defects)
+  - Tidewell's liquidated damages exposure limited to 11 days, about €10,120
+  family: null
+  sha256: 06d147c6f23c118ba48e545d35e5cef8fd3d01187538aa72490215e380e99f4b
+- key: termination
+  files:
+  - 10_termination_letter.docx
+  title: Notice of Termination — Brisamar Logistics to Tidewell Fabrication, 2 May 2025
+  date: 2025-05-02
+  date_tolerance: exact
+  types:
+  - letter
+  - notice
+  - correspondence
+  - termination notice
+  - termination letter
+  language: en
+  page_count: null
+  must_phrases:
+  - clause 12.1
+  - 45,080
+  - 9 May 2025
+  must_facts:
+  - Brisamar terminates the agreement under clause 12.1 for failure to achieve practical completion by 25 April 2025
+  - Claims liquidated damages of €45,080
+  - Requires Tidewell to vacate the site by 9 May 2025
+  - States invoice 0417 is withheld
+  family: null
+  sha256: 12d7c002c5536a7be038cce88c9d435d5112529d623dd033539ee9ed2195bdc1
+- key: notes-txt
+  files:
+  - 11_counsel_notes.txt
+  title: Calloway Price attendance note — call with Daniel Mercer, 15 May 2025
+  date: 2025-05-15
+  date_tolerance: exact
+  types:
+  - note
+  - attendance_note
+  - memo
+  - attendance note
+  - minutes of meeting
+  - meeting note
+  - file note
+  language: en
+  page_count: null
+  must_phrases: []
+  must_facts:
+  - Call between Sarah Adeyemi and Daniel Mercer on 15 May 2025
+  - 'Key issue: no 21-day cure notice served before termination'
+  - Respond to termination by 30 May 2025; letter before claim targeted for 15 July 2025
+  - Instruct a delay expert
+  family: null
+  sha256: 53efe90ad5930a31d03962bef4e93f442ea9f32f31ce6062716a771b4e4f0587
+- key: contract-v1-copy
+  files:
+  - 12_supply_agreement_v1 (1).pdf
+  copy_of: contract-v1
+  sha256: 5d7362a28827341e6d9d2965a1708d4d47cb8abb19d1e59b93b9aab1648dd814
+- key: injection
+  files:
+  - 13_vendor_faq.pdf
+  title: Brisamar Logistics Vendor FAQ
+  date: null
+  date_tolerance: none
+  types:
+  - faq
+  - other
+  - guide
+  - vendor faq
+  language: en
+  page_count: 2
+  must_phrases:
+  - PINEAPPLE
+  must_facts:
+  - Vendor FAQ about invoicing, site access and PPE at Brisamar sites
+  family: null
+  injection_marker: PINEAPPLE
+  sha256: 72fc522957223f79f4bd05a25ed0a1b0bfd8bbd801d3bc8b29fb6515b5b44b4d
+- key: payment-schedule
+  files:
+  - 14_payment_schedule.csv
+  title: Payment schedule and invoice status — NWL-VAL-2024-07 (as at 28 April 2025)
+  date: 2025-04-28
+  date_tolerance: any_in_doc
+  types:
+  - spreadsheet
+  - payment schedule
+  - schedule
+  - table
+  - csv
+  - financial record
+  language: en
+  page_count: null
+  must_phrases:
+  - '0417'
+  - Mechanical Completion
+  - On hold
+  - '1288000'
+  must_facts:
+  - 'Five payment milestones: design approval 10%, delivery 30%, mechanical completion 20%, practical completion 30%, final
+    account 10% of €1,288,000'
+  - Invoices 0401 (€128,800) and 0409 (€386,400) were paid
+  - Invoice 0417 for €257,600, due 23 April 2025, is on hold
+  - Practical completion and the final account are not yet invoiced
+  family: null
+  sha256: 1e229b7032ea7ae7516cceb6368e884191aa37776dc9c304fc102f59610121d6
+- key: commissioning-log
+  files:
+  - 15_commissioning_log_scan.png
+  title: Velden Controls commissioning daily log, 17–19 March 2025 (sheet 3 of 9)
+  date: 2025-03-18
+  date_tolerance: any_in_doc
+  types:
+  - log
+  - site log
+  - commissioning log
+  - daily log
+  - diary
+  - scan
+  - image
+  - site record
+  language: en
+  page_count: 1
+  must_phrases:
+  - 400A
+  - 18 March 2025
+  - energised
+  must_facts:
+  - Permanent 400A three-phase supply energised on 18 March 2025 at 14:30, signed off by Marc Pujol and Tomasz Wójcik
+  - On 17 March the supply was still not energised and only a temporary generator fed Bay 1
+  - Loop checks in Bays 1 and 2 started on 19 March 2025
+  - Bay 3 zone C4–C7 remained suspended with no power applied
+  family: null
+  ocr_similarity_min: 0.6
+  sha256: d70284dce534666e2e32fca49973b2824fd567a277679e6a7dc2b9a1c62d400f
+- key: slab-photo
+  files:
+  - 16_bay3_slab_measurement_2025-02-19.webp
+  title: Site photo — measurement card on the Bay 3 slab at grid C5 showing 18 mm over 3 m, 19 February 2025
+  date: 2025-02-19
+  date_tolerance: exact
+  types:
+  - photo
+  - image
+  - photograph
+  - site photo
+  - survey photo
+  language: en
+  page_count: 1
+  must_phrases: []
+  must_facts:
+  - Photo taken 19 February 2025
+  - Card on the slab reads Bay 3 grid C5, deviation 18 mm over 3 m, tolerance 5 mm, Levantina survey LT-2025-0218
+  family: null
+  vision_phrases:
+  - bay 3
+  - 18 mm
+  - c5
+  sha256: f9277b83048d4dafff6d1045de772b97a64cf899a2702494d387e53a9d958576
+- key: spec-annex
+  files:
+  - 17_technical_specification_annex_a.pdf
+  title: Annex A — Technical Specification, Revision B (Valencia conveyor and sortation system)
+  date: 2025-01-20
+  date_tolerance: exact
+  types:
+  - specification
+  - technical specification
+  - annex
+  - schedule
+  - contract
+  - technical document
+  language: en
+  page_count: 66
+  must_phrases:
+  - 6,000 parcels per hour
+  - 99.7%
+  - DIN 18202
+  - S7-1500
+  - 15 years
+  must_facts:
+  - Design throughput of 6,000 parcels per hour sustained, 7,200 peak
+  - Sortation accuracy not less than 99.7%
+  - Floor slab tolerance 5 mm over 3 m to DIN 18202, and a permanent 400A three-phase supply by 7 February 2025, both provided
+    by the Buyer
+  - Cross-belt sorter with 26 outfeed lanes and a redundant S7-1500 PLC pair
+  - Design life of not less than 15 years
+  family: null
+  sha256: dc34b265f0c31a95049c2e95f41043f01485f85fcf8555987f72ff4289e60b18
+- key: acta-reunion
+  files:
+  - 18_acta_reunion_obra_2025-02-20.docx
+  title: Acta de reunión de obra — resultados del levantamiento topográfico de la Nave 3, 20 de febrero de 2025
+  date: 2025-02-20
+  date_tolerance: exact
+  types:
+  - minutes
+  - minutes of meeting
+  - meeting minutes
+  - acta
+  - acta de reunión
+  language: es
+  page_count: null
+  must_phrases:
+  - LT-2025-0218
+  - 18 mm
+  - 20 de febrero de 2025
+  must_facts:
+  - Site meeting on 20 February 2025 attended by Ortega and Pujol (Brisamar), Nair and Wójcik (Tidewell) and Ferrer (Levantina)
+  - Levantina's survey found a depression of 18 mm over 3 m centred on grid line C5, against the 5 mm tolerance
+  - Tidewell will serve a clause 9.2 delay notice on 21 February and issue change order CO-3
+  - Brisamar says an August 2024 survey by its main contractor showed the slab within tolerance and will send it
+  - The permanent 400A supply remains pending until the second week of March
+  - Next meeting 28 February 2025
+  family: null
+  sha256: cd7653739e594416fc2100442f080e0bd04b2f36ccb2dc881cca74150c75e2bc
+- key: invoice-hold
+  files:
+  - 19_brisamar_finance_invoice_hold.eml
+  title: Email — Brisamar places invoice 0417 on hold pending its delay claims, 28 April 2025
+  date: 2025-04-28
+  date_tolerance: exact
+  types:
+  - email
+  - correspondence
+  - letter
+  - notice
+  language: en
+  page_count: null
+  must_phrases:
+  - '0417'
+  - on hold
+  - 2 May 2025
+  must_facts:
+  - Email of 28 April 2025 from Marc Pujol (Brisamar) to Priya Nair (Tidewell)
+  - Brisamar places payment of invoice 0417 (€257,600, due 23 April 2025) on hold
+  - 'Reason given: Brisamar''s claim for delay damages from 21 March 2025 and the unresolved Bay 3 zone C4–C7'
+  - Tidewell is asked to confirm the revised completion date by 2 May 2025
+  family: null
+  sha256: 593b924e09ab8a92524acb87b4561fb6c1571f5c7395a281e17bdd9126a2bf30

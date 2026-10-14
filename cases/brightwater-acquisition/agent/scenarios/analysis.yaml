@@ -1,0 +1,78 @@
+- id: analysis-warranty-12-3
+  group: analysis
+  tags:
+  - analysis
+  - core
+  turns:
+  - content: Assess the buyer's claim for breach of warranty 12.3. Was the Northgate notice fairly disclosed, and does clause
+      6.4 help the sellers?
+    timeout_s: 900
+    expect:
+      answer:
+        must_facts:
+        - 'warranty 12.3 was breached on its face: Northgate had given notice on 7 February 2025, before signing on 14 March
+          2025'
+        - the disclosure letter said renewal discussions were ongoing and did not disclose the notice
+        - clause 6.2 requires disclosure with sufficient detail to identify the nature and scope of the matter, so a general
+          risk flag is not fair disclosure of the notice
+        - clause 6.4 (buyer's knowledge) does not apply to wilful concealment, and the board minutes of 11 February record
+          a decision not to volunteer the notice
+      citations:
+        must_include_docs:
+        - spa
+        - disclosure-letter
+        - board-minutes
+        min: 3
+- id: analysis-earnout-arguments
+  group: analysis
+  tags:
+  - analysis
+  - core
+  turns:
+  - content: Who has the better of the earn-out dispute on the wording of schedule 7? Deal with the Northgate transition fee
+      and the signed-not-live contracts separately.
+    timeout_s: 900
+    expect:
+      answer:
+        must_facts:
+        - paragraph 2.2 excludes a contract under which notice of non-renewal has been given from the date of the notice,
+          which supports Castellane on Northgate
+        - the transition arrangement is a time-limited services fee, not recurring subscription under a customer contract
+        - paragraph 2.2 excludes contracts not live at the test date, so Kestrel and Dunmore count only if live on 31 December
+          2025
+        - the sellers' bad-faith argument under paragraph 4 turns on who caused the go-live delays
+      citations:
+        must_include_docs:
+        - spa
+        - earnout-thread-2
+        - earnout-thread-3
+        min: 3
+- id: analysis-okafor-timing
+  group: analysis
+  tags:
+  - analysis
+  turns:
+  - content: Can a tribunal claim presented on 20 May 2025 be a breach of warranty 15.1 given on 14 March 2025?
+    expect:
+      answer:
+        must_facts:
+        - the warranty covers claims pending or threatened at signing and circumstances likely to give rise to proceedings
+        - Okafor's email of 3 March 2025 said she would bring a claim unless a settlement was agreed, so a claim was arguably
+          threatened before signing
+        - the disclosure letter described only a resolved informal grievance and a settlement discussion
+- id: analysis-quantum-vs-limits
+  group: analysis
+  tags:
+  - analysis
+  - math
+  turns:
+  - content: If the Northgate claim fails but the Okafor and open-source claims succeed at the amounts claimed, do the remaining
+      claims clear the basket?
+    expect:
+      answer:
+        must_facts:
+        - Okafor £220,000 and open-source £180,000 total £400,000
+        - both exceed the £25,000 de minimis
+        - £400,000 exceeds the £185,000 basket, so the whole £400,000 would be recoverable
+        - the sellers' letter is wrong to say the open-source claim alone falls below the basket if the Okafor claim also
+          succeeds

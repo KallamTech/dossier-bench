@@ -1,0 +1,25 @@
+# Copy to dossier-bench.yaml (gitignored). Secrets can come from the environment instead:
+# DOSSIER_JUDGE_API_KEY / DOSSIER_JUDGE_BASE_URL / DOSSIER_JUDGE_MODEL, OPENAI_API_KEY for the baseline.
+
+# Pin one judge model and keep it fixed across the runs you compare.
+judge:
+  base_url: https://api.openai.com/v1
+  model: ""                  # e.g. a strong general model; temperature 0, JSON output
+  price_per_m: { input: 0, output: 0 }   # USD per million tokens, for the judge cost column
+
+# The system under test. The reference baseline needs any OpenAI-compatible chat model.
+adapter:
+  class: dossier_bench.baselines.llm:LLMBaseline
+  options:
+    model: ""
+    # base_url: http://localhost:11434/v1   # e.g. a local Ollama
+    vision: false            # true = transcribe scans and photos with the same model
+    price_per_m: { input: 0, output: 0 }
+
+thresholds:                  # `compare` flags an item that breaks any of these against the baseline
+  quality: { min_abs: 0.6, max_drop: 0.10 }
+  latency: { max_increase_pct: 25 }
+  cost: { max_increase_pct: 20 }
+
+runs_dir: runs
+baselines_dir: baselines

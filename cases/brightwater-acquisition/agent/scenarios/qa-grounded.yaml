@@ -1,0 +1,199 @@
+- id: qa-price-structure
+  group: qa-grounded
+  tags:
+  - qa
+  - core
+  turns:
+  - content: What was the purchase price for Brightwater, and how was it paid at completion?
+    expect:
+      answer:
+        must_facts:
+        - £18,500,000 on a locked-box basis at 31 December 2024
+        - £16,650,000 paid to the sellers at completion
+        - £1,850,000 into escrow for 18 months
+        - completion on 30 April 2025
+      citations:
+        must_include_docs:
+        - spa
+- id: qa-claim-limits
+  group: qa-grounded
+  tags:
+  - qa
+  - core
+  turns:
+  - content: What are the cap, de minimis and basket for warranty claims, and by when must a claim be notified?
+    expect:
+      answer:
+        must_facts:
+        - cap of 25% of the price, £4,625,000
+        - de minimis £25,000 per claim
+        - basket £185,000, after which the whole amount is recoverable
+        - notice within 18 months of completion (30 April 2025)
+      citations:
+        must_include_docs:
+        - spa
+- id: qa-earnout-mechanics
+  group: qa-grounded
+  tags:
+  - qa
+  - core
+  turns:
+  - content: How does the earn-out work, and what counts as ARR for it?
+    expect:
+      answer:
+        must_facts:
+        - up to £3,000,000
+        - full amount if ARR at 31 December 2025 is at least £6,200,000, nil at or below £5,500,000, pro rata in between
+        - ARR means recurring subscription fees from live customers, excluding contracts under notice of termination or non-renewal
+        - signed but not live contracts are excluded
+      citations:
+        must_include_docs:
+        - spa
+- id: qa-northgate-notice
+  group: qa-grounded
+  tags:
+  - qa
+  - core
+  turns:
+  - content: When did Northgate give notice of non-renewal, who sent it, and what did it say?
+    expect:
+      answer:
+        must_facts:
+        - 7 February 2025
+        - Gareth Whitcombe, Head of Procurement at Northgate Retail
+        - Northgate would not renew the master services agreement on its expiry on 30 June 2025
+        - Northgate was moving analytics to its ERP vendor's module and offered a reduced-fee transition to December 2025
+      citations:
+        must_include_docs:
+        - northgate-notice
+- id: qa-board-resolution
+  group: qa-grounded
+  tags:
+  - qa
+  - core
+  - ocr
+  turns:
+  - content: What did the Brightwater board resolve about the Northgate notice on 11 February 2025, and did anyone object?
+    expect:
+      answer:
+        must_facts:
+        - the notice would not be volunteered to Castellane before signing
+        - Imogen Hale would manage communication with Castellane
+        - Rafael Duarte recorded that he was uncomfortable with the resolution
+      citations:
+        must_include_docs:
+        - board-minutes
+- id: qa-disclosure-northgate
+  group: qa-grounded
+  tags:
+  - qa
+  - core
+  turns:
+  - content: What exactly did the disclosure letter say about Northgate?
+    expect:
+      answer:
+        must_facts:
+        - Northgate accounts for about 22% of ARR
+        - its agreement expires on 30 June 2025
+        - renewal discussions are ongoing
+        - refers to section 4.2 of the Hollis & Marr report flagging the renewal as a key risk
+      citations:
+        must_include_docs:
+        - disclosure-letter
+- id: qa-fdd-recommendation
+  group: qa-grounded
+  tags:
+  - qa
+  turns:
+  - content: What did Hollis & Marr recommend about the Northgate risk, and what were ARR and normalised EBITDA?
+    expect:
+      answer:
+        must_facts:
+        - obtain written confirmation of renewal, or negotiate a specific indemnity or price adjustment, or structure part
+          of the price as an earn-out
+        - ARR £5,900,000 at 31 December 2024
+        - normalised EBITDA £1,450,000 for FY2024
+      citations:
+        must_include_docs:
+        - fdd-report
+- id: qa-okafor-claim
+  group: qa-grounded
+  tags:
+  - qa
+  - ocr
+  turns:
+  - content: What is Rosemary Okafor claiming, when was the claim presented, and how much does she seek?
+    expect:
+      answer:
+        must_facts:
+        - unfair dismissal and detriment for making protected disclosures (whistleblowing)
+        - presented on 20 May 2025
+        - about £180,000
+        - she says she raised the Northgate churn and its concealment from the buyer in December 2024
+      citations:
+        must_include_docs:
+        - et1-claim
+- id: qa-oss-components
+  group: qa-grounded
+  tags:
+  - qa
+  turns:
+  - content: Which open-source components in the Brightwater platform are AGPL-licensed, and what is the proposed remediation?
+    expect:
+      answer:
+        must_facts:
+        - ghostscript-bridge, iText 7 community and mongoose-sse
+        - an iText commercial licence quoted at £38,000 per year
+        - a rewrite of mongoose-sse estimated at six engineer-weeks
+      citations:
+        must_include_docs:
+        - oss-audit
+- id: qa-arr-dispute-figures
+  group: qa-grounded
+  tags:
+  - qa
+  turns:
+  - content: What ARR figure does Castellane's draft statement show at 30 September 2025, and what figure do the sellers say
+      it should be?
+    expect:
+      answer:
+        must_facts:
+        - £5,100,000 on Castellane's draft
+        - £6,150,000 in the sellers' alternative column at 30 September 2025, and £6,250,000 at the Test Date in the sellers' email
+        - the difference is Northgate run-off at £650,000 and the Kestrel Pharma and Dunmore Council signed contracts (£220,000
+          and £180,000)
+      citations:
+        must_include_docs:
+        - arr-statement
+- id: qa-cap-table
+  group: qa-grounded
+  tags:
+  - qa
+  turns:
+  - content: Who held shares in Brightwater before completion and in what proportions?
+    expect:
+      answer:
+        must_facts:
+        - Imogen Hale 55%
+        - Rafael Duarte 30%
+        - Seedcorn EIS Fund III 10%
+        - Priya Venkatesan 5%
+      citations:
+        must_include_docs:
+        - cap-table
+- id: qa-sellers-offer
+  group: qa-grounded
+  tags:
+  - qa
+  turns:
+  - content: What settlement did the sellers' solicitors offer on the escrow, and on what basis?
+    expect:
+      answer:
+        must_facts:
+        - without prejudice save as to costs
+        - retention of £250,000 pending the Okafor claim
+        - release of the balance of £1,600,000 on 30 October 2026
+        - open for 21 days
+      citations:
+        must_include_docs:
+        - sellers-response

@@ -1,0 +1,102 @@
+case_version: 2
+entities:
+- type: organization
+  key: castellane
+  name: Castellane Holdings Ltd
+  aliases:
+  - Castellane
+  - the Buyer
+- type: organization
+  key: brightwater
+  name: Brightwater Analytics Ltd
+  aliases:
+  - Brightwater
+  - the Company
+  - the Target
+- type: organization
+  key: northgate
+  name: Northgate Retail plc
+  aliases:
+  - Northgate
+- type: organization
+  key: hollis
+  name: Hollis & Marr LLP
+  aliases:
+  - Hollis & Marr
+  - H&M
+- type: organization
+  key: fenwick
+  name: Fenwick Rowe LLP
+  aliases:
+  - Fenwick Rowe
+- type: organization
+  key: pemberton
+  name: Pemberton Clarke LLP
+  aliases:
+  - Pemberton Clarke
+- type: person
+  key: hale
+  name: Imogen Hale
+  aliases:
+  - Hale
+- type: person
+  key: duarte
+  name: Rafael Duarte
+  aliases:
+  - Duarte
+- type: person
+  key: okafor
+  name: Rosemary Okafor
+  aliases:
+  - Okafor
+- type: person
+  key: lindqvist
+  name: Anders Lindqvist
+  aliases:
+  - Lindqvist
+- type: person
+  key: baptiste
+  name: Claire Baptiste
+  aliases:
+  - Baptiste
+- type: person
+  key: whitcombe
+  name: Gareth Whitcombe
+  aliases:
+  - Whitcombe
+- type: person
+  key: marr
+  name: Eleanor Marr
+  aliases:
+  - Marr
+relations:
+- from: Imogen Hale
+  to: Brightwater Analytics Ltd
+  kind: works_for
+- from: Rafael Duarte
+  to: Brightwater Analytics Ltd
+  kind: works_for
+- from: Anders Lindqvist
+  to: Castellane Holdings Ltd
+  kind: works_for
+- from: Claire Baptiste
+  to: Castellane Holdings Ltd
+  kind: works_for
+- from: Gareth Whitcombe
+  to: Northgate Retail plc
+  kind: works_for
+- from: Eleanor Marr
+  to: Hollis & Marr LLP
+  kind: works_for
+- from: Fenwick Rowe LLP
+  to: Castellane Holdings Ltd
+  kind: represents
+- from: Pemberton Clarke LLP
+  to: Imogen Hale
+  kind: represents
+- from: Castellane Holdings Ltd
+  to: Brightwater Analytics Ltd
+  kind: acquired
+- from: Northgate Retail plc
+  to: Brightwater Analytics Ltd
+  kind: customer_of

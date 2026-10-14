@@ -1,0 +1,17 @@
+case_version: 4
+families:
+- group: supply-agreement
+  kind: version
+  members:
+    contract-v1: base
+    contract-v2: revision
+- group: delay-thread
+  kind: thread
+  members:
+    delay-thread-1: message
+    delay-thread-2: message
+    delay-thread-3: message
+    delay-thread-4: message
+copies:
+- copy: contract-v1-copy
+  of: contract-v1

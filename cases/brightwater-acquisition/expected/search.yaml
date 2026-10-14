@@ -1,0 +1,94 @@
+case_version: 2
+queries:
+- query: warranty cap de minimis basket
+  expect:
+  - spa
+  - spa-draft
+  k: 5
+- query: Northgate non-renewal notice
+  expect:
+  - northgate-notice
+  - claim-notice
+  - board-minutes
+  k: 5
+- query: earn-out ARR target
+  expect:
+  - spa
+  - arr-statement
+  k: 5
+- query: AGPL components hosted service
+  expect:
+  - oss-audit
+  - claim-notice
+  k: 5
+- query: whistleblowing detriment unfair dismissal
+  expect:
+  - et1-claim
+  k: 3
+- query: manage communication with the buyer
+  expect:
+  - board-minutes
+  k: 3
+- query: escrow retention
+  expect:
+  - claim-notice
+  - sellers-response
+  k: 5
+- query: renewal discussions are ongoing
+  expect:
+  - disclosure-letter
+  - data-room-index
+  k: 5
+- query: cap table EMI options
+  expect:
+  - cap-table
+  k: 3
+- query: net cash locked box EBITDA
+  expect:
+  - fdd-report
+  k: 3
+- query: ISO 27001 data centres
+  expect:
+  - injection
+  k: 3
+- query: signed not yet live contracts Kestrel
+  expect:
+  - arr-statement
+  - earnout-thread
+  k: 5
+- query: who represents the sellers
+  expect:
+  - sellers-response
+  - disclosure-letter
+  k: 5
+- query: iText commercial licence quote
+  expect:
+  - oss-audit
+  k: 3
+- query: completion date shares transferred
+  expect:
+  - spa
+  k: 5
+- query: Okafor grievance resolved January
+  expect:
+  - disclosure-letter
+  - data-room-index
+  k: 5
+- query: non-compete three years
+  expect:
+  - spa
+  - spa-draft
+  k: 5
+- query: Southmere Hotels churn
+  expect:
+  - arr-statement
+  k: 3
+- query: specific indemnity price adjustment Northgate
+  expect:
+  - fdd-report
+  k: 3
+- query: signature page execution version
+  expect:
+  - signature-photo
+  - spa
+  k: 5

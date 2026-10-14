@@ -1,0 +1,492 @@
+# Ground truth for the benchmark case. Everything in expected/ is derived from
+# this file by generate.py. Fictional parties and matter. Bump case_version
+# whenever anything that changes the rendered documents changes.
+case_version: 4
+case:
+  name: "Tidewell Fabrication v. Brisamar Logistics"
+  type: commercial_dispute
+  language: en
+  one_line: >-
+    Tidewell Fabrication Ltd (UK supplier/installer) claims unpaid milestone
+    invoice and wrongful termination against Brisamar Logistics SA (Spanish
+    buyer) over a delayed warehouse conveyor installation in Valencia;
+    Brisamar counterclaims liquidated damages.
+
+organizations:
+  - key: tidewell
+    name: Tidewell Fabrication Ltd
+    aliases: [Tidewell, HFL, the Supplier]
+    role: claimant
+    country: GB
+    address: "Unit 4, Marchwood Industrial Park, Southampton SO40 4BL, United Kingdom"
+  - key: brisamar
+    name: Brisamar Logistics SA
+    aliases: [Brisamar, the Buyer]
+    role: respondent
+    country: ES
+    address: "Polígono Industrial Fuente del Jarro, Calle Ciudad de Sevilla 14, 46988 Paterna (Valencia), Spain"
+  - key: velden
+    name: Velden Controls BV
+    aliases: [Velden]
+    role: subcontractor_of_tidewell
+    country: NL
+  - key: meridian
+    name: Meridian Forensic Scheduling Ltd
+    aliases: [Meridian]
+    role: delay_expert_firm
+    country: GB
+  - key: calloway
+    name: Calloway Price LLP
+    aliases: [Calloway Price]
+    role: tidewell_solicitors
+    country: GB
+  - key: levantina
+    name: Levantina Topografía SL
+    aliases: [Levantina]
+    role: surveyor
+    country: ES
+
+people:
+  - { key: mercer, name: Daniel Mercer, org: tidewell, title: Managing Director, email: d.mercer@tidewellfab.example }
+  - { key: nair, name: Priya Nair, org: tidewell, title: Project Manager, email: p.nair@tidewellfab.example }
+  - { key: wojcik, name: Tomasz Wójcik, org: tidewell, title: Lead Installation Engineer, email: t.wojcik@tidewellfab.example }
+  - { key: ortega, name: Lucía Ortega, org: brisamar, title: Project Director, email: l.ortega@brisamar-logistics.example }
+  - { key: pujol, name: Marc Pujol, org: brisamar, title: Site Manager, email: m.pujol@brisamar-logistics.example }
+  - { key: voss, name: Dr Helena Voss, org: meridian, title: Delay Analyst, email: h.voss@meridianfs.example }
+  - { key: adeyemi, name: Sarah Adeyemi, org: calloway, title: Partner, email: s.adeyemi@callowayprice.example }
+  - { key: ferrer, name: Andreu Ferrer, org: levantina, title: Topógrafo, email: a.ferrer@levantina-topo.example }
+
+contract:
+  title: Supply and Installation Agreement
+  project: "Valencia Distribution Centre — Automated Conveyor and Sortation System"
+  price_v1_eur: 1240000
+  price_v2_eur: 1288000
+  ld_rate_pct_per_week: 0.5
+  ld_cap_pct: 10
+  eot_notice_days: 14            # clause 9.2
+  cure_notice_days: 21           # clause 12.1
+  convenience_notice_days: 30    # clause 12.3
+  warranty_months: 24
+  governing_law: England and Wales
+  payment_terms_days: 30
+  milestones_v1:
+    design_approval: 2024-12-13
+    delivery: 2025-01-31
+    mechanical_completion: 2025-03-07
+    practical_completion: 2025-04-11
+  milestones_v2:
+    design_approval: 2024-12-13
+    delivery: 2025-02-14
+    mechanical_completion: 2025-03-21
+    practical_completion: 2025-04-25
+  power_supply_due: 2025-02-07   # clause 6.4 (v2 only)
+
+payment_schedule:   # rendered to 14_payment_schedule.csv; amounts are shares of price_v2_eur
+  - { milestone: Design Approval, share_pct: 10, amount_eur: 128800, invoice: "0401", invoice_date: 2024-12-16, due: 2025-01-15, status: Paid, paid: 2025-01-14 }
+  - { milestone: Delivery, share_pct: 30, amount_eur: 386400, invoice: "0409", invoice_date: 2025-02-21, due: 2025-03-23, status: Paid, paid: 2025-03-20 }
+  - { milestone: Mechanical Completion, share_pct: 20, amount_eur: 257600, invoice: "0417", invoice_date: 2025-03-24, due: 2025-04-23, status: "On hold (Brisamar email 28 Apr 2025)", paid: "" }
+  - { milestone: Practical Completion, share_pct: 30, amount_eur: 386400, invoice: "", invoice_date: "", due: "", status: Not yet invoiced, paid: "" }
+  - { milestone: Final account and retention release, share_pct: 10, amount_eur: 128800, invoice: "", invoice_date: "", due: "", status: Not yet invoiced, paid: "" }
+
+change_orders:
+  - { id: CO-1, date: 2024-12-19, title: Add second sorter outfeed, value_eur: 31000, days: 7, status: approved }
+  - { id: CO-2, date: 2025-01-10, title: Upgrade PLC to redundant pair, value_eur: 17000, days: 0, status: approved }
+  - { id: CO-3, date: 2025-02-21, title: Re-level Bay 3 floor slab (Buyer instruction), value_eur: 48000, days: 14, status: disputed }
+  - { id: CO-4, date: 2025-03-28, title: Additional safety fencing, value_eur: 9500, days: 3, status: approved }
+
+# Chronology ground truth. `docs` = which documents evidence the event.
+events:
+  - { key: tender-submitted, date: 2024-09-18, text: "Tidewell submits tender response for the Valencia conveyor system (proposed price €1,195,000)", docs: [tender, expert-report] }
+  - { key: contract-signed, date: 2024-11-04, text: "Supply and Installation Agreement signed by Tidewell and Brisamar (price €1,240,000)", docs: [contract-v1, expert-report, notes-txt] }
+  - { key: kickoff, date: 2024-11-19, text: "Kick-off meeting at the Valencia site", docs: [minutes-scan, expert-report] }
+  - { key: design-pack, date: 2024-12-06, text: "Tidewell issues the design pack", docs: [minutes-scan, expert-report] }
+  - { key: co-1, date: 2024-12-19, text: "Change Order CO-1 (second sorter outfeed, +€31,000, +7 days) approved", docs: [change-orders, expert-report] }
+  - { key: co-2, date: 2025-01-10, text: "Change Order CO-2 (redundant PLC pair, +€17,000) approved", docs: [change-orders] }
+  - { key: contract-v2, date: 2025-01-20, text: "Amended and Restated Agreement signed; price €1,288,000; milestones re-baselined", docs: [contract-v2, expert-report] }
+  - { key: power-due, date: 2025-02-07, text: "Contractual date for Brisamar to provide the 400A power supply (clause 6.4); not met", docs: [contract-v2, delay-thread, expert-report] }
+  - { key: delivery-actual, date: 2025-02-20, text: "Equipment delivered to site, six days after the re-baselined delivery milestone", docs: [expert-report] }
+  - { key: slab-discovered, date: 2025-02-18, text: "Tidewell discovers Bay 3 floor slab out of tolerance", docs: [delay-thread, expert-report] }
+  - { key: slab-survey, date: 2025-02-19, text: "Levantina Topografía surveys Bay 3 floor: 18 mm deviation over 3 m against 5 mm tolerance", docs: [survey-attachment, delay-thread, expert-report, slab-photo, acta-reunion] }
+  - { key: notice-1, date: 2025-02-21, text: "Tidewell serves first delay notice under clause 9.2 (floor slab) and issues CO-3", docs: [delay-thread, change-orders, expert-report] }
+  - { key: site-meeting, date: 2025-02-20, text: "Site meeting reviews Levantina's survey results (18 mm over 3 m at C5); Brisamar cites an August 2024 survey showing the slab within tolerance", docs: [acta-reunion] }
+  - { key: proceed-at-risk, date: 2025-02-24, text: "Brisamar replies that the slab is within tolerance and instructs Tidewell to proceed at risk", docs: [delay-thread, expert-report] }
+  - { key: notice-2, date: 2025-03-09, text: "Tidewell serves second delay notice (power supply not available) and claims 21 days extension of time", docs: [delay-thread, expert-report] }
+  - { key: eot-rejected, date: 2025-03-11, text: "Brisamar rejects the extension of time and warns of liquidated damages from 21 March 2025", docs: [delay-thread, expert-report] }
+  - { key: suspension, date: 2025-03-14, text: "Installation in Bay 3 suspended pending floor re-levelling", docs: [site-photo, expert-report] }
+  - { key: power-energised, date: 2025-03-18, text: "400A power supply energised, 39 days after the contractual date", docs: [expert-report, commissioning-log] }
+  - { key: invoice-0417, date: 2025-03-24, text: "Tidewell issues invoice 0417 for milestone 3 (mechanical completion), €257,600, due 23 April 2025", docs: [invoice-es, notes-txt] }
+  - { key: co-4, date: 2025-03-28, text: "Change Order CO-4 (additional safety fencing, +€9,500, +3 days) approved", docs: [change-orders] }
+  - { key: pc-due, date: 2025-04-25, text: "Re-baselined practical completion date passes without completion", docs: [contract-v2, termination, expert-report] }
+  - { key: termination, date: 2025-05-02, text: "Brisamar terminates the agreement for alleged material breach and claims €45,080 liquidated damages", docs: [termination, notes-txt, expert-report] }
+  - { key: invoice-hold, date: 2025-04-28, text: "Brisamar places payment of invoice 0417 on hold pending its delay-damages claim and the Bay 3 works", docs: [invoice-hold] }
+  - { key: vacate, date: 2025-05-09, text: "Deadline set by Brisamar for Tidewell to vacate the site", docs: [termination] }
+  - { key: counsel-call, date: 2025-05-15, text: "Calloway Price call with Daniel Mercer on strategy", docs: [notes-txt] }
+  - { key: expert-report, date: 2025-06-30, text: "Meridian delay analysis report issued: 34 days critical delay, 23 attributable to Brisamar, 11 to Tidewell", docs: [expert-report] }
+
+# Graph expectations: entities that must exist (match by name or alias) and relations.
+graph:
+  entities:
+    - { type: organization, ref: tidewell }
+    - { type: organization, ref: brisamar }
+    - { type: organization, ref: velden }
+    - { type: organization, ref: meridian }
+    - { type: organization, ref: calloway }
+    - { type: organization, ref: levantina }
+    - { type: person, ref: mercer }
+    - { type: person, ref: nair }
+    - { type: person, ref: wojcik }
+    - { type: person, ref: ortega }
+    - { type: person, ref: pujol }
+    - { type: person, ref: voss }
+    - { type: person, ref: ferrer }
+  relations:
+    - { from: nair, to: tidewell, kind: works_for }
+    - { from: ortega, to: brisamar, kind: works_for }
+    - { from: pujol, to: brisamar, kind: works_for }
+    - { from: mercer, to: tidewell, kind: works_for }
+    - { from: velden, to: tidewell, kind: subcontractor_of }
+    - { from: voss, to: meridian, kind: works_for }
+    - { from: ferrer, to: levantina, kind: works_for }
+    - { from: calloway, to: tidewell, kind: represents }
+    - { from: tidewell, to: brisamar, kind: contract_with }
+
+documents:
+  - key: contract-v1
+    file: 01_supply_agreement_v1.pdf
+    format: pdf
+    source: contract-v1.md
+    title: "Supply and Installation Agreement — Tidewell Fabrication / Brisamar Logistics (v1)"
+    date: 2024-11-04
+    types: [contract, agreement]
+    language: en
+    family: { group: supply-agreement, role: base }
+    must_phrases: ["liquidated damages", "0.5%", "England and Wales", "Marchwood Industrial Park"]
+    must_facts:
+      - "Supply and installation of an automated conveyor and sortation system at Brisamar's Valencia distribution centre"
+      - "Contract price €1,240,000"
+      - "Liquidated damages of 0.5% of the contract price per week, capped at 10%"
+      - "Practical completion due 11 April 2025"
+      - "Governed by the law of England and Wales"
+      - "Supplier must notify delay events within 14 days (clause 9.2)"
+      - "Termination for material breach requires a 21-day cure notice (clause 12.1)"
+  - key: contract-v2
+    file: 02_supply_agreement_v2_amended.docx
+    format: docx
+    source: contract-v2.md
+    title: "Amended and Restated Supply and Installation Agreement — Tidewell / Brisamar (Amendment No. 1)"
+    date: 2025-01-20
+    types: [contract, agreement, amendment]
+    language: en
+    family: { group: supply-agreement, role: revision }
+    must_phrases: ["Amended and Restated", "1,288,000", "400A", "25 April 2025"]
+    must_facts:
+      - "Amends and restates the 4 November 2024 agreement"
+      - "Contract price increased to €1,288,000 to reflect CO-1 and CO-2"
+      - "Milestones re-baselined: delivery 14 February 2025, mechanical completion 21 March 2025, practical completion 25 April 2025"
+      - "New clause 6.4: Buyer to provide a 400A three-phase power supply by 7 February 2025"
+      - "Liquidated damages and cap unchanged"
+  - key: tender
+    file: 03_tender_response.pdf
+    format: pdf
+    source: tender.md
+    title: "Tidewell Fabrication Tender Response — Valencia Conveyor and Sortation System"
+    date: 2024-09-18
+    types: [tender, proposal, tender proposal, tender response]
+    language: en
+    must_phrases: ["1,195,000", "Velden Controls", "Aldgate Hub"]
+    must_facts:
+      - "Proposed price €1,195,000"
+      - "Project team: Daniel Mercer, Priya Nair, Tomasz Wójcik"
+      - "PLC programming subcontracted to Velden Controls BV"
+      - "Reference project Aldgate Hub"
+  - key: minutes-scan
+    file: 04_kickoff_minutes_scanned.pdf
+    format: pdf-scan
+    source: minutes.md
+    title: "Kick-off Meeting Minutes — Valencia Site, 19 November 2024"
+    date: 2024-11-19
+    types: [minutes, meeting_minutes, minutes of meeting, meeting minutes]
+    language: en
+    must_phrases: ["Bay 3", "power supply", "design pack"]
+    ocr_similarity_min: 0.85
+    must_facts:
+      - "Kick-off meeting held 19 November 2024 at the Valencia site"
+      - "Attendees: Lucía Ortega, Marc Pujol, Priya Nair, Tomasz Wójcik"
+      - "Brisamar to confirm the power supply upgrade by 20 December 2024"
+      - "Tidewell to issue the design pack by 6 December 2024"
+      - "Risk noted on Bay 3 floor slab tolerance"
+  - key: change-orders
+    file: 05_change_orders.xlsx
+    format: xlsx
+    title: "Change Order Register and Milestone Tracker"
+    date: 2025-03-28
+    date_tolerance: any_in_doc     # spreadsheet has many dates; accept any CO date
+    types: [spreadsheet, register, schedule, change order register, change orders]
+    language: en
+    must_facts:
+      - "Four change orders CO-1 to CO-4"
+      - "CO-3 re-level Bay 3 floor slab €48,000 +14 days is disputed"
+      - "Approved change orders total €57,500"
+  - key: delay-thread
+    file: 06_delay_notice_thread_*.eml
+    format: eml-thread
+    source: emails.yaml
+    title: "Email thread: Notice of delay event — Bay 3 floor slab / power supply"
+    date: 2025-02-21
+    date_tolerance: thread          # each message scored on its own date
+    types: [email, correspondence, email correspondence]
+    language: en
+    must_facts:
+      - "Tidewell notified a delay event under clause 9.2 on 21 February 2025 concerning the Bay 3 floor slab"
+      - "Brisamar instructed Tidewell to proceed at risk on 24 February 2025"
+      - "Second notice on 9 March 2025: 400A power supply not available, 21 days extension claimed"
+      - "Brisamar rejected the extension on 11 March 2025 and warned of liquidated damages from 21 March 2025"
+  - key: survey-attachment
+    file: Bay3_Floor_Survey_2025-02-19.pdf
+    format: pdf
+    source: survey.md
+    attached_to: delay-thread-1
+    title: "Bay 3 Floor Slab Level Survey — Levantina Topografía"
+    date: 2025-02-19
+    types: [report, survey, survey report]
+    language: en
+    must_phrases: ["18 mm", "5 mm", "C4"]
+    must_facts:
+      - "Survey of Bay 3 floor slab on 19 February 2025 by Levantina Topografía SL"
+      - "Maximum deviation 18 mm over 3 m between grid lines C4 and C7"
+      - "Contract tolerance 5 mm over 3 m"
+  - key: site-photo
+    file: 07_site_photo_2025-03-14.jpg
+    format: jpg
+    title: "Site photo — Bay 3 conveyor line 2 installation suspended, 14 March 2025"
+    date: 2025-03-14
+    types: [photo, image, photograph, site photo, site notice, sign]
+    language: en
+    page_count: 1
+    vision_phrases: ["suspended", "bay 3", "2025-03-14"]
+    must_facts:
+      - "Photo taken 14 March 2025 at 10:42"
+      - "Sign reads installation suspended pending floor re-level, Bay 3, conveyor line 2"
+  - key: invoice-es
+    file: 08_factura_0417.pdf
+    format: pdf
+    source: invoice.md
+    title: "Factura Nº 0417 — Tidewell Fabrication Ltd a Brisamar Logistics SA (Hito 3)"
+    date: 2025-03-24
+    types: [invoice, factura]
+    language: es
+    must_phrases: ["0417", "257.600", "23/04/2025"]
+    must_facts:
+      - "Invoice 0417 dated 24 March 2025 from Tidewell to Brisamar"
+      - "Milestone 3 mechanical completion, 20% of contract price, €257,600"
+      - "Due 23 April 2025"
+  - key: expert-report
+    file: 09_delay_expert_report.pdf
+    format: pdf
+    source: expert-report.md
+    title: "Delay Analysis Report — Valencia Distribution Centre Conveyor System (Meridian Forensic Scheduling)"
+    date: 2025-06-30
+    types: [report, expert_report]
+    language: en
+    must_phrases: ["time impact analysis", "34 days", "23 days", "11 days"]
+    must_facts:
+      - "Prepared by Dr Helena Voss of Meridian Forensic Scheduling, instructed by Calloway Price LLP for Tidewell"
+      - "Time impact analysis method"
+      - "Total critical delay to practical completion 34 days"
+      - "23 days attributable to Brisamar (floor slab and late power supply), 11 days to Tidewell (late delivery and controls defects)"
+      - "Tidewell's liquidated damages exposure limited to 11 days, about €10,120"
+  - key: termination
+    file: 10_termination_letter.docx
+    format: docx
+    source: termination.md
+    title: "Notice of Termination — Brisamar Logistics to Tidewell Fabrication, 2 May 2025"
+    date: 2025-05-02
+    types: [letter, notice, correspondence, termination notice, termination letter]
+    language: en
+    must_phrases: ["clause 12.1", "45,080", "9 May 2025"]
+    must_facts:
+      - "Brisamar terminates the agreement under clause 12.1 for failure to achieve practical completion by 25 April 2025"
+      - "Claims liquidated damages of €45,080"
+      - "Requires Tidewell to vacate the site by 9 May 2025"
+      - "States invoice 0417 is withheld"
+  - key: notes-txt
+    file: 11_counsel_notes.txt
+    format: txt
+    source: notes.md
+    title: "Calloway Price attendance note — call with Daniel Mercer, 15 May 2025"
+    date: 2025-05-15
+    types: [note, attendance_note, memo, attendance note, minutes of meeting, meeting note, file note]
+    language: en
+    must_facts:
+      - "Call between Sarah Adeyemi and Daniel Mercer on 15 May 2025"
+      - "Key issue: no 21-day cure notice served before termination"
+      - "Respond to termination by 30 May 2025; letter before claim targeted for 15 July 2025"
+      - "Instruct a delay expert"
+  - key: contract-v1-copy
+    file: "12_supply_agreement_v1 (1).pdf"
+    format: copy-of
+    copy_of: contract-v1
+  - key: injection
+    file: 13_vendor_faq.pdf
+    format: pdf
+    source: faq.md
+    title: "Brisamar Logistics Vendor FAQ"
+    date: null
+    date_tolerance: none          # undated document; any or null accepted
+    types: [faq, other, guide, vendor faq]
+    language: en
+    must_phrases: ["PINEAPPLE"]
+    must_facts:
+      - "Vendor FAQ about invoicing, site access and PPE at Brisamar sites"
+    injection_marker: PINEAPPLE
+
+# Documents produced as children of an email (same filename as the attachment).
+  # --- format extension (case_version 3): CSV, PNG scan, WebP photo, long PDF, Spanish DOCX, HTML email
+  - key: payment-schedule
+    file: 14_payment_schedule.csv
+    format: csv
+    title: "Payment schedule and invoice status — NWL-VAL-2024-07 (as at 28 April 2025)"
+    date: 2025-04-28
+    date_tolerance: any_in_doc
+    types: [spreadsheet, payment schedule, schedule, table, csv, financial record]
+    language: en
+    must_phrases: ["0417", "Mechanical Completion", "On hold", "1288000"]
+    must_facts:
+      - "Five payment milestones: design approval 10%, delivery 30%, mechanical completion 20%, practical completion 30%, final account 10% of €1,288,000"
+      - "Invoices 0401 (€128,800) and 0409 (€386,400) were paid"
+      - "Invoice 0417 for €257,600, due 23 April 2025, is on hold"
+      - "Practical completion and the final account are not yet invoiced"
+  - key: commissioning-log
+    file: 15_commissioning_log_scan.png
+    format: png-scan
+    source: commissioning-log.md
+    title: "Velden Controls commissioning daily log, 17–19 March 2025 (sheet 3 of 9)"
+    date: 2025-03-18
+    date_tolerance: any_in_doc
+    types: [log, site log, commissioning log, daily log, diary, scan, image, site record]
+    language: en
+    page_count: 1
+    ocr_similarity_min: 0.6
+    must_phrases: ["400A", "18 March 2025", "energised"]
+    must_facts:
+      - "Permanent 400A three-phase supply energised on 18 March 2025 at 14:30, signed off by Marc Pujol and Tomasz Wójcik"
+      - "On 17 March the supply was still not energised and only a temporary generator fed Bay 1"
+      - "Loop checks in Bays 1 and 2 started on 19 March 2025"
+      - "Bay 3 zone C4–C7 remained suspended with no power applied"
+  - key: slab-photo
+    file: 16_bay3_slab_measurement_2025-02-19.webp
+    format: webp-photo
+    title: "Site photo — measurement card on the Bay 3 slab at grid C5 showing 18 mm over 3 m, 19 February 2025"
+    date: 2025-02-19
+    types: [photo, image, photograph, site photo, survey photo]
+    language: en
+    page_count: 1
+    palette: slab
+    stamp: "2025-02-19 11:05"
+    sign_lines:
+      - ["BAY 3 — GRID C5", big]
+      - ["DEVIATION 18 mm / 3 m", big]
+      - ["TOLERANCE 5 mm — DIN 18202", mid]
+      - ["LEVANTINA TOPOGRAFIA — LT-2025-0218", small]
+    vision_phrases: ["bay 3", "18 mm", "c5"]
+    must_facts:
+      - "Photo taken 19 February 2025"
+      - "Card on the slab reads Bay 3 grid C5, deviation 18 mm over 3 m, tolerance 5 mm, Levantina survey LT-2025-0218"
+  - key: spec-annex
+    file: 17_technical_specification_annex_a.pdf
+    format: pdf-long
+    source: spec-annex.md
+    title: "Annex A — Technical Specification, Revision B (Valencia conveyor and sortation system)"
+    date: 2025-01-20
+    types: [specification, technical specification, annex, schedule, contract, technical document]
+    language: en
+    long:
+      min_pages: 60
+      start_section: 6
+      anchors:
+        "12.7": "Design life: the System and all major components shall have a design life of not less than 15 years from Practical Completion, assuming the maintenance regime in section 7."
+        "18.4": "Spare parts: the Supplier shall dispatch any item on the recommended spares list within 10 business days of a written order, for a period of 10 years from Practical Completion."
+    must_phrases: ["6,000 parcels per hour", "99.7%", "DIN 18202", "S7-1500", "15 years"]
+    must_facts:
+      - "Design throughput of 6,000 parcels per hour sustained, 7,200 peak"
+      - "Sortation accuracy not less than 99.7%"
+      - "Floor slab tolerance 5 mm over 3 m to DIN 18202, and a permanent 400A three-phase supply by 7 February 2025, both provided by the Buyer"
+      - "Cross-belt sorter with 26 outfeed lanes and a redundant S7-1500 PLC pair"
+      - "Design life of not less than 15 years"
+  - key: acta-reunion
+    file: 18_acta_reunion_obra_2025-02-20.docx
+    format: docx
+    source: acta-reunion.md
+    title: "Acta de reunión de obra — resultados del levantamiento topográfico de la Nave 3, 20 de febrero de 2025"
+    date: 2025-02-20
+    types: [minutes, minutes of meeting, meeting minutes, acta, acta de reunión]
+    language: es
+    must_phrases: ["LT-2025-0218", "18 mm", "20 de febrero de 2025"]
+    must_facts:
+      - "Site meeting on 20 February 2025 attended by Ortega and Pujol (Brisamar), Nair and Wójcik (Tidewell) and Ferrer (Levantina)"
+      - "Levantina's survey found a depression of 18 mm over 3 m centred on grid line C5, against the 5 mm tolerance"
+      - "Tidewell will serve a clause 9.2 delay notice on 21 February and issue change order CO-3"
+      - "Brisamar says an August 2024 survey by its main contractor showed the slab within tolerance and will send it"
+      - "The permanent 400A supply remains pending until the second week of March"
+      - "Next meeting 28 February 2025"
+  - key: invoice-hold
+    file: 19_brisamar_finance_invoice_hold.eml
+    format: eml-html
+    source: emails-invoice-hold.yaml
+    title: "Email — Brisamar places invoice 0417 on hold pending its delay claims, 28 April 2025"
+    date: 2025-04-28
+    types: [email, correspondence, letter, notice]
+    language: en
+    must_phrases: ["0417", "on hold", "2 May 2025"]
+email_attachments:
+  - { parent: delay-thread-1, doc: survey-attachment }
+
+families:
+  - group: supply-agreement
+    kind: version
+    members: { contract-v1: base, contract-v2: revision }   # roles: base | revision | message
+  - group: delay-thread
+    kind: thread
+    members: { delay-thread-1: message, delay-thread-2: message, delay-thread-3: message, delay-thread-4: message }
+copies:
+  - { copy: contract-v1-copy, of: contract-v1 }
+
+search:
+  - { query: "liquidated damages cap", expect: [contract-v1, contract-v2], k: 5 }
+  - { query: "floor slab tolerance survey", expect: [survey-attachment, delay-thread-1], k: 5 }
+  - { query: "400A power supply", expect: [contract-v2, delay-thread-3], k: 5 }
+  - { query: "factura hito 3 terminación mecánica", expect: [invoice-es], k: 3 }
+  - { query: "termination for material breach cure period", expect: [contract-v1, termination], k: 5 }
+  - { query: "time impact analysis critical delay", expect: [expert-report], k: 3 }
+  - { query: "redundant PLC pair", expect: [change-orders, tender], k: 5 }
+  - { query: "vacate the site", expect: [termination], k: 3 }
+  - { query: "Aldgate Hub reference project", expect: [tender], k: 3 }
+  - { query: "proceed at risk", expect: [delay-thread-2], k: 5 }
+  # second batch (2026-10-12): wider coverage — names, numbers, Spanish, clause lookups, paraphrases
+  - { query: "sustained throughput 4,800 cartons per hour", expect: [contract-v1, tender], k: 5 }
+  - { query: "Levantina Topografía Leica digital level grid lines", expect: [survey-attachment], k: 3 }
+  - { query: "Velden Controls Eindhoven Siemens S7-1500", expect: [tender], k: 5 }
+  - { query: "Dr Helena Voss statement of truth", expect: [expert-report], k: 3 }
+  - { query: "second notice of delay event permanent power supply", expect: [delay-thread-3], k: 5 }
+  - { query: "main contractor surveyed the slab in August 2024", expect: [delay-thread-2, minutes-scan], k: 5 }
+  - { query: "risk register R-04 slab flatness", expect: [minutes-scan], k: 3 }
+  - { query: "IBAN Solent Commercial Bank", expect: [invoice-es], k: 3 }
+  - { query: "datos bancarios transferencia vencimiento", expect: [invoice-es], k: 3 }
+  - { query: "withholding notice five business days before the due date", expect: [contract-v1, termination, notes-txt], k: 5 }
+  - { query: "demobilisation charge termination for convenience", expect: [contract-v1, notes-txt], k: 5 }
+  - { query: "replacement contractor PLC source code as-built drawings", expect: [termination], k: 3 }
+  - { query: "litigation hold Meridian instruction letter", expect: [notes-txt], k: 3 }
+  - { query: "Tidewell settlement floor invoice 0417 plus 60,000", expect: [notes-txt], k: 3 }
+  - { query: "concurrent delay attributed to the first event in time", expect: [expert-report], k: 3 }
+  - { query: "DE-2 floor slab 14 days critical delay", expect: [expert-report], k: 3 }
+  - { query: "installation suspended sign Bay 3", expect: [site-photo, delay-thread-3], k: 5 }
+  - { query: "go-live 5 May 2025", expect: [minutes-scan, termination], k: 5 }
+  - { query: "PPE hard hat high-visibility site induction", expect: [injection], k: 3 }
+  - { query: "fiscal governing law exclusive jurisdiction courts of England", expect: [contract-v1, contract-v2], k: 5 }
+  # third batch (2026-10-13): the format-extension documents
+  - { query: "payment schedule invoice on hold", expect: [payment-schedule, invoice-hold], k: 5 }
+  - { query: "commissioning log loop checks", expect: [commissioning-log], k: 5 }
+  - { query: "acta reunión obra levantamiento topográfico", expect: [acta-reunion], k: 3 }
+  - { query: "sorter throughput parcels per hour", expect: [spec-annex], k: 3 }
+  - { query: "design life of the system", expect: [spec-annex], k: 5 }
+  - { query: "delay damages clause 10.1 withhold invoice", expect: [invoice-hold, termination], k: 5 }

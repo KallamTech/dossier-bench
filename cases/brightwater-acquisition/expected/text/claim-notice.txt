@@ -1,0 +1,59 @@
+FENWICK ROWE LLP
+
+1 Moorgate Place, London EC2R 6EA
+
+By email and post
+
+Pemberton Clarke LLP, 40 Chancery Lane, London WC2A 1JA
+
+For the attention of Julian Pemberton
+
+19 September 2025
+
+Our ref: SA/CAS/0381 — Your ref: JP/HALE
+
+Dear Sirs,
+
+NOTICE OF CLAIMS UNDER CLAUSE 9.1 OF THE SHARE PURCHASE AGREEMENT DATED 14 MARCH 2025 (THE "SPA") — BRIGHTWATER ANALYTICS LTD
+
+We act for Castellane Holdings Ltd (the "Buyer"). We write to give notice under clause 9.1 of the SPA of the following Claims against your clients Imogen Hale and Rafael Duarte (the "Sellers"). Defined terms have the meaning given in the SPA.
+
+1. Breach of Warranty 12.3 (Material Customers)
+
+1.1 Warranty 12.3 provides that no Material Customer had given notice to terminate or not to renew any Customer Contract. Northgate Retail plc, which represented 22% of ARR, gave written notice of non-renewal by email from Gareth Whitcombe to Imogen Hale on 7 February 2025, five weeks before the SPA was signed on 14 March 2025.
+
+1.2 The notice was reported to the Company's board on 11 February 2025. The board minutes record a resolution that the notice "would not be volunteered to Castellane before signing" and that Ms Hale would "manage communication" with our client.
+
+1.3 The Disclosure Letter (paragraph 3.2) stated that renewal discussions were "ongoing". That statement was untrue when made and was not a fair disclosure of the notice within the meaning of clause 6.2. The Q&A log answers 7 and 23 repeated it. Our client's awareness of a renewal risk from the Hollis & Marr report is not awareness of the notice, and in any event clause 6.4 does not apply to wilful concealment.
+
+1.4 Loss: ARR at Completion was overstated by £1,300,000. Applying the 3.1x ARR multiple on which the Purchase Price was based, the diminution in value of the Shares is not less than £2,000,000 after credit for the transition fees received from Northgate to December 2025. Our client reserves the right to plead fraudulent misrepresentation.
+
+2. Breach of Warranty 15.1 and 15.2 (litigation and employee claims)
+
+2.1 On 20 May 2025 Rosemary Okafor presented a claim in the London Central Employment Tribunal against the Company for unfair dismissal and detriment for making protected disclosures, seeking approximately £180,000. The claim form states that Ms Okafor raised concerns in December 2024 that customer churn was being concealed from a prospective buyer, and that she was told in January 2025 that her role would be made redundant.
+
+2.2 The Disclosure Letter described the matter as an "informal grievance" that was "resolved in January 2025". The claim was threatened before signing: Ms Okafor's email of 3 March 2025 to Ms Hale (disclosed in the tribunal bundle) stated that she had taken advice and would bring a claim if a settlement was not agreed. That email was not disclosed.
+
+2.3 Loss: the Company's exposure to the claim and its costs, estimated at £220,000.
+
+3. Breach of Warranty 18.4 (open-source software)
+
+3.1 The open-source audit by Lattice Compliance Ltd completed on 22 August 2025 identified three components licensed under the GNU Affero General Public License v3 incorporated in the hosted platform: ghostscript-bridge, iText 7 community and mongoose-sse. Provision of the platform as a service with those components engages the AGPL's network-use clause.
+
+3.2 The Disclosure Letter stated only that an audit was "in progress". The preliminary inventory at Data Room 5.3 left the licence field blank for these components. That is not fair disclosure of the matter.
+
+3.3 Loss: remediation costs (commercial licences and a rewrite) of not less than £180,000, together with the risk of licensing claims.
+
+4. Quantum and escrow
+
+4.1 The Claims total approximately £2,400,000, which exceeds the de minimis and basket thresholds in Schedule 5 and is within the cap of £4,625,000.
+
+4.2 Pursuant to clause 10.1, our client requires the Escrow Amount of £1,850,000 to be retained in the Escrow Account pending determination or settlement of the Claims. Please confirm your clients' agreement within 14 days.
+
+4.3 This letter is a notice for the purposes of clause 9.1 and is sent within 18 months of the Completion Date of 30 April 2025. Our client reserves all its rights, including under clause 9.2.
+
+Yours faithfully,
+
+Fenwick Rowe LLP
+
+Sophie Adair, Partner

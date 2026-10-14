@@ -1,0 +1,41 @@
+# Single HTML email with an inline logo, rendered to 19_brisamar_finance_invoice_hold.eml.
+subject: "Invoice 0417 — payment on hold pending resolution of delay claims"
+message_id: "<20250428160233.NWL-FIN-2206@brisamar-logistics.example>"
+date: "Mon, 28 Apr 2025 16:02:33 +0200"
+from: { ref: pujol }
+to: [{ ref: nair }]
+cc: [{ ref: ortega }, { ref: mercer }]
+must_facts:
+  - "Email of 28 April 2025 from Marc Pujol (Brisamar) to Priya Nair (Tidewell)"
+  - "Brisamar places payment of invoice 0417 (€257,600, due 23 April 2025) on hold"
+  - "Reason given: Brisamar's claim for delay damages from 21 March 2025 and the unresolved Bay 3 zone C4–C7"
+  - "Tidewell is asked to confirm the revised completion date by 2 May 2025"
+html: |
+  <html><body style="font-family: Arial, sans-serif; font-size: 11pt;">
+  <p><img src="cid:nwl-logo" alt="Brisamar Logistics" width="160"></p>
+  <p>Dear Priya,</p>
+  <p>I refer to Tidewell's invoice <b>No. 0417</b> dated 24 March 2025 for <b>&euro;257,600</b> (Milestone 3, Mechanical Completion), which fell due on <b>23 April 2025</b>.</p>
+  <p>On instruction from Luc&iacute;a Ortega, Brisamar is placing payment of this invoice <b>on hold</b> pending resolution of the following:</p>
+  <ol>
+    <li>Brisamar's claim for delay damages under clause 10.1 running from the Mechanical Completion date of 21 March 2025;</li>
+    <li>the outstanding works in Bay 3, zone C4&ndash;C7, which Tidewell's notice of 21 March 2025 expressly excluded from Mechanical Completion.</li>
+  </ol>
+  <p>Please confirm by <b>Friday 2 May 2025</b> the revised date on which Tidewell will achieve Practical Completion. Our finance department will review the position once the delay claims are resolved.</p>
+  <p>Kind regards,<br>Marc Pujol<br>Site Manager, Brisamar Logistics SA<br>Pol&iacute;gono Industrial Fuente del Jarro, Paterna (Valencia)</p>
+  </body></html>
+text: |
+  Dear Priya,
+
+  I refer to Tidewell's invoice No. 0417 dated 24 March 2025 for €257,600 (Milestone 3, Mechanical Completion), which fell due on 23 April 2025.
+
+  On instruction from Lucía Ortega, Brisamar is placing payment of this invoice on hold pending resolution of the following:
+
+  1. Brisamar's claim for delay damages under clause 10.1 running from the Mechanical Completion date of 21 March 2025;
+  2. the outstanding works in Bay 3, zone C4–C7, which Tidewell's notice of 21 March 2025 expressly excluded from Mechanical Completion.
+
+  Please confirm by Friday 2 May 2025 the revised date on which Tidewell will achieve Practical Completion. Our finance department will review the position once the delay claims are resolved.
+
+  Kind regards,
+  Marc Pujol
+  Site Manager, Brisamar Logistics SA
+  Polígono Industrial Fuente del Jarro, Paterna (Valencia)

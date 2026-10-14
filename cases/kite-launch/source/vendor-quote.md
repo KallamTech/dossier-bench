@@ -1,0 +1,30 @@
+# PIXELFORGE STUDIO LTD — QUOTATION
+
+**Quote number:** Q-2025-118
+
+**Date:** 24 July 2025
+
+**Client:** Larkspur Labs Ltd, Studio 9, 120 Leather Lane, London EC1N 7TR — attention Ines Okonkwo
+
+**Project:** Kite Planner 3.0 launch video (90 seconds)
+
+**Prepared by:** Faye Delacroix, Producer
+
+## Scope
+
+| Item | Description | Price (£) |
+| --- | --- | --- |
+| 1 | Concept and script (two concepts, one developed) | 3,500 |
+| 2 | Production: two-day shoot, motion graphics, voice-over | 14,000 |
+| 3 | Post-production: edit, grade, sound mix, two rounds of revisions | 5,500 |
+| 4 | Deliverables: 90-second master, 30-second cut, square and vertical social versions, captions | 1,500 |
+| | **Total (excluding VAT)** | **24,500** |
+
+## Terms
+
+- Delivery six weeks from approval of the brief and script.
+- Payment: 50% deposit on acceptance, balance on delivery of the master.
+- Two rounds of revisions included; further rounds at £1,200 per round.
+- Quote valid for 30 days.
+
+Faye Delacroix — Pixelforge Studio Ltd — 24 July 2025

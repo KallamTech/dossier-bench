@@ -1,0 +1,86 @@
+case_version: 2
+events:
+- key: heads-of-terms
+  date: 2025-01-17
+  text: Heads of terms signed between Castellane and the Brightwater founders (indicative price £18.5m)
+  docs:
+  - spa-draft
+  - fdd-report
+- key: fdd-report
+  date: 2025-02-28
+  text: Hollis & Marr deliver the financial due diligence report (ARR £5.9m at 31 December 2024; Northgate renewal flagged
+    as a risk)
+  docs:
+  - fdd-report
+- key: northgate-notice
+  date: 2025-02-07
+  text: Northgate Retail gives notice that it will not renew its contract, effective 30 June 2025
+  docs:
+  - northgate-notice
+  - board-minutes
+  - claim-notice
+- key: board-meeting
+  date: 2025-02-11
+  text: Brightwater board discusses the Northgate non-renewal and resolves to 'manage communication' with the buyer
+  docs:
+  - board-minutes
+  - claim-notice
+- key: spa-draft
+  date: 2025-03-07
+  text: SPA draft 7 circulated by Fenwick Rowe
+  docs:
+  - spa-draft
+- key: signing
+  date: 2025-03-14
+  text: Share purchase agreement signed; price £18,500,000; disclosure letter delivered
+  docs:
+  - spa
+  - disclosure-letter
+  - signature-photo
+- key: completion
+  date: 2025-04-30
+  text: 'Completion: shares transferred, £16,650,000 paid to sellers and £1,850,000 into escrow'
+  docs:
+  - spa
+  - claim-notice
+- key: okafor-et1
+  date: 2025-05-20
+  text: Rosemary Okafor presents an employment tribunal claim (unfair dismissal and whistleblowing detriment) seeking about
+    £180,000
+  docs:
+  - et1-claim
+  - claim-notice
+- key: northgate-end
+  date: 2025-06-30
+  text: Northgate contract ends
+  docs:
+  - northgate-notice
+  - arr-statement
+- key: oss-audit
+  date: 2025-08-22
+  text: 'Open-source audit completed: three AGPL-licensed components found in the Brightwater product'
+  docs:
+  - oss-audit
+  - claim-notice
+- key: claim-notice
+  date: 2025-09-19
+  text: Fenwick Rowe serve a warranty claim notice on the sellers for about £2,400,000 and request escrow retention
+  docs:
+  - claim-notice
+  - sellers-response
+- key: arr-statement
+  date: 2025-10-03
+  text: Castellane issues the draft ARR statement at 30 September 2025 showing £5,100,000
+  docs:
+  - arr-statement
+  - earnout-thread
+- key: sellers-response
+  date: 2025-10-10
+  text: Pemberton Clarke reject the warranty claims, relying on the disclosure letter and the buyer's knowledge from due diligence
+  docs:
+  - sellers-response
+- key: earnout-dispute
+  date: 2025-10-17
+  text: 'Sellers dispute the ARR statement: Northgate run-off revenue and two signed-not-live contracts should count'
+  docs:
+  - earnout-thread
