@@ -2,11 +2,14 @@
 case's document keys (expected/manifest.yaml `filename_to_key`), so map your own ids to those first.
 
 Optional data is None when the system doesn't produce it; the matching score group is skipped, not failed.
+Suites are optional too: implement `transcribe` / `voice_session` only if your system has dictation / realtime
+voice (`supports` decides; override it to switch a suite off per configuration).
 """
 
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Any
 
 from dossier_bench.cases import Case
@@ -96,10 +99,69 @@ class Answer:
     usage: dict[str, Any] = field(default_factory=dict)
 
 
+@dataclass
+class Transcript:
+    text: str
+    language: str | None = None                # what the system detected, any common form (en, en-GB, english)
+    latency_s: float | None = None             # request to final text; measured by the bench when None
+    cost_usd: float | None = None
+    terminal: str = "done"                     # done | error | timeout
+    error: str | None = None
+
+
+@dataclass
+class VoiceTurn:
+    """One spoken user turn. Stream `audio` at real-time pace (dossier_bench.audio.pcm_chunks)."""
+
+    audio: Path
+    text: str                                  # what the speaker says (reference, not for the system)
+    language: str
+    duration_s: float
+    barge_in_after_s: float | None = None      # start speaking this long after the previous reply's first audio
+
+
+@dataclass
+class VoiceTurnResult:
+    """Times are seconds on one monotonic clock for the whole session (any origin)."""
+
+    reply_text: str = ""                       # transcript of the spoken reply
+    user_transcript: str | None = None         # what the system heard
+    sources: list[str] = field(default_factory=list)
+    speech_end_s: float | None = None          # last user audio sent
+    first_audio_s: float | None = None         # first reply audio received
+    reply_end_s: float | None = None           # reply audio finished (or stopped)
+    barge_in_s: float | None = None            # when the next turn started speaking over this reply
+    terminal: str = "done"
+    error: str | None = None
+
+
+@dataclass
+class VoiceRun:
+    turns: list[VoiceTurnResult]
+    cost_usd: float | None = None
+    usage: dict[str, Any] = field(default_factory=dict)
+
+
+SUITE_METHODS = {"ingest": "ingest", "agent": "ask", "transcription": "transcribe", "voice": "voice_session"}
+
+
 class Adapter:
     """Subclass and override. `ingest` is called once per case, `ask` once per turn."""
 
     name = "adapter"
+
+    def supports(self, suite: str) -> bool:
+        """Whether this system runs `suite`; unsupported suites are skipped, not failed. Default: the method is overridden."""
+        method = SUITE_METHODS[suite]
+        return getattr(type(self), method) is not getattr(Adapter, method)
+
+    def transcribe(self, audio: Path, language: str | None) -> Transcript:
+        """Dictation: one recorded clip in, final text out. `language` is a hint (ISO 639-1); ignore it if you detect."""
+        raise NotImplementedError
+
+    def voice_session(self, case: Case, turns: list[VoiceTurn]) -> VoiceRun:
+        """Realtime voice: open one session on `case`, speak `turns` in order at real-time pace, return one result per turn."""
+        raise NotImplementedError
 
     def ingest(self, case: Case) -> IngestResult:
         raise NotImplementedError

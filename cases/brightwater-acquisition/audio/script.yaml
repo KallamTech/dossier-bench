@@ -1,0 +1,71 @@
+# Spoken fixtures for the transcription and voice suites (format: cases/harbor-dispute/audio/script.yaml).
+clips:
+  - id: memo-claim
+    language: en
+    voice: en-gb-f2
+    text: >-
+      Attendance note for Castellane Holdings. Fenwick Rowe served the warranty claim notice on Imogen
+      Hale and Rafael Duarte on 19 September 2025, for about £2,400,000. The warranty cap under the share
+      purchase agreement is 25% of the £18,500,000 price, so £4,625,000. We also asked the sellers to keep
+      the £1,850,000 escrow in place.
+    say: >-
+      Attendance note for Castellane Holdings. Fenwick Rowe served the warranty claim notice on Imogen
+      Hale and Rafael Duarte on the nineteenth of September, twenty twenty-five, for about two million,
+      four hundred thousand pounds. The warranty cap under the share purchase agreement is twenty-five
+      percent of the eighteen million, five hundred thousand pound price, so four million, six hundred
+      and twenty-five thousand pounds. We also asked the sellers to keep the one million, eight hundred
+      and fifty thousand pound escrow in place.
+    entities:
+      - { kind: name, text: Castellane Holdings, match: [Castellane] }
+      - { kind: name, text: Fenwick Rowe }
+      - { kind: name, text: Imogen Hale }
+      - { kind: name, text: Rafael Duarte }
+      - { kind: date, text: 19 September 2025, match: ["19 september 2025", "september 19 2025", "19th september 2025", "19th of september 2025", "september 19th 2025"] }
+      - { kind: amount, text: "£2,400,000", match: ["2400000", "2.4 million"] }
+      - { kind: amount, text: 25%, match: ["25%", "25 percent", "25 per cent", "twenty-five percent", "twenty-five per cent"] }
+      - { kind: amount, text: "£18,500,000", match: ["18500000", "18.5 million"] }
+      - { kind: amount, text: "£4,625,000", match: ["4625000", "4.625 million"] }
+      - { kind: amount, text: "£1,850,000", match: ["1850000", "1.85 million"] }
+
+  - id: memo-earnout
+    language: en
+    voice: en-us-m
+    text: >-
+      Earn-out position. Castellane's draft statement puts annual recurring revenue at £5,100,000 at
+      30 September 2025, below the £5,500,000 floor, so no earn-out is payable. The sellers say the
+      Northgate run-off revenue and two signed contracts should count, which takes them to £6,250,000
+      at the test date of 31 December 2025.
+    say: >-
+      Earn-out position. Castellane's draft statement puts annual recurring revenue at five million,
+      one hundred thousand pounds at the thirtieth of September, twenty twenty-five, below the five
+      million, five hundred thousand pound floor, so no earn-out is payable. The sellers say the
+      Northgate run-off revenue and two signed contracts should count, which takes them to six
+      million, two hundred and fifty thousand pounds at the test date of the thirty-first of December,
+      twenty twenty-five.
+    entities:
+      - { kind: name, text: Castellane, match: [Castellane] }
+      - { kind: name, text: Northgate }
+      - { kind: amount, text: "£5,100,000", match: ["5100000", "5.1 million"] }
+      - { kind: date, text: 30 September 2025, match: ["30 september 2025", "september 30 2025", "30th september 2025", "30th of september 2025", "september 30th 2025"] }
+      - { kind: amount, text: "£5,500,000", match: ["5500000", "5.5 million"] }
+      - { kind: amount, text: "£6,250,000", match: ["6250000", "6.25 million"] }
+      - { kind: date, text: 31 December 2025, match: ["31 december 2025", "december 31 2025", "31st december 2025", "31st of december 2025", "december 31st 2025"] }
+
+  - id: nota-cliente
+    language: es
+    voice: es-es-f
+    text: >-
+      Resumen para el cliente. Rosemary Okafor presentó una demanda ante el tribunal laboral el 20 de mayo
+      de 2025 por despido improcedente y reclama unas 180.000 libras. El contrato de compraventa se firmó
+      el 14 de marzo de 2025 por 18,5 millones de libras.
+    say: >-
+      Resumen para el cliente. Rosemary Okafor presentó una demanda ante el tribunal laboral el veinte de
+      mayo de dos mil veinticinco, por despido improcedente, y reclama unas ciento ochenta mil libras. El
+      contrato de compraventa se firmó el catorce de marzo de dos mil veinticinco, por dieciocho coma
+      cinco millones de libras.
+    entities:
+      - { kind: name, text: Rosemary Okafor, match: [Okafor] }
+      - { kind: date, text: 20 de mayo de 2025 }
+      - { kind: amount, text: "180.000 libras", match: ["180000"] }
+      - { kind: date, text: 14 de marzo de 2025 }
+      - { kind: amount, text: "18,5 millones", match: ["18,5 millones", "18.5 millones", "18500000"] }

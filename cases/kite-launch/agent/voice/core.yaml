@@ -1,0 +1,10 @@
+# Realtime voice scenarios (format: cases/harbor-dispute/agent/voice/core.yaml).
+- id: voice-launch-date
+  from: qa-launch-date
+  voice: en-gb-f
+  tags: [voice, core]
+
+- id: voice-video-deal
+  from: qa-video-deal
+  voice: en-us-m
+  tags: [voice, core]

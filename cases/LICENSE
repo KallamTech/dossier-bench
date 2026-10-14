@@ -15,6 +15,13 @@ fictional. Any resemblance to real persons or entities is coincidental.
 
 The generate.py scripts inside each case are code and fall under the repository's Apache-2.0 LICENSE.
 
+The spoken fixtures (cases/*/audio/) are synthetic speech rendered with Piper TTS from the scripts in
+cases/*/audio/script.yaml. The voice models were trained on these datasets (see cases/voices.yaml):
+  - LibriVox recordings (public domain)
+  - OHF-Voice voice-datasets (CC0)
+  - Scottish English corpus, University of Edinburgh (CC BY 4.0), https://datashare.ed.ac.uk/handle/10283/3270
+  - Sharvard Corpus, University of Edinburgh (CC BY 3.0), https://datashare.ed.ac.uk/handle/10283/574
+
 
 =======================================================================
 

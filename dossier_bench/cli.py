@@ -14,7 +14,7 @@ from dossier_bench import __version__
 from dossier_bench.adapter import Adapter
 from dossier_bench.cases import Case, available
 from dossier_bench.config import Config
-from dossier_bench.results import Run, RunLock
+from dossier_bench.results import Item, Run, RunLock
 
 console = Console()
 
@@ -74,32 +74,73 @@ def cmd_run(args) -> int:
     run.state["case_version"] = case.version
     run.meta.update({"adapter": getattr(adapter, "name", type(adapter).__name__), "dossier_bench": __version__, "config": cfg.snapshot()})
     judge = _judge(cfg, run, not args.no_judge)
-    suites = {"ingest", "agent"} if args.suite == "all" else {args.suite}
+    suites = SUITES if args.suite == "all" else (args.suite,)
     with RunLock(run):
-        if "ingest" in suites:
-            from dossier_bench.ingest import GROUPS, IngestScorer
-
-            only = [g.strip() for g in args.only.split(",")] if args.only else None
-            bad = [g for g in (only or []) if g not in GROUPS]
-            if bad:
-                raise SystemExit(f"unknown groups {bad}; choose from {GROUPS}")
-            console.log(f"ingesting {len(case.files)} files with {run.meta['adapter']}…")
-            result = adapter.ingest(case)
-            search = None
-            if type(adapter).search is not Adapter.search and (only is None or "search" in only):
-                search = lambda q, k: adapter.search(case, q, k)  # noqa: E731
-            for item in IngestScorer(result, case.expected, judge, search, console).run(only):
-                run.add(item)
-            run.save()
-        if "agent" in suites:
-            from dossier_bench.qa import AgentRunner
-            from dossier_bench.scenario import load_scenarios, select
-
-            scs = select(load_scenarios(case.dir), args.scenario.split(",") if args.scenario else None, args.tag.split(",") if args.tag else None, args.group.split(",") if args.group else None)
-            console.log(f"{len(scs)} scenario(s)")
-            AgentRunner(adapter, case, run, judge, console).run_all(scs, repeat=int(args.repeat))
+        for suite in suites:
+            if not adapter.supports(suite):
+                console.log(f"[yellow]{run.meta['adapter']} does not support {suite}; skipped[/yellow]")
+                run.add(Item(suite, "-", "suite", skipped=f"{run.meta['adapter']} does not support {suite}"))
+                run.save()
+                continue
+            if suite in ("transcription", "voice") and not case.audio.exists:
+                run.add(Item(suite, "-", "suite", skipped=f"case {case.name} has no audio fixtures"))
+                run.save()
+                continue
+            SUITE_RUNNERS[suite](args, case, adapter, run, judge)
             run.save()
     return _write_report(cfg, run, args.baseline)
+
+
+def _run_ingest(args, case, adapter, run, judge) -> None:
+    from dossier_bench.ingest import GROUPS, IngestScorer
+
+    only = [g.strip() for g in args.only.split(",")] if args.only else None
+    bad = [g for g in (only or []) if g not in GROUPS]
+    if bad:
+        raise SystemExit(f"unknown groups {bad}; choose from {GROUPS}")
+    console.log(f"ingesting {len(case.files)} files with {run.meta['adapter']}…")
+    result = adapter.ingest(case)
+    search = None
+    if type(adapter).search is not Adapter.search and (only is None or "search" in only):
+        search = lambda q, k: adapter.search(case, q, k)  # noqa: E731
+    for item in IngestScorer(result, case.expected, judge, search, console).run(only):
+        run.add(item)
+
+
+def _run_agent(args, case, adapter, run, judge) -> None:
+    from dossier_bench.qa import AgentRunner
+    from dossier_bench.scenario import load_scenarios, select
+
+    scs = select(load_scenarios(case.dir), _csv(args.scenario), _csv(args.tag), _csv(args.group))
+    console.log(f"{len(scs)} scenario(s)")
+    AgentRunner(adapter, case, run, judge, console).run_all(scs, repeat=int(args.repeat))
+
+
+def _run_transcription(args, case, adapter, run, judge) -> None:
+    from dossier_bench.transcription import TranscriptionRunner
+
+    run.state["audio_version"] = case.audio.version
+    console.log(f"transcribing {len(case.audio.clips)} clip(s)…")
+    TranscriptionRunner(adapter, case, run, console).run_all(_csv(args.variant), _csv(args.clip))
+
+
+def _run_voice(args, case, adapter, run, judge) -> None:
+    from dossier_bench.voice import VoiceRunner, load_voice_scenarios
+
+    run.state["audio_version"] = case.audio.version
+    scs = load_voice_scenarios(case.dir)
+    ids, tags = _csv(args.scenario), _csv(args.tag)
+    scs = [s for s in scs if (not ids or s.id in ids) and (not tags or set(tags) & set(s.tags))]
+    console.log(f"{len(scs)} voice scenario(s)")
+    VoiceRunner(adapter, case, run, judge, console).run_all(scs)
+
+
+def _csv(v: str | None) -> list[str] | None:
+    return [x.strip() for x in v.split(",") if x.strip()] if v else None
+
+
+SUITES = ("ingest", "agent", "transcription", "voice")
+SUITE_RUNNERS = {"ingest": _run_ingest, "agent": _run_agent, "transcription": _run_transcription, "voice": _run_voice}
 
 
 def cmd_report(args) -> int:
@@ -146,10 +187,11 @@ def main(argv: list[str] | None = None) -> None:
 
     s = sub.add_parser("run", help="ingest a case through the adapter and/or run its agent scenarios, then score")
     s.add_argument("--case", default="harbor-dispute")
-    s.add_argument("--suite", choices=["all", "ingest", "agent"], default="all")
+    s.add_argument("--suite", choices=["all", "ingest", "agent", "transcription", "voice"], default="all")
     s.add_argument("--adapter", help="module:Class, overrides adapter.class")
     s.add_argument("--only", help="comma list of ingestion groups")
     s.add_argument("--scenario"); s.add_argument("--tag"); s.add_argument("--group"); s.add_argument("--repeat", default="1")
+    s.add_argument("--variant", help="transcription: comma list of clean,noise"); s.add_argument("--clip", help="transcription: comma list of clip ids")
     s.add_argument("--no-judge", action="store_true"); s.add_argument("--label"); s.add_argument("--baseline")
     s.set_defaults(fn=cmd_run)
     s = sub.add_parser("report"); s.add_argument("--run"); s.add_argument("--baseline"); s.set_defaults(fn=cmd_report)

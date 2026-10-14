@@ -1,0 +1,10 @@
+# Realtime voice scenarios (format: cases/harbor-dispute/agent/voice/core.yaml).
+- id: voice-price-structure
+  from: qa-price-structure
+  voice: en-gb-f2
+  tags: [voice, core]
+
+- id: voice-okafor-claim
+  from: qa-okafor-claim
+  voice: en-us-m
+  tags: [voice, core]

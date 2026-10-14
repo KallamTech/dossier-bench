@@ -1,0 +1,24 @@
+# Realtime voice scenarios. `from` reuses a text scenario's turns and expectations, spoken by `voice`;
+# or give `turns` directly. `say` (list, per turn) overrides what the voice reads. `barge_in_after_s` on a turn: start speaking that many seconds after the
+# previous reply's first audio, interrupting it. Audio: audio/voice/<id>-t<n>.mp3 (scripts/gen_audio.py).
+- id: voice-ld-rate
+  from: qa-ld-rate
+  voice: en-gb-f
+  tags: [voice, core]
+
+- id: voice-power-supply
+  from: qa-power-supply
+  voice: en-us-m
+  say: ["When was the permanent four hundred amp power supply contractually due, and when was it actually energised?"]
+  tags: [voice, core]
+
+- id: voice-barge-in
+  voice: en-us-m
+  tags: [voice, barge-in]
+  turns:
+    - content: Walk me through the delay expert's report in detail, section by section.
+    - content: Sorry, stop there. Just tell me the liquidated damages cap.
+      barge_in_after_s: 3
+      expect:
+        answer:
+          must_facts: [capped at 10% of the contract price]
