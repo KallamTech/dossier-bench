@@ -1,0 +1,60 @@
+# Spoken fixtures for the transcription and voice suites (format: cases/harbor-dispute/audio/script.yaml).
+clips:
+  - id: standup
+    language: en
+    voice: en-gb-f
+    text: >-
+      Stand-up notes for Project Kite. Owen Castillo's team found the single sign-on bug on 12 September
+      2025, and on 18 September we agreed to move the launch of Kite Planner 3.0 from 15 October to
+      29 October 2025. Pixelforge Studio will deliver the launch video for £21,000, down from the quoted
+      £24,500.
+    say: >-
+      Stand-up notes for Project Kite. Owen Castillo's team found the single sign-on bug on the twelfth
+      of September, twenty twenty-five, and on the eighteenth of September we agreed to move the launch
+      of Kite Planner three point oh from the fifteenth of October to the twenty-ninth of October, twenty
+      twenty-five. Pixelforge Studio will deliver the launch video for twenty-one thousand pounds, down
+      from the quoted twenty-four thousand, five hundred.
+    entities:
+      - { kind: name, text: Owen Castillo }
+      - { kind: date, text: 12 September 2025, match: ["12 september 2025", "september 12 2025", "12th september 2025", "12th of september 2025", "september 12th 2025"] }
+      - { kind: date, text: 18 September, match: ["18 september", "september 18", "18th september", "18th of september", "september 18th"] }
+      - { kind: name, text: Kite Planner 3.0, match: ["kite planner 3.0", "kite planner 3", "kite planner 3 0", "kite planner three point oh"] }
+      - { kind: date, text: 15 October, match: ["15 october", "october 15", "15th october", "15th of october", "october 15th"] }
+      - { kind: date, text: 29 October 2025, match: ["29 october 2025", "october 29 2025", "29th october 2025", "29th of october 2025", "october 29th 2025"] }
+      - { kind: name, text: Pixelforge Studio, match: [Pixelforge, Pixel Forge] }
+      - { kind: amount, text: "£21,000", match: ["21000"] }
+      - { kind: amount, text: "£24,500", match: ["24500"] }
+
+  - id: budget
+    language: en
+    voice: en-us-m
+    text: >-
+      Budget check from Tom Berglund. The total launch budget stays at £120,000. Twelve beta customers took
+      part, and the net promoter score was 41. Kwame Mensah at Holloway Logistics agreed to be quoted in
+      the press release.
+    say: >-
+      Budget check from Tom Berglund. The total launch budget stays at one hundred and twenty thousand
+      pounds. Twelve beta customers took part, and the net promoter score was forty-one. Kwame Mensah at
+      Holloway Logistics agreed to be quoted in the press release.
+    entities:
+      - { kind: name, text: Tom Berglund }
+      - { kind: amount, text: "£120,000", match: ["120000"] }
+      - { kind: amount, text: "41", match: ["41", "forty-one"] }
+      - { kind: name, text: Kwame Mensah }
+      - { kind: name, text: Holloway Logistics, match: [Holloway] }
+
+  - id: nota-reunion
+    language: es
+    voice: es-es-m
+    text: >-
+      Notas de la reunión con Holloway Logistics. Kwame Mensah confirmó que el error de inicio de sesión
+      único está resuelto y que su equipo usará Kite Planner 3.0 desde el 29 de octubre de 2025.
+    say: >-
+      Notas de la reunión con Holloway Logistics. Kwame Mensah confirmó que el error de inicio de sesión
+      único está resuelto, y que su equipo usará Kite Planner tres punto cero desde el veintinueve de
+      octubre de dos mil veinticinco.
+    entities:
+      - { kind: name, text: Holloway Logistics, match: [Holloway] }
+      - { kind: name, text: Kwame Mensah }
+      - { kind: name, text: Kite Planner 3.0, match: ["kite planner 3.0", "kite planner 3", "kite planner 3 0", "kite planner tres punto cero"] }
+      - { kind: date, text: 29 de octubre de 2025 }

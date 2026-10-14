@@ -1,6 +1,6 @@
 [project]
 name = "dossier-bench"
-version = "0.1.0"
+version = "0.2.0"
 description = "Quality / latency / cost benchmark for AI systems that ingest and answer questions over case files"
 readme = "README.md"
 license = "Apache-2.0"

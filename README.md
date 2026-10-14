@@ -43,6 +43,27 @@ Groups the system doesn't produce (no graph, no search, and so on) are **skipped
 Answers are graded by a pinned LLM judge against `must_facts` and `must_not_claim` lists, plus literal
 `contains` / `not_contains` checks and citation checks.
 
+**Transcription.** Dictated notes about each case, in English and Spanish, each in a clean and a noisy
+(pink noise, 10 dB SNR) version. A clip is scored on:
+- word and character error rate against the reference, after a documented normalisation (case,
+  punctuation, currency symbols, thousands separators, ordinals);
+- **critical entities**: names, amounts, dates and references (clause numbers, invoice numbers), weighted
+  amounts 2, dates and references 1.5, names 1. A transcript that says "€1,280,000" instead of
+  "€1,288,000" is worse than one that misspells a word, and this is where it shows;
+- language detection, when the system reports one;
+- speed, as a real-time factor (seconds of processing per second of audio).
+
+A clip passes at WER ≤ 0.15, entity accuracy ≥ 0.8 and the right language.
+
+**Voice (realtime).** Spoken conversations about the case, streamed to the system at real-time pace. Each
+reply is scored like an agent turn, on the transcript of what the system said. On top of that:
+- time to first audio after the user stops speaking;
+- turn latency;
+- for barge-in turns, whether the interrupted reply stopped within a second;
+- how well the system heard the user (WER of its transcript of the user's turn).
+
+Suites the system doesn't have (no dictation, no realtime voice) are skipped, not failed.
+
 ## The cases
 
 | case | what | files | scenarios |
@@ -60,20 +81,33 @@ Each case has the same layout:
 - `docs/`: the files to ingest. `docs/attachments-only/` holds files that arrive only inside an email.
 - `expected/`: the ground truth.
 - `agent/scenarios/`: the conversations.
+- `audio/script.yaml`: the dictation clips: reference text, what the voice reads, and the critical entities.
+- `agent/voice/`: the realtime voice scenarios. Most reuse a text scenario's turns and expectations.
+- `audio/`: rendered speech (mono 16 kHz mp3); `expected/audio.yaml` lists every file with its sha256.
 
 `expected/manifest.yaml` maps every filename to a stable document key, and every score is keyed by
 those document keys.
 
 ```
 uv run python cases/harbor-dispute/generate.py --force   # re-render; bump case_version in bible.yaml if output changes
+uv run --with numpy python scripts/gen_audio.py --force  # re-render the speech (needs ffmpeg; Piper runs via uvx)
 ```
+
+The speech is synthetic: Piper TTS with five voices trained on public-domain, CC0 and CC BY datasets
+(`cases/voices.yaml`). It is clean studio speech, so treat absolute WER as optimistic next to real
+dictation; the comparison between systems is what the suite is for.
 
 ## Quick start: the reference baseline
 
 The baseline uses one OpenAI-compatible chat model and has no retrieval index:
 - **ingest:** extracts the text of each file and makes one JSON call per document;
 - **ask:** puts every document into the prompt and asks the model to cite `[doc-key]`;
-- **search:** idf-weighted lexical matching.
+- **search:** idf-weighted lexical matching;
+- **transcribe:** any OpenAI-compatible `/audio/transcriptions` endpoint (`stt_model`), for example a hosted
+  speech-to-text model or a local [whisper.cpp](https://github.com/ggml-org/whisper.cpp) server started with
+  `--inference-path /v1/audio/transcriptions`.
+
+It has no realtime voice, so the voice suite is skipped.
 
 It exists so the benchmark runs end to end without any product, and to give a floor to beat.
 
@@ -85,6 +119,7 @@ uv run dossier-bench cases
 uv run dossier-bench run --case harbor-dispute --label baseline       # ingest + agent, then report
 uv run dossier-bench baseline save --label first
 uv run dossier-bench run --case harbor-dispute --suite agent --tag core --baseline first
+uv run dossier-bench run --case harbor-dispute --suite transcription --variant clean    # dictation only
 ```
 
 Each run writes `runs/<id>/` containing:
@@ -100,7 +135,10 @@ Subclass `dossier_bench.adapter.Adapter`. Work in document keys: the manifest ma
 translate your own ids to keys before returning anything.
 
 ```python
-from dossier_bench.adapter import Adapter, Answer, Document, IngestResult
+from pathlib import Path
+
+from dossier_bench.adapter import (Adapter, Answer, Document, IngestResult, Transcript, VoiceRun, VoiceTurn,
+                                   VoiceTurnResult)
 from dossier_bench.cases import Case
 
 
@@ -124,7 +162,19 @@ class MySystem(Adapter):
 
     def search(self, case: Case, query: str, k: int) -> list[str]:   # optional
         return ["contract-v1", "contract-v2"]
+
+    def transcribe(self, audio: Path, language: str | None) -> Transcript:   # optional: dictation
+        r = my_stt(audio.read_bytes())
+        return Transcript(text=r.text, language=r.language, cost_usd=r.cost)
+
+    def voice_session(self, case: Case, turns: list[VoiceTurn]) -> VoiceRun:  # optional: realtime voice
+        ...  # one session; stream each turn with dossier_bench.audio.pcm_chunks(turn.audio) at real-time pace,
+        ...  # speak over the previous reply when turn.barge_in_after_s is set, and time everything on one clock
+        return VoiceRun([VoiceTurnResult(reply_text=..., speech_end_s=..., first_audio_s=..., reply_end_s=...)])
 ```
+
+Override `supports(suite)` to switch a suite off for one configuration, for example a mode of your
+product that has dictation but no realtime voice.
 
 Then run it with `uv run dossier-bench run --adapter my_package.adapter:MySystem`. Alternatively, set
 `adapter.class` and `adapter.options` (the constructor's keyword arguments) in `dossier-bench.yaml`.

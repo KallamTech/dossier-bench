@@ -127,6 +127,7 @@ def render_markdown(run: Run, cfg, baseline: dict[str, Item] | None = None, base
             f"{_fmt(a['pass_rate'], 'q')} | {_fmt(a['judge_cost_usd'], '$')} |"
         )
     out.append("")
+    out += _transcription_section(run.items) + _voice_section(run.items)
     if violations:
         out.append(f"## Regressions / floor misses ({len(violations)})")
         out.append("")
@@ -157,8 +158,49 @@ def render_markdown(run: Run, cfg, baseline: dict[str, Item] | None = None, base
     return "\n".join(out) + "\n"
 
 
+def _transcription_section(items: list[Item]) -> list[str]:
+    its = [i for i in items if i.suite == "transcription" and not i.skipped and "ref_words" in i.detail]
+    if not its:
+        return []
+    out = ["## Transcription", "", "Corpus WER/CER (edits over reference length), weighted critical-entity accuracy, entity accuracy by kind, median real-time factor (latency / audio length).", ""]
+    out += ["| group | clips | WER | CER | entities | names | amounts | dates | refs | RTF | pass |", "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|"]
+    by: dict[str, list[Item]] = defaultdict(list)
+    for i in its:
+        by[i.group].append(i)
+        by["all"].append(i)
+    for g, gi in sorted(by.items(), key=lambda kv: (kv[0] == "all", kv[0])):
+        w = sum(i.detail["word_edits"] for i in gi) / max(1, sum(i.detail["ref_words"] for i in gi))
+        c = sum(i.detail["char_edits"] for i in gi) / max(1, sum(i.detail["ref_chars"] for i in gi))
+        ent = statistics.mean(i.detail["entity_accuracy"] for i in gi)
+        kinds = []
+        for k in ("name", "amount", "date", "ref"):
+            es = [e["found"] for i in gi for e in i.detail.get("entities", []) if e["kind"] == k]
+            kinds.append(f"{sum(es) / len(es):.2f}" if es else "–")
+        rtf = [i.detail["rtf"] for i in gi if i.detail.get("rtf") is not None]
+        passed = sum(1 for i in gi if i.passed) / len(gi)
+        out.append(f"| {g} | {len(gi)} | {w:.3f} | {c:.3f} | {ent:.2f} | {' | '.join(kinds)} | {statistics.median(rtf):.2f} | {passed:.2f} |" if rtf else f"| {g} | {len(gi)} | {w:.3f} | {c:.3f} | {ent:.2f} | {' | '.join(kinds)} | – | {passed:.2f} |")
+    return out + [""]
+
+
+def _voice_section(items: list[Item]) -> list[str]:
+    its = [i for i in items if i.suite == "voice" and not i.skipped]
+    if not its:
+        return []
+    fa = [i.detail["first_audio_s"] for i in its if i.detail.get("first_audio_s") is not None]
+    tl = [i.detail["turn_latency_s"] for i in its if i.detail.get("turn_latency_s") is not None]
+    bi = [i.detail["subscores"]["barge_in"] for i in its if "barge_in" in i.detail.get("subscores", {})]
+    hw = [i.detail["heard_wer"] for i in its if i.detail.get("heard_wer") is not None]
+
+    def med(xs: list[float], unit: str = "s") -> str:
+        return f"{statistics.median(xs):.2f}{unit}" if xs else "–"
+
+    out = ["## Voice", "", "| turns | first audio (median) | first audio (max) | turn latency (median) | barge-in handled | heard WER (median) |", "|---:|---:|---:|---:|---:|---:|"]
+    out.append(f"| {len(its)} | {med(fa)} | {f'{max(fa):.2f}s' if fa else '–'} | {med(tl)} | {f'{sum(bi):.0f}/{len(bi)}' if bi else '–'} | {med(hw, '')} |")
+    return out + [""]
+
+
 def _short_detail(d: dict) -> str:
-    keys = ["why", "missing", "missing_phrases", "contradicted", "forbidden_present", "error", "actual", "tools", "missing_tools", "forbidden_tools", "reasoning", "injection"]
+    keys = ["wer", "why", "missing", "missing_phrases", "contradicted", "forbidden_present", "error", "actual", "tools", "missing_tools", "forbidden_tools", "reasoning", "injection"]
     parts = []
     for k in keys:
         if k in d and d[k] not in (None, [], "", {}):

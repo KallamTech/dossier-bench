@@ -1,0 +1,77 @@
+# Spoken fixtures for the transcription and voice suites. `text` is the reference transcript, written
+# the way a careful human transcriber would; `say` (optional) is what the synthetic voice reads, spelled
+# out so the voice pronounces it the way a person dictating would. Entities are the critical items
+# (names, amounts, dates, references); `match` lists accepted written forms after normalisation.
+# Render with: uv run python scripts/gen_audio.py --case harbor-dispute
+clips:
+  - id: memo-power
+    language: en
+    voice: en-gb-f
+    text: >-
+      File note, Tidewell Fabrication against Brisamar Logistics. Under clause 6.4 of the amended
+      agreement, Brisamar had to provide the 400 amp power supply by 7 February 2025. It did not.
+      Priya Nair raised it at the site meeting and Marc Pujol accepted that the date had slipped.
+      The amended contract price is €1,288,000, and invoice 0417 for €257,600 is still on hold.
+    say: >-
+      File note, Tidewell Fabrication against Brisamar Logistics. Under clause six point four of the
+      amended agreement, Brisamar had to provide the four hundred amp power supply by the seventh of
+      February, twenty twenty-five. It did not. Priya Nair raised it at the site meeting, and Marc
+      Pujol accepted that the date had slipped. The amended contract price is one million, two hundred
+      and eighty-eight thousand euros, and invoice zero four one seven, for two hundred and fifty-seven
+      thousand, six hundred euros, is still on hold.
+    entities:
+      - { kind: name, text: Tidewell Fabrication, match: [Tidewell] }
+      - { kind: name, text: Brisamar Logistics, match: [Brisamar] }
+      - { kind: name, text: Priya Nair }
+      - { kind: name, text: Marc Pujol }
+      - { kind: ref, text: clause 6.4 }
+      - { kind: amount, text: 400 amp, match: ["400 amp", "400a", "400 amps", "400-amp"] }
+      - { kind: date, text: 7 February 2025, match: ["7 february 2025", "february 7 2025", "7th february 2025", "7th of february 2025", "february 7th 2025"] }
+      - { kind: amount, text: "€1,288,000", match: ["1288000", "1.288 million"] }
+      - { kind: ref, text: invoice 0417, match: ["0417", "04 17", "invoice 417"] }
+      - { kind: amount, text: "€257,600", match: ["257600"] }
+
+  - id: memo-slab
+    language: en
+    voice: en-us-m
+    text: >-
+      Note on the Bay 3 floor slab. Levantina Topografía surveyed the slab on 19 February 2025 and
+      measured an 18 millimetre deviation over 3 metres, against a tolerance of 5 millimetres.
+      Tidewell served its first delay notice under clause 9.2 two days later and issued change order
+      CO-3 for €48,000.
+    say: >-
+      Note on the Bay three floor slab. Levantina Topografía surveyed the slab on the nineteenth of
+      February, twenty twenty-five, and measured an eighteen millimetre deviation over three metres,
+      against a tolerance of five millimetres. Tidewell served its first delay notice under clause
+      nine point two two days later, and issued change order C O three, for forty-eight thousand euros.
+    entities:
+      - { kind: ref, text: Bay 3, match: ["bay 3", "bay three"] }
+      - { kind: name, text: Levantina Topografía, match: [Levantina] }
+      - { kind: date, text: 19 February 2025, match: ["19 february 2025", "february 19 2025", "19th february 2025", "19th of february 2025", "february 19th 2025"] }
+      - { kind: amount, text: 18 millimetre, match: ["18 millimetre", "18 millimeter", "18 mm", "18-millimetre", "18-millimeter", "eighteen millimetre", "eighteen millimeter"] }
+      - { kind: amount, text: 5 millimetres, match: ["5 millimetres", "5 millimeters", "5 mm", "five millimetres", "five millimeters"] }
+      - { kind: ref, text: clause 9.2 }
+      - { kind: ref, text: CO-3, match: ["co-3", "co 3", "co3", "c o 3", "c o three", "co three"] }
+      - { kind: amount, text: "€48,000", match: ["48000"] }
+
+  - id: nota-factura
+    language: es
+    voice: es-es-m
+    text: >-
+      Nota para el expediente. Brisamar Logistics retuvo la factura 0417, por importe de 257.600 euros,
+      el 28 de abril de 2025. Lucía Ortega alegó retrasos en la instalación del sistema de transportadores
+      en Valencia y anunció una reclamación por daños liquidados del 0,5 % semanal, con un máximo del 10 %.
+    say: >-
+      Nota para el expediente. Brisamar Logistics retuvo la factura cero cuatro uno siete, por importe
+      de doscientos cincuenta y siete mil seiscientos euros, el veintiocho de abril de dos mil
+      veinticinco. Lucía Ortega alegó retrasos en la instalación del sistema de transportadores en
+      Valencia, y anunció una reclamación por daños liquidados del cero coma cinco por ciento semanal,
+      con un máximo del diez por ciento.
+    entities:
+      - { kind: name, text: Brisamar Logistics, match: [Brisamar] }
+      - { kind: name, text: Lucía Ortega }
+      - { kind: ref, text: factura 0417, match: ["0417", "04 17", "factura 417"] }
+      - { kind: amount, text: "257.600 euros", match: ["257600"] }
+      - { kind: date, text: 28 de abril de 2025 }
+      - { kind: amount, text: "0,5 %", match: ["0,5", "0.5", "cero coma cinco"] }
+      - { kind: amount, text: "10 %", match: ["10", "diez por ciento"] }

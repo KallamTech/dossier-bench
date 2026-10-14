@@ -1,0 +1,19 @@
+# Synthetic voices used for the spoken fixtures (Piper TTS, https://github.com/OHF-Voice/piper1-gpl).
+# Each voice model is trained on the dataset named here; the audio we render is distributed under
+# cases/LICENSE (CC BY 4.0) with the attributions below.
+en-gb-f:
+  piper: en/en_GB/cori/high/en_GB-cori-high
+  dataset: LibriVox recordings (public domain)
+en-gb-f2:
+  piper: en/en_GB/alba/medium/en_GB-alba-medium
+  dataset: "Scottish English corpus (University of Edinburgh, CC BY 4.0): https://datashare.ed.ac.uk/handle/10283/3270"
+en-us-m:
+  piper: en/en_US/joe/medium/en_US-joe-medium
+  dataset: OHF-Voice voice-datasets (CC0)
+es-es-m:
+  piper: es/es_ES/davefx/medium/es_ES-davefx-medium
+  dataset: OHF-Voice voice-datasets (CC0)
+es-es-f:
+  piper: es/es_ES/sharvard/medium/es_ES-sharvard-medium
+  speaker: F
+  dataset: "Sharvard Corpus (University of Edinburgh, CC BY 3.0): https://datashare.ed.ac.uk/handle/10283/574"

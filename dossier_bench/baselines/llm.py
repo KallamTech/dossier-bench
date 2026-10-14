@@ -1,8 +1,11 @@
 """Reference baseline: one OpenAI-compatible model, no retrieval index, no pipeline.
 
-ingest: extract text per file (optionally transcribe scans/photos with the model), one JSON call per document.
-ask:    every document's text in one prompt, cited as [doc-key].
-search: lexical idf scoring over the extracted text.
+ingest:     extract text per file (optionally transcribe scans/photos with the model), one JSON call per document.
+ask:        every document's text in one prompt, cited as [doc-key].
+search:     lexical idf scoring over the extracted text.
+transcribe: one OpenAI-compatible /audio/transcriptions call per clip (`stt_model`; e.g. whisper.cpp's server
+            started with --inference-path /v1/audio/transcriptions, or a hosted speech-to-text model).
+No realtime voice: `voice_session` is left unimplemented, so the voice suite is skipped.
 
 It exists so the bench runs end to end without any product; it is not meant to score well.
 """
@@ -20,7 +23,7 @@ from collections import Counter
 from typing import Any
 
 from dossier_bench import scorers as S
-from dossier_bench.adapter import Adapter, Answer, Document, Event, IngestResult, Usage
+from dossier_bench.adapter import Adapter, Answer, Document, Event, IngestResult, Transcript, Usage
 from dossier_bench.baselines.extract import Extracted, extract
 from dossier_bench.cases import Case
 
@@ -56,19 +59,31 @@ def _tokens(s: str) -> list[str]:
 class LLMBaseline(Adapter):
     name = "llm-baseline"
 
-    def __init__(self, model: str = "", base_url: str | None = None, api_key: str | None = None, price_per_m: dict | None = None, vision: bool = False, max_doc_chars: int = 60_000, max_context_chars: int = 300_000):
+    def __init__(
+        self, model: str = "", base_url: str | None = None, api_key: str | None = None, price_per_m: dict | None = None, vision: bool = False,
+        max_doc_chars: int = 60_000, max_context_chars: int = 300_000,
+        stt_model: str = "", stt_base_url: str | None = None, stt_api_key: str | None = None, stt_price_per_min: float = 0.0, stt_response_format: str = "json",
+    ):
         from openai import OpenAI
 
         self.model = model or os.environ.get("DOSSIER_MODEL", "")
-        if not self.model:
-            raise SystemExit("llm baseline: set adapter.options.model (or DOSSIER_MODEL)")
+        self.stt_model = stt_model or os.environ.get("DOSSIER_STT_MODEL", "")
+        if not (self.model or self.stt_model):
+            raise SystemExit("llm baseline: set adapter.options.model (or DOSSIER_MODEL), and/or stt_model for transcription")
         self.client = OpenAI(base_url=base_url or os.environ.get("OPENAI_BASE_URL"), api_key=api_key or os.environ.get("OPENAI_API_KEY") or "sk-none")
+        self.stt_client = OpenAI(base_url=stt_base_url or base_url or os.environ.get("OPENAI_BASE_URL"), api_key=stt_api_key or api_key or os.environ.get("OPENAI_API_KEY") or "sk-none")
+        self.stt_price_per_min, self.stt_response_format = float(stt_price_per_min), stt_response_format
         price = price_per_m or {}
         self.p_in, self.p_out = float(price.get("input", 0)), float(price.get("output", 0))
         self.vision = vision
         self.max_doc_chars = max_doc_chars
         self.max_context_chars = max_context_chars
         self._docs: dict[str, dict[str, Document]] = {}
+
+    def supports(self, suite: str) -> bool:
+        if suite == "transcription":
+            return bool(self.stt_model)
+        return bool(self.model) and super().supports(suite)
 
     # ---- model calls ----------------------------------------------------------------
     def _chat(self, messages: list[dict], json_mode: bool = False) -> tuple[str, float, int]:
@@ -169,3 +184,17 @@ class LLMBaseline(Adapter):
         df = {t: sum(1 for c in docs.values() if t in c) for t in q}
         scores = {key: sum((1 + math.log(c[t])) * math.log(1 + n / df[t]) for t in q if c.get(t)) for key, c in docs.items()}
         return [key for key, s in sorted(scores.items(), key=lambda x: -x[1]) if s > 0][:k]
+
+    # ---- dictation --------------------------------------------------------------------
+    def transcribe(self, audio, language: str | None) -> Transcript:
+        t0 = time.monotonic()
+        with open(audio, "rb") as f:
+            r = self.stt_client.audio.transcriptions.create(model=self.stt_model, file=f, response_format=self.stt_response_format)
+        latency = round(time.monotonic() - t0, 3)
+        text = r if isinstance(r, str) else (getattr(r, "text", "") or "")
+        cost = None
+        if self.stt_price_per_min:
+            from dossier_bench.audio import duration_s
+
+            cost = round((getattr(r, "duration", None) or duration_s(audio)) / 60 * self.stt_price_per_min, 6)
+        return Transcript(" ".join(text.split()), language=getattr(r, "language", None), latency_s=latency, cost_usd=cost)

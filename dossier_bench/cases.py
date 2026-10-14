@@ -6,8 +6,12 @@ import os
 from dataclasses import dataclass
 from functools import cached_property
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 import yaml
+
+if TYPE_CHECKING:
+    from dossier_bench.audio import AudioManifest
 
 _PKG = Path(__file__).resolve().parent
 
@@ -58,6 +62,12 @@ class Case:
     @cached_property
     def expected(self) -> Expected:
         return Expected(self.dir)
+
+    @cached_property
+    def audio(self) -> AudioManifest:
+        from dossier_bench.audio import AudioManifest
+
+        return AudioManifest(self.dir)
 
     @property
     def docs_dir(self) -> Path:

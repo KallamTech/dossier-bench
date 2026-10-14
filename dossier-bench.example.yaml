@@ -15,6 +15,11 @@ adapter:
     # base_url: http://localhost:11434/v1   # e.g. a local Ollama
     vision: false            # true = transcribe scans and photos with the same model
     price_per_m: { input: 0, output: 0 }
+    # transcription suite: any OpenAI-compatible speech-to-text endpoint
+    # stt_model: whisper-1
+    # stt_base_url: http://127.0.0.1:8080/v1   # e.g. whisper-server --inference-path /v1/audio/transcriptions
+    # stt_response_format: verbose_json        # json for models that only return text
+    # stt_price_per_min: 0.006
 
 thresholds:                  # `compare` flags an item that breaks any of these against the baseline
   quality: { min_abs: 0.6, max_drop: 0.10 }
