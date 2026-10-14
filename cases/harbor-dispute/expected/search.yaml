@@ -1,4 +1,4 @@
-case_version: 4
+case_version: 5
 queries:
 - query: liquidated damages cap
   expect:

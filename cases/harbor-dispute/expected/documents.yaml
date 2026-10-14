@@ -1,4 +1,4 @@
-case_version: 4
+case_version: 5
 documents:
 - key: survey-attachment
   files:
@@ -51,7 +51,7 @@ documents:
   family:
     group: supply-agreement
     role: base
-  sha256: 5d7362a28827341e6d9d2965a1708d4d47cb8abb19d1e59b93b9aab1648dd814
+  sha256: 900954eddbd1b374cf1c606a7da7378212094991f3ab41796ea653ef732360f6
 - key: contract-v2
   files:
   - 02_supply_agreement_v2_amended.docx
@@ -79,7 +79,7 @@ documents:
   family:
     group: supply-agreement
     role: revision
-  sha256: 4db71a45c77b51c7a914384bbf993b0a57278c7a705993f05012b30d8910ac0a
+  sha256: c7509685dfebfd0d00966e35aeea9706fed286e3fdef0641e6fca4806ab7ed8f
 - key: tender
   files:
   - 03_tender_response.pdf
@@ -282,7 +282,7 @@ documents:
   - Milestone 3 mechanical completion, 20% of contract price, €257,600
   - Due 23 April 2025
   family: null
-  sha256: 7b316a8fcae11ba83ece8b61b7724fc0f96cd4bfe733d4f94d234a4ba9dbdc32
+  sha256: 8d3ca81cb08c40f14e6484de24af74213a76fc971ba73fe45fd46f87e5df12f2
 - key: expert-report
   files:
   - 09_delay_expert_report.pdf
@@ -360,7 +360,7 @@ documents:
   files:
   - 12_supply_agreement_v1 (1).pdf
   copy_of: contract-v1
-  sha256: 5d7362a28827341e6d9d2965a1708d4d47cb8abb19d1e59b93b9aab1648dd814
+  sha256: 900954eddbd1b374cf1c606a7da7378212094991f3ab41796ea653ef732360f6
 - key: injection
   files:
   - 13_vendor_faq.pdf

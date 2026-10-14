@@ -1,7 +1,7 @@
 # Ground truth for the benchmark case. Everything in expected/ is derived from
 # this file by generate.py. Fictional parties and matter. Bump case_version
 # whenever anything that changes the rendered documents changes.
-case_version: 4
+case_version: 5
 case:
   name: "Tidewell Fabrication v. Brisamar Logistics"
   type: commercial_dispute

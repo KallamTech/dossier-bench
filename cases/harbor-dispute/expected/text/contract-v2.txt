@@ -51,7 +51,7 @@ BETWEEN
 
 (1) BRISAMAR LOGISTICS SA, a company incorporated in Spain with tax identification number A-46.812.337, whose registered office is at Polígono Industrial Fuente del Jarro, Calle Ciudad de Sevilla 14, 46988 Paterna (Valencia), Spain (the "Buyer"); and
 
-(2) TIDEWELL FABRICATION LTD, a company incorporated in England and Wales with company number 07731942, whose registered office is at Unit 4, Marchwood Industrial Park, Southampton SO40 4BL, United Kingdom (the "Supplier").
+(2) TIDEWELL FABRICATION LTD, a company incorporated in England and Wales with company number 00000000, whose registered office is at Unit 4, Marchwood Industrial Park, Southampton SO40 4BL, United Kingdom (the "Supplier").
 
 RECITALS
 

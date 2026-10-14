@@ -52,6 +52,6 @@
 | 3 — Terminación mecánica (20%) | 0417 | 24/03/2025 | 257.600,00 | Pendiente |
 | 4 — Recepción (10%) | — | — | 128.800,00 | No emitida |
 
-Tidewell Fabrication Ltd — Registrada en Inglaterra y Gales con el número 07731942.
+Tidewell Fabrication Ltd — Registrada en Inglaterra y Gales con el número 00000000.
 
 Persona de contacto para esta factura: Priya Nair, Project Manager — p.nair@tidewellfab.example
