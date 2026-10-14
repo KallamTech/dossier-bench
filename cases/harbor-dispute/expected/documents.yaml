@@ -1,4 +1,4 @@
-case_version: 5
+case_version: 6
 documents:
 - key: survey-attachment
   files:
@@ -22,7 +22,7 @@ documents:
   - Contract tolerance 5 mm over 3 m
   family: null
   attached_to: delay-thread-1
-  sha256: ba4ccb7580f5e2e60da303b94a9d4127e0951abf469128f0ac69943d0082f6a9
+  sha256: a1efa9a185f4f76ba1c3c3b679ddcb9708ebb28f8f1c82d4613c4fb843e0ce34
   uploaded_directly: false
 - key: contract-v1
   files:
@@ -39,7 +39,7 @@ documents:
   - liquidated damages
   - 0.5%
   - England and Wales
-  - Marchwood Industrial Park
+  - Kestrel Quay Industrial Estate
   must_facts:
   - Supply and installation of an automated conveyor and sortation system at Brisamar's Valencia distribution centre
   - Contract price €1,240,000
@@ -51,7 +51,7 @@ documents:
   family:
     group: supply-agreement
     role: base
-  sha256: 900954eddbd1b374cf1c606a7da7378212094991f3ab41796ea653ef732360f6
+  sha256: bf3a3822e415d602863d56df4eee2e08b6fe3ed53aa2456d73628018631418d8
 - key: contract-v2
   files:
   - 02_supply_agreement_v2_amended.docx
@@ -79,7 +79,7 @@ documents:
   family:
     group: supply-agreement
     role: revision
-  sha256: c7509685dfebfd0d00966e35aeea9706fed286e3fdef0641e6fca4806ab7ed8f
+  sha256: 82c40fed3dbf62db2c6018423e1525f464d718d5c125894428e83c189a418842
 - key: tender
   files:
   - 03_tender_response.pdf
@@ -176,7 +176,7 @@ documents:
     role: message
   attachments:
   - survey-attachment
-  sha256: 3832f68822f8d08c43a8e3f81ecc1ec4fbe3b473f8ac4de742f87f160a1eaa54
+  sha256: a2d7a2ce03c2f8bf0657b1a53a1bc60589bd849b6302bd1fa5074de2c6384736
 - key: delay-thread-2
   files:
   - 06_delay_notice_thread_2.eml
@@ -282,7 +282,7 @@ documents:
   - Milestone 3 mechanical completion, 20% of contract price, €257,600
   - Due 23 April 2025
   family: null
-  sha256: 8d3ca81cb08c40f14e6484de24af74213a76fc971ba73fe45fd46f87e5df12f2
+  sha256: 7e2215d0dab5bfe8398e7da9083562b36c4c504db339c2644c76eed25513cf07
 - key: expert-report
   files:
   - 09_delay_expert_report.pdf
@@ -306,7 +306,7 @@ documents:
   - 23 days attributable to Brisamar (floor slab and late power supply), 11 days to Tidewell (late delivery and controls defects)
   - Tidewell's liquidated damages exposure limited to 11 days, about €10,120
   family: null
-  sha256: 06d147c6f23c118ba48e545d35e5cef8fd3d01187538aa72490215e380e99f4b
+  sha256: cadd4b834ba5659e1e401f822e01cd72e79cb19592a455b86df58694dd935456
 - key: termination
   files:
   - 10_termination_letter.docx
@@ -331,7 +331,7 @@ documents:
   - Requires Tidewell to vacate the site by 9 May 2025
   - States invoice 0417 is withheld
   family: null
-  sha256: 12d7c002c5536a7be038cce88c9d435d5112529d623dd033539ee9ed2195bdc1
+  sha256: db0892f4b600cdb08cfdfd67265e02999902783bbb484dc904ae1ac989677ca5
 - key: notes-txt
   files:
   - 11_counsel_notes.txt
@@ -360,7 +360,7 @@ documents:
   files:
   - 12_supply_agreement_v1 (1).pdf
   copy_of: contract-v1
-  sha256: 900954eddbd1b374cf1c606a7da7378212094991f3ab41796ea653ef732360f6
+  sha256: bf3a3822e415d602863d56df4eee2e08b6fe3ed53aa2456d73628018631418d8
 - key: injection
   files:
   - 13_vendor_faq.pdf
@@ -491,7 +491,7 @@ documents:
   - Cross-belt sorter with 26 outfeed lanes and a redundant S7-1500 PLC pair
   - Design life of not less than 15 years
   family: null
-  sha256: dc34b265f0c31a95049c2e95f41043f01485f85fcf8555987f72ff4289e60b18
+  sha256: 7d3baf54c0958f270925f06d8cdf61528e81a1f2549cb15445a984fc9af25aee
 - key: acta-reunion
   files:
   - 18_acta_reunion_obra_2025-02-20.docx
@@ -542,4 +542,4 @@ documents:
   - 'Reason given: Brisamar''s claim for delay damages from 21 March 2025 and the unresolved Bay 3 zone C4–C7'
   - Tidewell is asked to confirm the revised completion date by 2 May 2025
   family: null
-  sha256: 593b924e09ab8a92524acb87b4561fb6c1571f5c7395a281e17bdd9126a2bf30
+  sha256: b64260a9f022be9739a0e8424900ff0507e83e85583596556fee6db8cfeb0eaa

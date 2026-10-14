@@ -51,7 +51,7 @@ Answers are graded by a pinned LLM judge against `must_facts` and `must_not_clai
 | `brightwater-acquisition` | UK share purchase: SPA draft and executed version, disclosure letter, due-diligence report, scanned board minutes and employment-tribunal claim, data-room spreadsheets, cap-table CSV, and an earn-out email thread | 18 | 29 |
 | `kite-launch` | non-legal business project, a software launch: brief, roadmap and risk register (xlsx), budget CSV, vendor quote and negotiation thread, beta survey, scanned design review, press release v1/v2, and an HTML bug report | 17 | 15 |
 
-All parties, people and events are fictional, and every email domain is `*.example`.
+All parties, people and events are fictional. Every email domain is `*.example`, UK postcodes use the non-existent `ZZ` area, and company, VAT and tax numbers are placeholders.
 
 Each case has the same layout:
 - `bible.yaml`: the single source of truth for the case.

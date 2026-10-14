@@ -4,9 +4,9 @@
 
 **(1) IMOGEN HALE and RAFAEL DUARTE** (together the "Sellers")
 
-**(2) CASTELLANE HOLDINGS LTD** (company number 11483920) of 14 Bruton Place, London W1J 6LX (the "Buyer")
+**(2) CASTELLANE HOLDINGS LTD** (company number 00000001) of 14 Ashgrove Mews, London ZZ3 6LX (the "Buyer")
 
-**relating to the entire issued share capital of BRIGHTWATER ANALYTICS LTD** (company number 10177245) of Floor 3, 26 Clerkenwell Road, London EC1M 5PQ (the "Company")
+**relating to the entire issued share capital of BRIGHTWATER ANALYTICS LTD** (company number 00000002) of Floor 3, 26 Copperfield Yard, London ZZ4 5PQ (the "Company")
 
 Execution version. Prepared by Fenwick Rowe LLP for the Buyer. Project Larch.
 
@@ -217,4 +217,4 @@ Signed by RAFAEL DUARTE — *R. Duarte* — 14 March 2025
 
 Signed for and on behalf of CASTELLANE HOLDINGS LTD by ANDERS LINDQVIST, director — *A. Lindqvist* — 14 March 2025
 
-Witnessed by Sophie Adair, solicitor, Fenwick Rowe LLP, 1 Moorgate Place, London EC2R 6EA.
+Witnessed by Sophie Adair, solicitor, Fenwick Rowe LLP, 1 Lantern Row, London ZZ5 6EA.

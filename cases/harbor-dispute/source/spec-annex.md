@@ -8,7 +8,7 @@ Revision B — issued with Amendment No. 1 on 20 January 2025
 
 ## 1. Scope
 
-1.1 This Annex A sets out the performance, design, supply, installation and commissioning requirements for the automated conveyor and sortation system (the "System") to be supplied and installed by Tidewell Fabrication Ltd (the "Supplier") at Brisamar Logistics SA's Valencia Distribution Centre at Polígono Industrial Fuente del Jarro, Paterna (the "Site").
+1.1 This Annex A sets out the performance, design, supply, installation and commissioning requirements for the automated conveyor and sortation system (the "System") to be supplied and installed by Tidewell Fabrication Ltd (the "Supplier") at Brisamar Logistics SA's Valencia Distribution Centre at Polígono Industrial Los Almendros, Paterna (the "Site").
 
 1.2 In the event of conflict between this Annex and the body of the Agreement, the body of the Agreement prevails.
 

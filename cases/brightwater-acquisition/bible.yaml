@@ -1,7 +1,7 @@
 # Ground truth for the second benchmark case: a UK share purchase with a post-completion warranty
 # claim and an earn-out dispute. Fictional parties. Everything in expected/ is derived from this
 # file by generate.py. Bump case_version whenever anything that changes the rendered documents changes.
-case_version: 2
+case_version: 3
 case:
   name: "Castellane Holdings — acquisition of Brightwater Analytics"
   type: corporate_ma
@@ -18,13 +18,13 @@ organizations:
     aliases: [Castellane, the Buyer]
     role: buyer
     country: GB
-    address: "14 Bruton Place, London W1J 6LX, United Kingdom"
+    address: "14 Ashgrove Mews, London ZZ3 6LX, United Kingdom"
   - key: brightwater
     name: Brightwater Analytics Ltd
     aliases: [Brightwater, the Company, the Target]
     role: target
     country: GB
-    address: "Floor 3, 26 Clerkenwell Road, London EC1M 5PQ, United Kingdom"
+    address: "Floor 3, 26 Copperfield Yard, London ZZ4 5PQ, United Kingdom"
   - key: northgate
     name: Northgate Retail plc
     aliases: [Northgate]
@@ -155,7 +155,7 @@ data_room_index:
   - { ref: "5.4", folder: "5. IP and technology", title: "Third-party licences (bundle)", date: 2025-01-30 }
   - { ref: "6.1", folder: "6. Litigation and compliance", title: "Litigation summary (nil return)", date: 2025-01-30 }
   - { ref: "6.2", folder: "6. Litigation and compliance", title: "ICO registration and data protection policies", date: 2025-01-30 }
-  - { ref: "7.1", folder: "7. Property", title: "Lease of Floor 3, 26 Clerkenwell Road", date: 2025-01-30 }
+  - { ref: "7.1", folder: "7. Property", title: "Lease of Floor 3, 26 Copperfield Yard", date: 2025-01-30 }
 qa_log:
   - { q: 7, date: 2025-02-04, question: "Please confirm the renewal status of the Northgate Retail contract expiring 30 June 2025.", answer: "Renewal discussions are ongoing and management expects renewal on similar terms.", answered: 2025-02-06 }
   - { q: 12, date: 2025-02-12, question: "Are there any threatened or pending employee claims?", answer: "No formal claims. One informal grievance (customer success) was resolved internally in January 2025.", answered: 2025-02-14 }

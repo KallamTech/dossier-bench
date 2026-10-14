@@ -2,7 +2,7 @@
 
 ## Minutes of a meeting of the board of directors
 
-**Held at:** Floor 3, 26 Clerkenwell Road, London EC1M 5PQ
+**Held at:** Floor 3, 26 Copperfield Yard, London ZZ4 5PQ
 
 **Date and time:** Tuesday 11 February 2025, 08:30
 

@@ -6,9 +6,9 @@
 
 **(1) IMOGEN HALE and RAFAEL DUARTE** (together the "Sellers")
 
-**(2) CASTELLANE HOLDINGS LTD** (company number 11483920) of 14 Bruton Place, London W1J 6LX (the "Buyer")
+**(2) CASTELLANE HOLDINGS LTD** (company number 00000001) of 14 Ashgrove Mews, London ZZ3 6LX (the "Buyer")
 
-**relating to the entire issued share capital of BRIGHTWATER ANALYTICS LTD** (company number 10177245) of Floor 3, 26 Clerkenwell Road, London EC1M 5PQ (the "Company")
+**relating to the entire issued share capital of BRIGHTWATER ANALYTICS LTD** (company number 00000002) of Floor 3, 26 Copperfield Yard, London ZZ4 5PQ (the "Company")
 
 Draft 7. Prepared by Fenwick Rowe LLP for the Buyer. Project Larch. Changes from draft 6 shown in the comparison circulated separately.
 

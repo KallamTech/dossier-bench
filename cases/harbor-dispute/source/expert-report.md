@@ -4,7 +4,7 @@
 
 **Tidewell Fabrication Ltd v. Brisamar Logistics SA**
 
-**Prepared by:** Dr Helena Voss, BSc PhD FCIArb, Meridian Forensic Scheduling Ltd, 14 Bedford Row, London WC1R 4ED
+**Prepared by:** Dr Helena Voss, BSc PhD FCIArb, Meridian Forensic Scheduling Ltd, 14 Scrivener Row, London ZZ9 4ED
 
 **Instructed by:** Calloway Price LLP on behalf of Tidewell Fabrication Ltd
 

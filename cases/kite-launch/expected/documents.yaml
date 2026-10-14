@@ -1,4 +1,4 @@
-case_version: 2
+case_version: 3
 documents:
 - key: brief
   files:
@@ -119,7 +119,7 @@ documents:
   - Total £24,500 for a 90-second launch video, including two rounds of revisions
   - Delivery six weeks from brief approval; 50% deposit, balance on delivery
   family: null
-  sha256: 4ef6e81dc1d51724ad18d48b469be6d063945b483908e10ec0307bb4dc12d921
+  sha256: f7e72f506ff9f0039084575b61ee8e94a1724876061bee7751416fdc8f77a69e
 - key: vendor-thread-1
   files:
   - 06_pixelforge_thread_1.eml

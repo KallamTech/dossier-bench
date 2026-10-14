@@ -1,4 +1,4 @@
-case_version: 2
+case_version: 3
 documents:
 - key: spa-draft
   files:
@@ -28,7 +28,7 @@ documents:
   family:
     group: spa
     role: base
-  sha256: f6dc1ec47cdb53d71688b9291f999ee9d7c8450a23cb2248a59f9bf3deef51e7
+  sha256: d0d2b05d1888ef32c25576792fbb5889735afbb8ab485bc7cf26b709c0ceb67c
 - key: spa
   files:
   - 02_spa_executed_2025-03-14.pdf
@@ -65,7 +65,7 @@ documents:
   family:
     group: spa
     role: revision
-  sha256: 372fdd3e159665c3abaf86857b0c59a37814b2eb0f35f680d09b7ca0ca99bebb
+  sha256: 53035e4e4431b6b0a1257bf1d5c67156b00bd65c6f5b5ecc63294a53517ed102
 - key: disclosure-letter
   files:
   - 03_disclosure_letter_2025-03-14.docx
@@ -90,7 +90,7 @@ documents:
   - 'Against warranty 15.1: an informal grievance by Rosemary Okafor was resolved in January 2025'
   - 'Against warranty 18.4: an open-source audit has been commissioned and is in progress'
   family: null
-  sha256: 49fdb7ac78beb039e3c35a4382995387bfebaabfe8f293c76719c1a3497c13c4
+  sha256: bbba30f34a7272ef71382cda17621b7c28d35d55a0fee950ff1eda3e8103d286
 - key: data-room-index
   files:
   - 04_data_room_index.xlsx
@@ -115,7 +115,7 @@ documents:
   - Q12 on employee claims answered 'no formal claims; one informal grievance resolved January 2025'
   - Q19 on the open-source audit answered 'preliminary inventory; full audit commissioned'
   family: null
-  sha256: eec8c8ec00fa6edac6c2521129f73bed3fe580a2587e0fa0a2a9f977d4877ed0
+  sha256: d602e9350be1fa7e259b093bb12dfb5cdd11814cd319f7209a3c61dd3fd13df5
 - key: fdd-report
   files:
   - 05_financial_due_diligence_report.pdf
@@ -164,7 +164,7 @@ documents:
   - 'The board noted the sale process timetable: signing mid-March, completion end of April'
   family: null
   ocr_similarity_min: 0.75
-  sha256: 1a550ff0f736d519cb7f209d059a5026eb6a971583acc71ef8aff6f6f8e8cc32
+  sha256: 5df84f2408cc36e6328d9d6c2f9ffc18942bfcf8045625250bfbd6e1fb5e9096
 - key: northgate-notice
   files:
   - 07_northgate_non_renewal_notice.eml
@@ -240,7 +240,7 @@ documents:
   - 'Breach of warranty 18.4: three AGPL components in the hosted product'
   - Quantum claimed about £2,400,000; Castellane requires the escrow of £1,850,000 to be retained
   family: null
-  sha256: 579967c117a7948bea42e26e173386d255074fd004392210b4fc379d1904c97d
+  sha256: 97b6746ae592d079fd323b72070212afab6998f579c4947e4a26e3358ee822e5
 - key: sellers-response
   files:
   - 10_sellers_response_2025-10-10.pdf
@@ -265,7 +265,7 @@ documents:
   - 'On 18.4: the audit was disclosed as in progress and the components were in the preliminary inventory'
   - Sellers deny any loss above the basket and invite withdrawal of the escrow retention
   family: null
-  sha256: 7e137f07d44fd8daf8433167dd598ce25921a5f7a7ea3167854803f604170146
+  sha256: 17cb3a2d0831992ae40703bb8bb7135e01eb16bccc6408d55361ef206620b774
 - key: et1-claim
   files:
   - 11_et1_claim_form_okafor_scanned.pdf
@@ -292,7 +292,7 @@ documents:
   - Compensation sought about £180,000
   family: null
   ocr_similarity_min: 0.75
-  sha256: ebf1a3cb1a884152229a518935e69656d621e79f71d8cd52cccdc85839ef1da1
+  sha256: 3d00c1b17d3e6435d85e3baeef013f0f50f3ebd51799c65b12c720e2e41143bf
 - key: oss-audit
   files:
   - 12_open_source_audit.xlsx

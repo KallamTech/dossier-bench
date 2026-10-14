@@ -1,4 +1,4 @@
-case_version: 2
+case_version: 3
 entities:
 - type: organization
   key: castellane

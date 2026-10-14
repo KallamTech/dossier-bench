@@ -1,10 +1,10 @@
 # FLOOR SLAB LEVEL SURVEY — BAY 3
 
-**Levantina Topografía SL** — Avenida del Puerto 211, 46023 Valencia — CIF B-98.455.102
+**Levantina Topografía SL** — Calle del Faro Viejo 211, 46023 Valencia — CIF B-00.000.001
 
 **Client:** Tidewell Fabrication Ltd (attention Tomasz Wójcik)
 
-**Site:** Brisamar Logistics distribution centre, Polígono Industrial Fuente del Jarro, Paterna
+**Site:** Brisamar Logistics distribution centre, Polígono Industrial Los Almendros, Paterna
 
 **Survey date:** 19 February 2025 | **Report reference:** LT-2025-0218 | **Issued:** 19 February 2025
 
