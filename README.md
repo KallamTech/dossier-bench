@@ -189,7 +189,7 @@ need care:
 ## Scoring notes
 
 - **Judge.** Pin one judge model and keep it fixed across the runs you compare. Without a judge, titles
-  fall back to fuzzy matching, answers fall back to phrase coverage, and long summaries are skipped. The
+  fall back to fuzzy matching, and answer facts and long summaries are skipped (they are sentences, not phrases). The
   judge's own spend is reported separately (`judge $`) and never counted as system cost.
 - **Pass mark.** An item passes at quality ≥ 0.6. An agent turn's quality is the mean of its sub-scores:
   terminal state, answer facts, rubric, contains/not_contains, citations, and any latency/cost budgets.

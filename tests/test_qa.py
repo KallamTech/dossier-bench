@@ -12,7 +12,7 @@ def test_content_citations_and_budgets():
     }
     ans = Answer("The rate is 0.5% per week, capped at 10%.", sources=["contract-v1"], latency_s=3.0, cost_usd=0.02)
     subs, det, jc = score_answer(expect, ans, None, question="q", tag="t")
-    assert set(subs) == {"terminal", "contains", "not_contains", "answer_phrases", "citations", "latency_budget", "cost_budget"}
+    assert set(subs) == {"terminal", "contains", "not_contains", "citations", "latency_budget", "cost_budget"}
     assert all(v == 1.0 for v in subs.values()) and jc == 0.0
     assert det["cited"] == ["contract-v1"]
 
