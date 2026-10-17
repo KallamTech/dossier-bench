@@ -1,4 +1,4 @@
-case_version: 3
+case_version: 4
 queries:
 - query: warranty cap de minimis basket
   expect:
@@ -54,7 +54,8 @@ queries:
 - query: signed not yet live contracts Kestrel
   expect:
   - arr-statement
-  - earnout-thread
+  - earnout-thread-2
+  - earnout-thread-3
   k: 5
 - query: who represents the sellers
   expect:

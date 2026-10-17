@@ -42,7 +42,7 @@ def score_answer(expect: dict, answer: Answer, judge: Judge | None, *, question:
         det.update({k: d[k] for k in ("missing", "contradicted", "forbidden_present") if d.get(k)})
         det["reasoning"] = d.get("reasoning", "")
     elif a:
-        subs["answer_phrases"], det["missing"] = S.phrase_coverage(content, a.get("must_facts", []))
+        det["answer_skipped"] = "must_facts are sentences; scoring them needs the judge"
     aj = expect.get("answer_judge")
     if aj and judge is not None:
         q, d, c = judge.rubric(judged, aj.get("reference", ""), aj.get("rubric", ""), tag=f"{tag}-rubric")
