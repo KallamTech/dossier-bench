@@ -39,7 +39,7 @@ def test_score_turn_latency_and_barge_in():
     expect = {"answer": {"must_facts": ["10%"]}, "max_first_audio_s": 1.0}
     q, passed, det, _ = score_voice_turn(expect, res, prev, 3, "Sorry, stop there. Just tell me the cap.", "en", None, "t")
     assert det["first_audio_s"] == 0.6 and det["turn_latency_s"] == 3.0 and det["stopped_after_s"] == 0.7
-    assert det["subscores"] == {"terminal": 1.0, "answer_phrases": 1.0, "first_audio_budget": 1.0, "barge_in": 1.0}
+    assert det["subscores"] == {"terminal": 1.0, "first_audio_budget": 1.0, "barge_in": 1.0}
     assert q == 1.0 and passed and det["heard_wer"] == 0.0
     slow_stop = VoiceTurnResult(reply_text="x", speech_end_s=0, first_audio_s=1, reply_end_s=9, barge_in_s=3.5)
     _, _, det2, _ = score_voice_turn({}, res, slow_stop, 3, "q", "en", None, "t")
