@@ -1,4 +1,4 @@
-case_version: 3
+case_version: 4
 entities:
 - type: organization
   key: larkspur

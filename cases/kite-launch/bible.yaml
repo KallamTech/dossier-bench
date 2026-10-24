@@ -1,7 +1,7 @@
 # Ground truth for the business benchmark case: a B2B software launch run by a small team.
 # No legal content; the vocabulary is project / team / counterparty. Everything in expected/
 # is derived from this file by generate.py. Bump case_version whenever rendered documents change.
-case_version: 3
+case_version: 4
 case:
   name: "Project Kite — Kite Planner 3.0 launch"
   type: project

@@ -1,4 +1,4 @@
-case_version: 6
+case_version: 7
 entities:
 - type: organization
   key: tidewell

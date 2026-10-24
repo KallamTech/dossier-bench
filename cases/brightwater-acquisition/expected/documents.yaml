@@ -1,4 +1,4 @@
-case_version: 3
+case_version: 5
 documents:
 - key: spa-draft
   files:
@@ -164,7 +164,7 @@ documents:
   - 'The board noted the sale process timetable: signing mid-March, completion end of April'
   family: null
   ocr_similarity_min: 0.75
-  sha256: 5df84f2408cc36e6328d9d6c2f9ffc18942bfcf8045625250bfbd6e1fb5e9096
+  sha256: 375fbac80a02a5d04550c8edf85b0f546484f289b55aa324598d29e7c800f2f9
 - key: northgate-notice
   files:
   - 07_northgate_non_renewal_notice.eml
@@ -292,7 +292,7 @@ documents:
   - Compensation sought about £180,000
   family: null
   ocr_similarity_min: 0.75
-  sha256: 3d00c1b17d3e6435d85e3baeef013f0f50f3ebd51799c65b12c720e2e41143bf
+  sha256: f91ed3922a0ac37dbc8dd56cba9f4884d3ec9b929709c59475b8e909802ba232
 - key: oss-audit
   files:
   - 12_open_source_audit.xlsx

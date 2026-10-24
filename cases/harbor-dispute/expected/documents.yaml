@@ -1,4 +1,4 @@
-case_version: 6
+case_version: 7
 documents:
 - key: survey-attachment
   files:
@@ -129,7 +129,7 @@ documents:
   - Risk noted on Bay 3 floor slab tolerance
   family: null
   ocr_similarity_min: 0.85
-  sha256: c184333f9e92bebc7f126fcae31999c3b42e67a8b4de5229e747901872720246
+  sha256: 2778107c7e6747423b301c48b51eb1e7d527cc0c13e29c6577f69cec8ccfeb30
 - key: change-orders
   files:
   - 05_change_orders.xlsx

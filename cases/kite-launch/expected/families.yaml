@@ -1,4 +1,4 @@
-case_version: 3
+case_version: 4
 families:
 - group: press-release
   kind: version
