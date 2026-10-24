@@ -1,4 +1,4 @@
-case_version: 3
+case_version: 4
 documents:
 - key: brief
   files:
@@ -228,7 +228,7 @@ documents:
   - Dark mode was raised and parked for 3.1
   family: null
   ocr_similarity_min: 0.75
-  sha256: a619aa341219d39e044efa5bac67da29ac780a4f88624fd2a06dced2447ae5ca
+  sha256: 2447afe6ec15b8b5246f8e7dd76f538d174f1a0ed4e73d08dcf0f41c309d8989
 - key: checklist
   files:
   - 09_launch_checklist.docx
